@@ -1,2 +1,1 @@
-# here.li
-Digital Marketing Eco-system
+# Here is a Digital Marketing Eco-system
