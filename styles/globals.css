@@ -42,24 +42,69 @@
     }
 }
 
-@layer components {
-    button {
-        @apply text-gray-1000 w-64 border-2 border-gray-1000 hover:bg-gray-1000 hover:text-white py-2 rounded-md transition duration-300
-    }
+/** Button styles **/
+button {
+    @apply text-gray-1000 w-64 border-2 border-gray-1000 hover:bg-gray-1000 hover:text-white py-2 rounded-md transition duration-300
+}
 
-    button.hovered {
-        @apply bg-gray-1000 text-white
-    }
+button.hovered {
+    @apply bg-gray-1000 text-white
+}
 
-    button[disabled] {
-        @apply text-gray-300 border-gray-200 cursor-not-allowed hover:bg-white
-    }
+button[disabled] {
+    @apply text-gray-300 border-gray-200 cursor-not-allowed hover:bg-white
+}
 
-    button.primary {
-        @apply bg-primary border-primary text-gray-1000 hover:bg-primary-hovered hover:border-primary-hovered
-    }
+button.primary {
+    @apply bg-primary border-primary text-gray-1000 hover:bg-primary-hovered hover:border-primary-hovered
+}
 
-    button.primary.hovered {
-        @apply bg-primary-hovered border-primary-hovered
+button.primary.hovered {
+    @apply bg-primary-hovered border-primary-hovered
+}
+
+/** Link styles **/
+a.with-chevron {
+    position: relative;
+}
+
+a.with-chevron:after {
+    @apply transition duration-200
+}
+
+a.with-chevron:after {
+    content: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.73172 8.94743L4.40894 3.53425L5.83114 2.08789L12.5761 8.94743L5.83114 15.807L4.40894 14.3606L9.73172 8.94743Z' fill='%23070B0D'/%3E%3C/svg%3E%0A");
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    transform: translateX(0);
+}
+
+a.with-chevron:hover:after {
+    transform: translateX(2px);
+}
+
+a.with-chevron:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 0%;
+    background: theme('colors.primary-hovered')
+}
+
+a.with-chevron:hover:before {
+    animation: line-grow 200ms ease-in-out forwards;
+}
+
+@keyframes line-grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
     }
 }

@@ -2,6 +2,7 @@ import { HeaderBanner } from "../components/Banner";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import Layout from "../components/Layout";
+import { LinkWithChevron } from "../components/Link";
 
 export default function StyleguidePage() {
     return <Layout>
@@ -142,5 +143,27 @@ export default function StyleguidePage() {
                 </div>
             </div>
         </Container>
+
+        <Container>
+            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
+            <h2>Banner Slider</h2>
+        </Container>
+
+        <div className="mt-12 flex items-start">
+            <div className="bg-gray-100 w-full">
+                <Container>
+                    <div className="py-48">
+                        <div className="h1">
+                            Handy accessories
+                            <br />
+                            for your bag
+                        </div>
+                        <div className="mt-16">
+                            <LinkWithChevron href="/" className="">Shop now</LinkWithChevron>
+                        </div>
+                    </div>
+                </Container>
+            </div>
+        </div>
     </Layout>
 }
