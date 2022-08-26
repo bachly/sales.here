@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import Meta from '../components/Meta';
-import LogoImage from "../public/logo.svg";
 import PackageJSON from '../package.json';
 
 export default function Layout({ children }) {
@@ -15,7 +13,7 @@ export default function Layout({ children }) {
                     <div className="relative z-10 flex items-center">
                         <Link href="/">
                             <span className="w-40 flex items-center justify-center">
-                                <Image src={LogoImage} alt={`${sitename} logo`} title={`${sitename} logo`} />
+                                <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
                             </span>
                         </Link>
                         <div className="flex-1 flex items-center">

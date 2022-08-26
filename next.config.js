@@ -1,6 +1,9 @@
 module.exports = {
   reactStrictMode: true,
   experimental: {
-    scrollRestoration: true
+    scrollRestoration: true,
+    images: {
+      unoptimized: true,
+    },
   },
 }
