@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -28,6 +30,29 @@ module.exports = {
       '100': '1',
     },
     extend: {
+      colors: {
+        "primary": "#FFD33E",
+        "primary-hovered": "#FBC200",
+        "gray": {
+          1000: "rgba(7, 11, 13, 1)",
+          900: "rgba(7, 11, 13, 0.9)",
+          500: "rgba(7, 11, 13, 0.5)",
+          400: "rgba(7, 11, 13, 0.4)",
+          300: "rgba(7, 11, 13, 0.3)",
+          200: "rgba(7, 11, 13, 0.2)",
+          100: "rgba(7, 11, 13, 0.1)",
+          50: "rgba(7, 11, 13, 0.05)"
+        }
+      },
+      fontFamily: {
+        body: ['Mulish']
+      },
+      lineHeight: {
+        'normal': '1',
+        'loose': '1.25',
+        'extra-loose': '1.5',
+        'extreme-loose': '2',
+      },
       gridTemplateRows: {
         '10': 'repeat(10, minmax(0, 1fr))'
       },

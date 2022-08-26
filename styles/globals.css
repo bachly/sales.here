@@ -1,3 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish:semibold,bold,black&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1.display, .h1.display {
+        @apply text-6xl text-gray-900 font-black leading-loose tracking-tight
+    }
+
+    h1, .h1 {
+        @apply text-5xl text-gray-900 font-semibold leading-loose tracking-tight
+    }
+
+    h2, .h2 {
+        @apply text-3xl text-gray-900 font-semibold leading-loose
+    }
+
+    h3, .h3 {
+        @apply text-xl text-gray-900 font-semibold leading-extra-loose
+    }
+
+    h4, .h4 {
+        @apply text-base text-gray-500 font-semibold leading-extra-loose
+    }
+
+    h5, .h5 {
+        @apply text-sm text-gray-500 uppercase
+    }
+
+    h6, .h6, small {
+        @apply text-xs text-gray-300 font-bold
+    }
+
+    p, .p {
+        @apply text-base text-gray-900
+    }
+
+    quote, .quote {
+        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-primary block pl-6
+    }
+}
+
+@layer components {
+    button {
+        @apply text-gray-1000 w-64 border-2 border-gray-1000 hover:bg-gray-1000 hover:text-white py-2 rounded-md transition duration-300
+    }
+
+    button.hovered {
+        @apply bg-gray-1000 text-white
+    }
+
+    button[disabled] {
+        @apply text-gray-300 border-gray-200 cursor-not-allowed hover:bg-white
+    }
+
+    button.primary {
+        @apply bg-primary border-primary text-gray-1000 hover:bg-primary-hovered hover:border-primary-hovered
+    }
+
+    button.primary.hovered {
+        @apply bg-primary-hovered border-primary-hovered
+    }
+}
