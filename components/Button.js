@@ -1,13 +1,13 @@
 import clsx from "clsx"
 
-export default function ({ onClick, children, primary, hovered, disabled, className }) {
+export default function ({ onClick, children, primary, secondary, disabled, className }) {
     if (disabled) {
-        return <button disabled className={className} onClick={onClick}>
+        return <button disabled className={`button ${className}`} onClick={onClick}>
             {children}
         </button>
     }
 
-    return <button className={clsx(primary && "primary", hovered && "hovered", className)} onClick={onClick}>
+    return <button className={clsx(primary && "primary", secondary && "secondary", `button ${className}`)} onClick={onClick}>
         {children}
     </button>
 }

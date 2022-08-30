@@ -2,7 +2,8 @@ import { HeaderBanner } from "../components/Banner";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import Layout from "../components/Layout";
-import { LinkWithChevron } from "../components/Link";
+import BannerSlider from "../components/BannerSlider";
+import { LinkAsButton, LinkWithChevron } from "../components/Link";
 
 export default function StyleguidePage() {
     return <Layout>
@@ -17,8 +18,8 @@ export default function StyleguidePage() {
                 </div>
                 <div className="w-2/3">
                     <span className="h1 display">
-                        Display Title.<br />
-                        Go Big or Go Home.
+                        Go Big.<br />
+                        Or Go Home.
                     </span>
                 </div>
             </div>
@@ -113,8 +114,9 @@ export default function StyleguidePage() {
                 <div className="w-2/3">
                     <div className="max-w-lg">
                         <div className="prose">
-                            <quote>Utinam quidem dicerent alium alio beatiorem. Iam ruinas videres. Non autem hoc, igitur. Universa enim illorum ratione cum tota vestra confligendum puto.
-                            </quote>
+                            <blockquote>
+                                Utinam quidem dicerent alium alio beatiorem. Iam ruinas videres. Non autem hoc, igitur. Universa enim illorum ratione cum tota vestra confligendum puto.
+                            </blockquote>
                         </div>
                     </div>
                 </div>
@@ -123,7 +125,7 @@ export default function StyleguidePage() {
 
         <Container>
             <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
-            <h2>Buttons</h2>
+            <h2>Buttons &amp; Links</h2>
             <div className="mt-20 flex items-start">
                 <div className="w-1/3">
                     <div className="h5">Buttons and states</div>
@@ -131,14 +133,28 @@ export default function StyleguidePage() {
                 <div className="">
                     <div className="grid grid-cols-2 gap-2">
                         <Button>Outline Button</Button>
-                        <Button hovered>Outline Button Hovered</Button>
                     </div>
                     <div className="mt-2 grid grid-cols-2 gap-2">
                         <Button primary>Primary Button</Button>
-                        <Button primary hovered>Primary Button Hovered</Button>
+                    </div>
+                    <div className="mt-2 grid grid-cols-2 gap-2">
+                        <Button secondary>Secondary Button</Button>
                     </div>
                     <div className="mt-2">
                         <Button disabled>Disabled Button</Button>
+                    </div>
+                </div>
+            </div>
+            <div className="mt-20 flex items-start">
+                <div className="w-1/3">
+                    <div className="h5">Links</div>
+                </div>
+                <div className="">
+                    <div className="">
+                        <LinkWithChevron href="#">Shop now</LinkWithChevron>
+                    </div>
+                    <div className="mt-6">
+                        <LinkAsButton href="#">Shop now</LinkAsButton>
                     </div>
                 </div>
             </div>
@@ -149,21 +165,8 @@ export default function StyleguidePage() {
             <h2>Banner Slider</h2>
         </Container>
 
-        <div className="mt-12 flex items-start">
-            <div className="bg-gray-100 w-full">
-                <Container>
-                    <div className="py-48">
-                        <div className="h1">
-                            Handy accessories
-                            <br />
-                            for your bag
-                        </div>
-                        <div className="mt-16">
-                            <LinkWithChevron href="/" className="">Shop now</LinkWithChevron>
-                        </div>
-                    </div>
-                </Container>
-            </div>
+        <div className="mt-12">
+            <BannerSlider />
         </div>
     </Layout>
 }

@@ -4,9 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@splidejs/splide/css';
+@import '@splidejs/react-splide/css/core';
+
+.splide__pagination {
+    bottom: -2rem;
+}
+.splide__pagination__page {
+    background: theme("colors.gray.500");
+}
+
+.splide__pagination__page.is-active {
+    background: theme("colors.black")
+}
+
+button.splide__arrow {
+    background-color: theme("colors.white");
+}
+
 @layer base {
     h1.display, .h1.display {
-        @apply text-6xl text-gray-900 font-black leading-loose tracking-tight
+        @apply text-8xl text-gray-900 font-black tracking-tight
     }
 
     h1, .h1 {
@@ -37,30 +55,35 @@
         @apply text-base text-gray-900
     }
 
-    quote, .quote {
+    blockquote, .blockquote {
         @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-primary block pl-6
     }
 }
 
 /** Button styles **/
-button {
-    @apply text-gray-1000 w-64 border-2 border-gray-1000 hover:bg-gray-1000 hover:text-white py-2 rounded-md transition duration-300
+.button, 
+.button.outline {
+    @apply text-gray-1000 w-64 border-2 border-gray-1000 
+        py-2 px-4 rounded-md transition duration-200
+        hover:bg-gray-1000 hover:text-white
+        active:scale-95 active:bg-gray-1000 active:text-white
 }
 
-button.hovered {
-    @apply bg-gray-1000 text-white
+.button.secondary {
+    @apply bg-stone-900 text-white
+        hover:bg-gray-1000
+        active:scale-95 active:bg-gray-1000
 }
 
-button[disabled] {
+.button[disabled] {
     @apply text-gray-300 border-gray-200 cursor-not-allowed hover:bg-white
+        active:scale-100
 }
 
-button.primary {
-    @apply bg-primary border-primary text-gray-1000 hover:bg-primary-hovered hover:border-primary-hovered
-}
-
-button.primary.hovered {
-    @apply bg-primary-hovered border-primary-hovered
+.button.primary {
+    @apply bg-primary border-primary text-gray-1000 
+        hover:bg-primary-hovered hover:border-primary-hovered
+        active:scale-95 active:bg-primary-hovered
 }
 
 /** Link styles **/
@@ -81,7 +104,7 @@ a.with-chevron:after {
     transform: translateX(0);
 }
 
-a.with-chevron:hover:after {
+a.with-chevron:active:after {
     transform: translateX(2px);
 }
 
@@ -107,4 +130,9 @@ a.with-chevron:hover:before {
     to {
         width: 100%;
     }
+}
+
+.vertically-aligned {
+    top: 50%;
+    transform: translateY(-50%);
 }
