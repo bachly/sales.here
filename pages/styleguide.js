@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Layout from "../components/Layout";
 import BannerSlider from "../components/BannerSlider";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";
+import FeaturedProducts from "../components/FeaturedProducts";
 
 export default function StyleguidePage() {
     return <Layout>
@@ -167,6 +168,15 @@ export default function StyleguidePage() {
 
         <div className="mt-12">
             <BannerSlider />
+        </div>
+
+        <Container>
+            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
+            <h2>Product Slider</h2>
+        </Container>
+
+        <div className="mt-12">
+            <FeaturedProducts />
         </div>
     </Layout>
 }

@@ -4,9 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*** SplideJS ***/
+
 @import '@splidejs/splide/css';
 @import '@splidejs/react-splide/css/core';
-
 .splide__pagination {
     bottom: -2rem;
 }
@@ -20,6 +21,14 @@
 
 button.splide__arrow {
     background-color: theme("colors.white");
+}
+
+.splide__arrow--prev {
+    left: -3rem;
+}
+
+.splide__arrow--next {
+    right: -3rem;
 }
 
 @layer base {
@@ -40,7 +49,7 @@ button.splide__arrow {
     }
 
     h4, .h4 {
-        @apply text-base text-gray-500 font-semibold leading-extra-loose
+        @apply text-base text-gray-500 font-bold leading-extra-loose tracking-tight
     }
 
     h5, .h5 {
@@ -66,13 +75,13 @@ button.splide__arrow {
     @apply text-gray-1000 w-64 border-2 border-gray-1000 
         py-2 px-4 rounded-md transition duration-200
         hover:bg-gray-1000 hover:text-white
-        active:scale-95 active:bg-gray-1000 active:text-white
+        active:bg-gray-1000 active:text-white
 }
 
 .button.secondary {
     @apply bg-stone-900 text-white
-        hover:bg-gray-1000
-        active:scale-95 active:bg-gray-1000
+        hover:bg-black
+        active:bg-black
 }
 
 .button[disabled] {
@@ -83,7 +92,7 @@ button.splide__arrow {
 .button.primary {
     @apply bg-primary border-primary text-gray-1000 
         hover:bg-primary-hovered hover:border-primary-hovered
-        active:scale-95 active:bg-primary-hovered
+        active:bg-primary-hovered
 }
 
 /** Link styles **/
