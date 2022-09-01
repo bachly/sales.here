@@ -77,6 +77,7 @@ typings/
 
 # Next.js build output
 .next
+out
 
 # Nuxt.js build / generate output
 .nuxt
@@ -103,5 +104,5 @@ dist
 # TernJS port file
 .tern-port
 
-# NextJS files
-out
+# OS files
+.DS_Store

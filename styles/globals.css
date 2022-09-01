@@ -12,6 +12,7 @@
     bottom: -2rem;
 }
 .splide__pagination__page {
+    margin: 4px;
     background: theme("colors.gray.500");
 }
 
@@ -41,7 +42,7 @@ button.splide__arrow {
     }
 
     h2, .h2 {
-        @apply text-3xl text-gray-900 font-semibold leading-loose
+        @apply text-2xl text-gray-900 font-bold leading-loose
     }
 
     h3, .h3 {

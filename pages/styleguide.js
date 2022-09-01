@@ -4,9 +4,10 @@ import Container from "../components/Container";
 import Layout from "../components/Layout";
 import BannerSlider from "../components/BannerSlider";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";
-import FeaturedProducts from "../components/FeaturedProducts";
+import ProductSlider from "../components/ProductSlider";
+import { getAllProducts } from "../lib/api";
 
-export default function StyleguidePage() {
+export default function StyleguidePage({ featuredProducts }) {
     return <Layout>
         <HeaderBanner title="Styleguide" />
 
@@ -176,7 +177,19 @@ export default function StyleguidePage() {
         </Container>
 
         <div className="mt-12">
-            <FeaturedProducts />
+            <ProductSlider title="Featured Products" products={featuredProducts} />
         </div>
     </Layout>
+}
+
+export function getStaticProps() {
+    const products = getAllProducts();
+    const featuredProducts = products.filter(product =>
+        ['CHIL', 'APIR', 'GHER', 'HONE', 'PICK4', 'RAIN'].indexOf(product.sku) >= 0)
+
+    return {
+        props: {
+            featuredProducts
+        }
+    }
 }
