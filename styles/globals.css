@@ -46,23 +46,27 @@ button.splide__arrow {
     }
 
     h3, .h3 {
-        @apply text-xl text-gray-900 font-semibold leading-extra-loose
+        @apply text-xl text-gray-900 font-bold leading-extra-loose
     }
 
     h4, .h4 {
-        @apply text-base text-gray-500 font-bold leading-extra-loose tracking-tight
+        @apply text-lg text-gray-900 font-semibold leading-extra-loose tracking-tight
     }
 
     h5, .h5 {
         @apply text-sm text-gray-500 uppercase
     }
 
-    h6, .h6, small {
-        @apply text-xs text-gray-300 font-bold
+    h6, .h6 {
+        @apply text-xs text-gray-700 font-bold
     }
 
     p, .p {
         @apply text-base text-gray-900
+    }
+
+    small {
+        @apply text-xs text-gray-300 font-bold
     }
 
     blockquote, .blockquote {
