@@ -2,6 +2,7 @@ import Link from "next/link";
 import Meta from '../components/Meta';
 import PackageJSON from '../package.json';
 import Container from "./Container";
+import { UserIcon, CartIcon, SearchIcon } from "./Icons";
 
 export default function Layout({ children }) {
     const sitename = `${PackageJSON.site_settings.sitename}`;
@@ -15,19 +16,26 @@ export default function Layout({ children }) {
                     <div className="relative py-6">
                         <div className="relative z-10 flex items-center">
                             <Link href="/">
-                                <span className="w-28 flex items-center">
+                                <a className="w-28 flex items-center">
                                     <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
-                                </span>
+                                </a>
                             </Link>
                             <div className="ml-6 flex-1 flex items-center">
                                 <NavLink href="/">Home</NavLink>
                                 <NavLink href="/products">Products</NavLink>
-                                <NavLink href="/ideas">Ideas</NavLink>
+                                <NavLink href="/blog">Blog</NavLink>
                                 <NavLink href="/styleguide">Styleguide</NavLink>
                             </div>
                             <div className="flex itens-center">
-                                <a className="bg-gray-50 hover:bg-gray-100 py-2 px-6 text-sm rounded-sm">Account</a>
-                                <a className="ml-2 bg-primary hover:bg-primary-hovered py-2 px-6 text-sm rounded-sm">Cart</a>
+                                <NavIconLink href="/styleguide">
+                                    <SearchIcon />
+                                </NavIconLink>
+                                <NavIconLink href="/styleguide">
+                                    <UserIcon />
+                                </NavIconLink>
+                                <NavIconLink href="/styleguide">
+                                    <CartIcon />
+                                </NavIconLink>
                             </div>
                         </div>
                     </div>
@@ -44,6 +52,14 @@ export default function Layout({ children }) {
 function NavLink({ href, children }) {
     return <Link href={href}>
         <a className="ml-8 leading-none tracking-wide text-sm flex items-center text-opacity-70 hover:text-opacity-100 transition duration-200">
+            {children}
+        </a>
+    </Link>
+}
+
+function NavIconLink({ href, children }) {
+    return <Link href={href}>
+        <a className="ml-4 leading-none tracking-wide text-sm flex items-center text-opacity-70 hover:text-opacity-100 transition duration-200">
             {children}
         </a>
     </Link>

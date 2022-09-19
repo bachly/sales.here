@@ -7,13 +7,13 @@ export default function BannerSlider() {
     return <div className="bg-gray-50 w-full">
         <Splide options={{
             gap: '1rem',
+            arrows: false
         }}>
             <SplideSlide>
                 <div className="h-full">
                     <Container className="h-full">
                         <div className="h-full relative overflow-hidden">
                             <div className="pt-12 pb-32 relative z-10">
-                                <div className="text-xs bg-gray-100 font-bold inline-block py-1 px-3 rounded-full">SALE ON</div>
                                 <div className="pt-32"></div>
                                 <div className="">
                                     <span className="inline-block text-3xl bg-black text-white py-1 px-5">BIG ADVENTURE</span>
@@ -23,7 +23,7 @@ export default function BannerSlider() {
                                     <span className="mt-1 inline-block text-3xl font-semibold bg-black py-1 px-5 text-white font-serif">ONLY 2 DAYS LEFT</span>
                                 </div>
                                 <div className="mt-16">
-                                    <LinkWithChevron href="/" className="">Shop now</LinkWithChevron>
+                                    <LinkAsButton href="/" className="">Shop now</LinkAsButton>
                                 </div>
                             </div>
                             <img className="h-full absolute bottom-0 right-0 z-0" src="/img/man-woman-binoculars.png" />
@@ -36,7 +36,6 @@ export default function BannerSlider() {
                 <Container>
                     <div className="relative overflow-hidden">
                         <div className="pt-12 pb-32 relative z-10">
-                            <div className="text-xs bg-black text-white font-bold inline-block py-1 px-3 rounded-md">NEW PRODUCTS</div>
                             <div className="pt-32"></div>
                             <div className="">
                                 <span className="text-6xl">NEW ARRIVAL</span>
@@ -58,14 +57,13 @@ export default function BannerSlider() {
                     <Container className="h-full">
                         <div className="h-full relative overflow-hidden">
                             <div className="pt-12 pb-32 relative z-10 flex flex-col items-center">
-                                <div className="text-xs bg-primary font-bold inline-block py-1 px-3 rounded-full">LATEST BLOG</div>
-                                <div className="pt-40"></div>
+                                <div className="pt-32"></div>
                                 <div className="text-center">
                                     <span className="inline-block px-2 text-3xl bg-white bg-opacity-70">TOP 100 IDEAS FOR</span>
                                     <span className="mt-1 block px-4 text-8xl font-black font-sans bg-white bg-opacity-70">CAMPING</span>
                                 </div>
                                 <div className="mt-16">
-                                    <Button secondary>View article</Button>
+                                    <LinkAsButton href="/" secondary>View article</LinkAsButton>
                                 </div>
                             </div>
                         </div>

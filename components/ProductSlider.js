@@ -1,6 +1,8 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import Link from 'next/link';
 import Container from "./Container";
-import { LinkWithChevron } from './Link';
+import { ArrowRight } from './Icons';
+import { LinkAsButton, LinkWithChevron } from './Link';
 
 function ProductThumbnail({ img, title, price }) {
     const cleanImgSrc = img.replaceAll(' ', '\\ ');
@@ -23,9 +25,13 @@ function ProductThumbnail({ img, title, price }) {
 export default function ProductSlider({ title, products }) {
     return <div className="bg-gray-50 w-full pt-12 pb-20">
         <Container>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center">
                 <h2>{title}</h2>
-                <LinkWithChevron href="#">View all</LinkWithChevron>
+                <Link href="#">
+                    <a className="ml-4">
+                        <ArrowRight />
+                    </a>
+                </Link>
             </div>
         </Container>
         <Container className="mt-4">
@@ -33,14 +39,10 @@ export default function ProductSlider({ title, products }) {
                 <Splide
                     options={{
                         gap: '1rem',
-                        perPage: 4,
-                        padding: {
-                            left: '1rem',
-                            right: '1rem'
-                        }
+                        perPage: 4
                     }}>
                     {products.map(product => {
-                        return <SplideSlide className="py-4">
+                        return <SplideSlide key={product.sku} className="py-4">
                             <ProductThumbnail
                                 img={product.img}
                                 title={product.title}

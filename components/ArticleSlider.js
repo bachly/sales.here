@@ -1,5 +1,7 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import Link from 'next/link';
 import Container from "./Container";
+import { ArrowRight } from './Icons';
 import { LinkWithChevron } from './Link';
 
 function ArticleThumbnail({ img, title }) {
@@ -25,9 +27,13 @@ function ArticleThumbnail({ img, title }) {
 export default function ArticleSlider({ title, posts }) {
     return <div className="bg-gray-50 w-full pt-12 pb-20">
         <Container>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center">
                 <h2>{title}</h2>
-                <LinkWithChevron href="#">View all</LinkWithChevron>
+                <Link href="#">
+                    <a className="ml-4">
+                        <ArrowRight />
+                    </a>
+                </Link>
             </div>
         </Container>
         <Container className="mt-4">
@@ -35,11 +41,7 @@ export default function ArticleSlider({ title, posts }) {
                 <Splide
                     options={{
                         gap: '1.5rem',
-                        perPage: 3,
-                        padding: {
-                            left: '1rem',
-                            right: '1rem'
-                        }
+                        perPage: 3
                     }}>
                     {posts.map(post => {
                         return <SplideSlide className="py-4">

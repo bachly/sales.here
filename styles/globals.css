@@ -20,16 +20,22 @@
     background: theme("colors.black")
 }
 
+.splide__arrows {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+}
+
 button.splide__arrow {
     background-color: theme("colors.white");
 }
 
 .splide__arrow--prev {
-    left: -3rem;
+    left: -4.5rem;
 }
 
 .splide__arrow--next {
-    right: -3rem;
+    right: 0;
 }
 
 @layer base {
