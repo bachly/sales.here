@@ -1,14 +1,14 @@
-import { HeaderBanner } from "../components/Banner";
+import { Banner } from "../components/Banner";
 import Container from "../components/Container";
 import Layout from "../components/Layout";
 import { getAllProducts } from "../lib/api";
 
 export default function ProductsPage({ products }) {
     return <Layout>
-        <HeaderBanner title="Products" />
+        <Banner title="Products" />
 
         <Container>
-            <div class="grid grid-cols-5">
+            <div className="grid grid-cols-5">
                 {products.map(product => {
                     return <div>
                         <img src={product.img} />

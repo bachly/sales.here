@@ -2,28 +2,27 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Link from 'next/link';
 import Container from "./Container";
 import { ArrowRight } from './Icons';
-import { LinkAsButton, LinkWithChevron } from './Link';
 
-function ProductThumbnail({ img, title, price }) {
-    const cleanImgSrc = img.replaceAll(' ', '\\ ');
-    return <div className="h-full bg-white rounded-xl overflow-hidden shadow-xs flex flex-col">
-        <div className="pb-1/1 bg-contain bg-image bg-no-repeat bg-center"
+function ProductThumbnail({ featuredImage, title, priceRange }) {
+    const cleanImgSrc = featuredImage?.url;
+    return <div className="h-full bg-white border border-neutral-100 shadow-sm rounded-xl overflow-hidden flex flex-col">
+        <div className="pb-1/1 bg-cover bg-image bg-no-repeat bg-center"
             style={{ backgroundImage: `url(${cleanImgSrc})` }}></div>
         <div className="flex-1">
             <div className="h-full py-3 px-4 flex flex-col">
-                <div className="h4 text-center flex-1">
+                <div className="text-center flex-1">
                     {title}
                 </div>
-                <div className="mt-12 h5 text-center">
-                    {price}
+                <div className="mt-12 text-sm text-neutral-500 text-center">
+                    From {priceRange?.minVariantPrice.amount} {priceRange?.minVariantPrice.currencyCode}
                 </div>
             </div>
         </div>
     </div>
 }
 
-export default function ProductSlider({ title, products }) {
-    return <div className="bg-gray-50 w-full pt-12 pb-20">
+export default function FeaturedProducts({ title, products }) {
+    return <div className="pt-12 pb-20">
         <Container>
             <div className="flex items-center">
                 <h2>{title}</h2>
@@ -35,18 +34,15 @@ export default function ProductSlider({ title, products }) {
             </div>
         </Container>
         <Container className="mt-4">
-            <div className="-ml-4 -mr-4">
+            <div className="">
                 <Splide
                     options={{
-                        gap: '1rem',
+                        gap: '0.5rem',
                         perPage: 4
                     }}>
                     {products.map(product => {
                         return <SplideSlide key={product.sku} className="py-4">
-                            <ProductThumbnail
-                                img={product.img}
-                                title={product.title}
-                                price={`$${product.price}`}></ProductThumbnail>
+                            <ProductThumbnail {...product}></ProductThumbnail>
                         </SplideSlide>
                     })}
                 </Splide>

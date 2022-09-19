@@ -1,10 +1,10 @@
-import { LinkAsButton, LinkWithChevron } from "../components/Link";
+import { LinkAsButton, LinkWithChevron } from "./Link";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Container from "./Container";
 import Button from "./Button";
 
-export default function BannerSlider() {
-    return <div className="bg-gray-50 w-full">
+export default function BannerSliderWithTextAndImage() {
+    return <div className="">
         <Splide options={{
             gap: '1rem',
             arrows: false

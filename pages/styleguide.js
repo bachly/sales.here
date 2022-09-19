@@ -1,16 +1,17 @@
-import { HeaderBanner } from "../components/Banner";
+import { Banner } from "../components/Banner";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import Layout from "../components/Layout";
-import BannerSlider from "../components/BannerSlider";
+import BannerSliderWithTextAndImage from "../components/BannerSliderWithTextAndImage";
+import BannerSliderWithImage from "../components/BannerSliderWithImage";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";
-import ProductSlider from "../components/ProductSlider";
+import FeaturedProducts from "../components/FeaturedProducts";
 import { getAllPosts, getAllProducts } from "../lib/api";
-import ArticleSlider from "../components/ArticleSlider";
+import FeaturedArticles from "../components/FeaturedArticles";
 
 export default function StyleguidePage({ featuredProducts, featuredPosts }) {
     return <Layout>
-        <HeaderBanner title="Styleguide" />
+        <Banner title="Styleguide" />
 
         <Container>
             <div className="mt-20 pt-8 border-t-2 border-gray-200 w-12"></div>
@@ -165,11 +166,20 @@ export default function StyleguidePage({ featuredProducts, featuredPosts }) {
 
         <Container>
             <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
-            <h2>Banner Slider</h2>
+            <h2>Banner Slider with Text and Image</h2>
         </Container>
 
         <div className="mt-12">
-            <BannerSlider />
+            <BannerSliderWithTextAndImage />
+        </div>
+
+        <Container>
+            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
+            <h2>Banner Slider with Image</h2>
+        </Container>
+
+        <div className="mt-12">
+            <BannerSliderWithImage />
         </div>
 
         <Container>
@@ -186,7 +196,7 @@ export default function StyleguidePage({ featuredProducts, featuredPosts }) {
         </Container>
 
         <div className="mt-12">
-            <ProductSlider title="Featured Products" products={featuredProducts} />
+            <FeaturedProducts title="Featured Products" products={featuredProducts} />
         </div>
 
         <Container>
@@ -202,7 +212,7 @@ export default function StyleguidePage({ featuredProducts, featuredPosts }) {
         </Container>
 
         <div className="mt-12">
-            <ArticleSlider title="Featured Articles" posts={featuredPosts} />
+            <FeaturedArticles title="Featured Articles" posts={featuredPosts} />
         </div>
     </Layout>
 }
@@ -212,8 +222,6 @@ export function getStaticProps() {
     const posts = getAllPosts();
     const featuredProducts = products.filter(product =>
         ['CHIL', 'APRI', 'GHER', 'HONE', 'PICK4', 'RAIN', 'MARI', 'OLIV', 'ORAN'].indexOf(product.sku) >= 0)
-
-    console.log('all posts:', posts);
     const featuredPosts = posts.filter(post => post.isFeatured);
 
     return {

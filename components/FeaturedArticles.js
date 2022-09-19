@@ -24,8 +24,8 @@ function ArticleThumbnail({ img, title }) {
     </div>
 }
 
-export default function ArticleSlider({ title, posts }) {
-    return <div className="bg-gray-50 w-full pt-12 pb-20">
+export default function FeaturedArticles({ title, posts }) {
+    return <div className="pt-12 pb-20">
         <Container>
             <div className="flex items-center">
                 <h2>{title}</h2>
@@ -37,14 +37,14 @@ export default function ArticleSlider({ title, posts }) {
             </div>
         </Container>
         <Container className="mt-4">
-            <div className="-ml-4 -mr-4">
+            <div className="">
                 <Splide
                     options={{
                         gap: '1.5rem',
                         perPage: 3
                     }}>
                     {posts.map(post => {
-                        return <SplideSlide className="py-4">
+                        return <SplideSlide key={post.slug} className="py-4">
                             <ArticleThumbnail
                                 img={post.image.url}
                                 title={post.title}></ArticleThumbnail>
