@@ -41,7 +41,7 @@ export default function FeaturedProducts({ title, products }) {
                         perPage: 4
                     }}>
                     {products.map(product => {
-                        return <SplideSlide key={product.sku} className="py-4">
+                        return <SplideSlide key={product.handle} className="py-4">
                             <ProductThumbnail {...product}></ProductThumbnail>
                         </SplideSlide>
                     })}

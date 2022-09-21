@@ -51,113 +51,109 @@
     }
 }
 
-@layer components {
-    .splide__pagination {
-        bottom: -2rem;
-    }
-    .splide__pagination__page {
-        margin: 4px;
-        background: theme("colors.gray.500");
-    }
+.splide__pagination {
+    bottom: -2rem;
+}
+.splide__pagination__page {
+    margin: 4px;
+    background: theme("colors.gray.500");
+}
 
-    .splide__pagination__page.is-active {
-        background: theme("colors.black")
-    }
+.splide__pagination__page.is-active {
+    background: theme("colors.black")
+}
 
-    .splide__arrows {
-        position: absolute;
-        top: -1.5rem;
-        right: 0;
-    }
+.splide__arrows {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+}
 
-    button.splide__arrow {
-        background-color: theme("colors.white");
-    }
+button.splide__arrow {
+    background-color: theme("colors.white");
+}
 
-    .splide__arrow--prev {
-        left: -4.5rem;
-    }
+.splide__arrow--prev {
+    left: -4.5rem;
+}
 
-    .splide__arrow--next {
-        right: 0;
-    }
+.splide__arrow--next {
+    right: 0;
+}
 
-    /** Button styles **/
-    .button, 
-    .button.outline {
-        @apply text-gray-1000 w-64 border-2 border-gray-1000 
-            py-2 px-4 rounded-md transition duration-200
-            hover:bg-gray-1000 hover:text-white
-            active:bg-gray-1000 active:text-white
-    }
+/** Button styles **/
+.button, 
+.button.outline {
+    @apply text-gray-1000 w-64 border-2 border-gray-1000 
+        py-2 px-4 rounded-md transition duration-200
+        hover:bg-gray-1000 hover:text-white
+        active:bg-gray-1000 active:text-white
+}
 
-    .button.secondary {
-        @apply bg-stone-900 text-white
-            hover:bg-black
-            active:bg-black
-    }
+.button.secondary {
+    @apply bg-stone-900 text-white
+        hover:bg-black
+        active:bg-black
+}
 
-    .button[disabled] {
-        @apply text-gray-300 border-gray-200 cursor-not-allowed hover:bg-white
-            active:scale-100
-    }
+.button[disabled] {
+    @apply text-gray-300 border-gray-200 cursor-not-allowed hover:bg-white
+        active:scale-100
+}
 
-    .button.primary {
-        @apply bg-primary border-primary text-gray-1000 
-            hover:bg-primary-hovered hover:border-primary-hovered
-            active:bg-primary-hovered
-    }
+.button.primary {
+    @apply bg-primary border-primary text-gray-1000 
+        hover:bg-primary-hovered hover:border-primary-hovered
+        active:bg-primary-hovered
+}
 
-    /** Link styles **/
-    a.with-chevron {
-        position: relative;
-    }
+/** Link styles **/
+a.with-chevron {
+    position: relative;
+}
 
-    a.with-chevron:after {
-        @apply transition duration-200
-    }
+a.with-chevron:after {
+    @apply transition duration-200
+}
 
-    a.with-chevron:after {
-        content: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.73172 8.94743L4.40894 3.53425L5.83114 2.08789L12.5761 8.94743L5.83114 15.807L4.40894 14.3606L9.73172 8.94743Z' fill='%23070B0D'/%3E%3C/svg%3E%0A");
-        display: block;
-        position: absolute;
-        top: 0;
-        right: -15px;
-        transform: translateX(0);
-    }
+a.with-chevron:after {
+    content: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.73172 8.94743L4.40894 3.53425L5.83114 2.08789L12.5761 8.94743L5.83114 15.807L4.40894 14.3606L9.73172 8.94743Z' fill='%23070B0D'/%3E%3C/svg%3E%0A");
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    transform: translateX(0);
+}
 
-    a.with-chevron:active:after {
-        transform: translateX(2px);
-    }
+a.with-chevron:active:after {
+    transform: translateX(2px);
+}
 
-    a.with-chevron:before {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        right: 0;
-        height: 3px;
+a.with-chevron:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 0%;
+    background: theme('colors.primary-hovered')
+}
+
+a.with-chevron:hover:before {
+    animation: line-grow 200ms ease-in-out forwards;
+}
+
+@keyframes line-grow {
+    from {
         width: 0%;
-        background: theme('colors.primary-hovered')
     }
-
-    a.with-chevron:hover:before {
-        animation: line-grow 200ms ease-in-out forwards;
-    }
-
-    @keyframes line-grow {
-        from {
-            width: 0%;
-        }
-        to {
-            width: 100%;
-        }
+    to {
+        width: 100%;
     }
 }
 
-@layer utilities {
-    .vertically-aligned {
-        top: 50%;
-        transform: translateY(-50%);
-    }
+.vertically-aligned {
+    top: 50%;
+    transform: translateY(-50%);
 }

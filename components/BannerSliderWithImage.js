@@ -29,6 +29,11 @@ export default function BannerSliderWithImage() {
                     <img className="h-full absolute left-0 w-full z-0" src="/img/web_hero_4.jpg" />
                 </div>
             </SplideSlide>
+            <SplideSlide>
+                <div className="h-96 relative overflow-hidden">
+                    <img className="h-full absolute left-0 w-full z-0" src="/img/web_hero_5.jpg" />
+                </div>
+            </SplideSlide>
         </Splide>
     </div>
 
