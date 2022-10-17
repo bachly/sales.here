@@ -2,12 +2,12 @@ const slugify = require('slugify');
 const $ = Cypress.$;
 
 const BASE_URL = 'https://www.ozsale.com.au';
-const COLLECTION_URL = `${BASE_URL}/shop/sale/women-s-men-s-apparel-dresses-shirts-more/s/62wNes_i-EmmBQTvCdQHgg`;
+const COLLECTION_URL = `/shop/sale/royal-comfort-duck-feather-and-down-pillows/s/NKjuLzTkoEisosb43hw7PA`;
 const productLinks = {};
 
 describe('Profile input', () => {
     before(() => {
-        cy.visit(COLLECTION_URL)
+        cy.visit(`${BASE_URL}${COLLECTION_URL}`)
     })
 
     it('visit product, download info and pictures', () => {
