@@ -103,8 +103,8 @@ button.splide__arrow {
 
 .button.primary {
     @apply bg-primary border-primary text-gray-1000 
-        hover:bg-primary-hovered hover:border-primary-hovered
-        active:bg-primary-hovered
+        hover:bg-secondary hover:border-secondary
+        active:bg-secondary
 }
 
 /** Link styles **/
@@ -137,7 +137,7 @@ a.with-chevron:before {
     right: 0;
     height: 3px;
     width: 0%;
-    background: theme('colors.primary-hovered')
+    background: theme('colors.secondary')
 }
 
 a.with-chevron:hover:before {
