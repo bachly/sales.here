@@ -10,7 +10,7 @@ describe('Profile input', () => {
         cy.visit(COLLECTION_URL)
     })
 
-    it('visit product and hover pictures', () => {
+    it('visit product, download info and pictures', () => {
         cy.get('.test-product-list-item_link').each(($el, index, $list) => {
             const link = $el.find('a[data-link]')[0];
             const linkUrl = $(link).attr('data-link');
