@@ -55,7 +55,7 @@ export default function Homepage({ heroBanners, featuredProducts, featuredPosts,
                     {featuredCollections.map(collection => {
                         return <div key={collection.title} className="pb-2/3 relative">
                             <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
-                            <div className="flex items-center justify-center relative -top-6">
+                            <div className="flex items-center justify-center -top-6">
                                 <div className="bg-dark py-1 px-4 text-light">
                                     {collection.title}
                                 </div>
