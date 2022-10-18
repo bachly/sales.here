@@ -1,160 +1,57 @@
-import Image from "next/future/image";
-import FeaturedProducts from "../components/FeaturedProducts";
-import { ExchangeIcon, LockIcon, PhoneIcon, TruckIcon } from "../components/Icons";
-import Layout from "../components/Layout";
-import { getAllPosts, getAllProducts } from "../lib/api";
+export default function Homepage({ }) {
+    return <div className="min-h-screen bg-ocean-dark py-12">
+        <h1 className="mt-24 px-24 max-w-7xl">
+            <div className="text-ocean-light font-bold text-6xl inline">Handily makes </div>
+            <div className="text-ocean-light font-bold text-6xl inline leading-tight text-opacity-50">
+                premium UI and banners for Jamstack websites &amp; applications.
+            </div>
+        </h1>
 
-export default function Homepage({ heroBanners, featuredProducts, featuredPosts, featuredCollections }) {
-    return <Layout>
-        <section id="highlights" className="bg-light py-2">
-            <div className="max-w-4xl mx-auto">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                        <span className="mr-2">
-                            <PhoneIcon />
-                        </span>
-                        +61 123 456 789
+        <h2 className="mt-20 px-24 text-ocean-light text-opacity-50 font-light text-2xl">Latest UI</h2>
+
+        <div className="mt-4 grid grid-cols-2 gap-12 px-24">
+            <div>
+                <div className="pb-2/3 bg-ocean-light bg-opacity-5"></div>
+                <div className="mt-3 text-ocean-light text-center text-base text-opacity-50 uppercase tracking-wider">Minimal Fashion Store</div>
+            </div>
+            <div>
+                <div className="pb-2/3 bg-ocean-light bg-opacity-5 relative">
+                    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                        <span className="text-ocean-light text-opacity-10 text-4xl font-light">Coming soon</span>
                     </div>
-                    <div className="flex items-center">
-                        <span className="mr-2">
-                            <TruckIcon />
-                        </span>Free shipping for $75+ orders</div>
-                    <div className="flex items-center">
-                        <span className="mr-2">
-                            <ExchangeIcon />
-                        </span>30-day free return</div>
-                    <div className="flex items-center">
-                        <span className="mr-2">
-                            <LockIcon />
-                        </span>Secured payment</div>
                 </div>
+                <div className="mt-3 text-ocean-light text-center text-base text-opacity-50 uppercase tracking-wider">Watchlist Web App</div>
+            </div>
+        </div>
+
+        <h2 className="mt-20 px-24 text-ocean-light text-opacity-50 font-light">Latest banners</h2>
+
+        <div className="mt-4 grid grid-cols-3 gap-6 px-24">
+            <div className="pb-2/3 bg-ocean-light bg-opacity-5"></div>
+            <div className="pb-2/3 bg-ocean-light bg-opacity-5"></div>
+            <div className="pb-2/3 bg-ocean-light bg-opacity-5"></div>
+        </div>
+
+        <section className="mt-32 px-24 max-w-8xl">
+            <h2 className="text-ocean-light text-5xl inline font-bold">Why Handily? </h2>
+            <div className="text-ocean-light font-bold text-opacity-50 text-5xl inline leading-tight">
+                We want to create themes, brand elements and banners that work together as an eco-system, making it easier and quicker for webmasters to update and improve their websites.
             </div>
         </section>
 
-        <section id="hero" className="mt-4">
-            <div className="max-w-9xl mx-auto px-4">
-                <div className="grid grid-cols-2 gap-4">
-                    <div className="pb-2/3 bg-light relative">
-                        <Image alt={`Image for ${heroBanners[0].title}`} src={`${heroBanners[0].image}`} fill={true} />
-                    </div>
-                    <div className="pb-2/3 bg-light relative">
-                        <Image alt={`Image for ${heroBanners[1].title}`} src={`${heroBanners[1].image}`} fill={true} />
-                    </div>
-                </div>
+        <section className="mt-32 px-24 max-w-8xl">
+            <h2 className="text-ocean-light text-5xl inline font-bold">Contact. </h2>
+            <div className="text-ocean-light font-bold text-opacity-50 text-5xl inline leading-tight">
+                Send an email to hi@handily.net
             </div>
         </section>
-
-        <section id="featured__shop-the-sale" className="mt-8">
-            <div className="max-w-9xl mx-auto px-4">
-
-                <div className="text-center">
-                    <h2>Shop the sale</h2>
-                </div>
-
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {featuredCollections.map(collection => {
-                        return <div key={collection.title} className="pb-2/3 relative">
-                            <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
-                            <div className="flex items-center justify-center -top-6">
-                                <div className="bg-dark py-1 px-4 text-light">
-                                    {collection.title}
-                                </div>
-                            </div>
-                        </div>
-                    })}
-                </div>
-
-                <FeaturedProducts title={"Best Sellers This Week"} products={featuredProducts} />
-            </div>
-        </section>
-    </Layout>
+    </div >
 }
 
 export async function getStaticProps() {
-    const products = getAllProducts();
-    const posts = getAllPosts();
-
-    const featuredPosts = posts.filter(post => post.isFeatured);
-
-    const featuredProducts = [
-        {
-            title: "Women Dress Lanola Beige",
-            image: "/img/products/women-fashion/women-dress-lanola-beige-0.jpeg"
-        },
-        {
-            title: "Women Alayra Midi Dress Abstract Blue",
-            image: "/img/products/women-fashion/women-alayra-midi-dress-abstract-blue-0.jpeg"
-        }
-    ]
-
-    const featuredCollections = [
-        {
-            title: "Spring Wardrobe Refresh",
-            image: "/img/home-featured/featured-banner-01.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-02.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-03.png"
-        },
-        {
-            title: "Spring Wardrobe Refresh",
-            image: "/img/home-featured/featured-banner-04.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-05.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-06.png"
-        },
-        {
-            title: "Spring Wardrobe Refresh",
-            image: "/img/home-featured/featured-banner-07.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-08.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-09.png"
-        },
-        {
-            title: "Spring Wardrobe Refresh",
-            image: "/img/home-featured/featured-banner-10.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-11.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-12.png"
-        }
-    ]
-
-    const heroBanners = [
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-02.png"
-        },
-        {
-            title: "New Organic Apparel",
-            image: "/img/home-featured/featured-banner-03.png"
-        },
-    ]
-
     return {
         props: {
-            heroBanners,
-            featuredProducts,
-            featuredPosts,
-            featuredCollections
+
         }
     }
 }

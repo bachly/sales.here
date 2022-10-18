@@ -17,6 +17,7 @@ module.exports = {
     },
     opacity: {
       '0': '0',
+      '5': '.05',
       '10': '.1',
       '20': '.2',
       '30': '.3',
@@ -31,10 +32,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        "primary": "#705546",
-        "secondary": "#32231E",
-        "light": "#F1E7DB",
-        "dark": "#1E150B",
+        "dust": {
+          "primary": "#705546",
+          "secondary": "#32231E",
+          "light": "#F1E7DB",
+          "dark": "#1E150B",
+        },
+        "ocean": {
+          "primary": "#2E889F",
+          "secondary": "#155362",
+          "light": "#FBF8F6",
+          "dark": "#0d121e",
+          "success": "#7FAF6E"
+        },
         "gray": {
           1000: "rgba(7, 11, 13, 1)",
           900: "rgba(7, 11, 13, 0.9)",

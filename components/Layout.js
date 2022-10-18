@@ -11,7 +11,7 @@ export default function Layout({ children }) {
             <Meta />
 
             <header id="Header">
-                <div className="bg-primary text-light py-1 text-center text-sm uppercase">
+                <div className="bg-dust-primary text-dust-light py-1 text-center text-sm uppercase">
                     We ship nationwide. 30-day return policy. Free standard shipping on orders over $75.
                 </div>
                 <Container>

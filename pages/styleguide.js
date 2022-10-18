@@ -139,10 +139,10 @@ export default function StyleguidePage({ featuredProducts, featuredPosts }) {
                         <Button>Outline Button</Button>
                     </div>
                     <div className="mt-2 grid grid-cols-2 gap-2">
-                        <Button primary>Primary Button</Button>
+                        <Button dust-primary>dust-primary Button</Button>
                     </div>
                     <div className="mt-2 grid grid-cols-2 gap-2">
-                        <Button secondary>Secondary Button</Button>
+                        <Button dust-secondary>dust-secondary Button</Button>
                     </div>
                     <div className="mt-2">
                         <Button disabled>Disabled Button</Button>
