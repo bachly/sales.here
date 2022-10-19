@@ -3,7 +3,6 @@
   "description": "NextJS Lifestyle Blog & Online Store",
   "private": true,
   "dependencies": {
-    "@shopify/shopify-api": "^5.0.1",
     "@splidejs/react-splide": "^0.7.8",
     "@tailwindcss/typography": "^0.5.2",
     "classnames": "^2.3.1",

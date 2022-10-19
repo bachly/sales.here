@@ -1,9 +1,9 @@
 export default function Homepage({ }) {
     return <div className="min-h-screen bg-ocean-dark py-12">
         <h1 className="mt-24 px-24 max-w-8xl">
-            <div className="text-ocean-light font-bold text-6xl inline">Handily makes </div>
+            <div className="text-ocean-light font-bold text-6xl inline">Handily is </div>
             <div className="text-ocean-light font-bold text-6xl inline leading-tight text-opacity-50">
-                premium &amp; practical themes for Jamstack websites, web apps &amp; Shopify.
+                premium &amp; practical theme eco-system for NextJS websites & applications.
             </div>
         </h1>
 
