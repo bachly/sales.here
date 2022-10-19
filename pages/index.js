@@ -1,13 +1,13 @@
 export default function Homepage({ }) {
     return <div className="min-h-screen bg-ocean-dark py-12">
-        <h1 className="mt-24 px-24 max-w-7xl">
+        <h1 className="mt-24 px-24 max-w-8xl">
             <div className="text-ocean-light font-bold text-6xl inline">Handily makes </div>
             <div className="text-ocean-light font-bold text-6xl inline leading-tight text-opacity-50">
-                premium UI and banners for Jamstack websites &amp; applications.
+                premium &amp; practical themes for Jamstack websites, web apps &amp; Shopify.
             </div>
         </h1>
 
-        <h2 className="mt-20 px-24 text-ocean-light text-opacity-50 font-light text-2xl">Latest UI</h2>
+        <h2 className="mt-20 px-24 text-ocean-light text-opacity-50 font-normal text-xl">Latest UI</h2>
 
         <div className="mt-4 grid grid-cols-2 gap-12 px-24">
             <div>
@@ -24,7 +24,7 @@ export default function Homepage({ }) {
             </div>
         </div>
 
-        <h2 className="mt-20 px-24 text-ocean-light text-opacity-50 font-light">Latest banners</h2>
+        <h2 className="mt-20 px-24 text-ocean-light text-opacity-50 font-normal text-xl">Latest banners</h2>
 
         <div className="mt-4 grid grid-cols-3 gap-6 px-24">
             <div className="pb-2/3 bg-ocean-light bg-opacity-5"></div>
