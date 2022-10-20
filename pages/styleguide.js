@@ -9,7 +9,7 @@ import FeaturedProducts from "../components/FeaturedProducts";
 import { getAllPosts, getAllCollections } from "../lib/api";
 import FeaturedArticles from "../components/FeaturedArticles";
 
-export default function StyleguidePage({ featuredProducts, featuredPosts }) {
+export default function DocsPage({ featuredProducts, featuredPosts }) {
     return <Layout>
         <Banner title="Styleguide" />
 

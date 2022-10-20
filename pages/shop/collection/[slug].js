@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
-import { productFilePaths, PRODUCTS_PATH } from "../../lib/utils"
+import { productFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
 
-export default function Collection({ source, collection }) {
+export default function CollectionPage({ source, collection }) {
     const router = useRouter()
 
     if (!router.isFallback && !collection?.slug) {
