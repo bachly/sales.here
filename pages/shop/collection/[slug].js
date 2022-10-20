@@ -1,5 +1,9 @@
+import fs from 'fs'
+import path from 'path'
 import { useRouter } from "next/router"
 import { productFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
+import Layout from '../../../components/Layout'
+import Head from 'next/head'
 
 export default function CollectionPage({ source, collection }) {
     const router = useRouter()
@@ -14,13 +18,13 @@ export default function CollectionPage({ source, collection }) {
                 router.isFallback ? (
                     <>Loading…</>
                 ) : (
-                    <LayoutArticle post={collection}>
+                    <Layout post={collection}>
                         <Head>
                             <title>{collection.title}</title>
                             <meta name="description" content={collection.description} />
                             <meta property="og:title" content={collection.title} />
                             <meta property="og:description" content={collection.description} />
-                            <meta property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}${collection.ogImage.url}`} />
+                            <meta property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}${collection.image}`} />
                             <meta property="og:type" content="article" />
                             <meta property="article:publisher" content={process.env.NEXT_PUBLIC_PUBLISHER_FACEBOOK_URL} />
                             <meta property="article:published_time" content={collection.publishedTime} />
@@ -31,7 +35,7 @@ export default function CollectionPage({ source, collection }) {
                             {collection.title}
                             - {collection.description}
                         </article>
-                    </LayoutArticle>
+                    </Layout>
                 )
             }
         </>
@@ -39,7 +43,7 @@ export default function CollectionPage({ source, collection }) {
 }
 
 export const getStaticProps = async ({ params }) => {
-    const fullPath = path.join(PRODUCTS_PATH, `${params.slug}.mdx`)
+    const fullPath = path.join(PRODUCTS_PATH, `${params.slug}.json`)
     const source = fs.readFileSync(fullPath)
     const stat = fs.statSync(fullPath)
     const data = JSON.parse(source)

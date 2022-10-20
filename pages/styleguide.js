@@ -6,7 +6,6 @@ import BannerSliderWithTextAndImage from "../components/BannerSliderWithTextAndI
 import BannerSliderWithImage from "../components/BannerSliderWithImage";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";
 import FeaturedProducts from "../components/FeaturedProducts";
-import { getAllPosts, getAllCollections } from "../lib/api";
 import FeaturedArticles from "../components/FeaturedArticles";
 
 export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) {
