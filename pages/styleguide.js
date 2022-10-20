@@ -9,7 +9,7 @@ import FeaturedProducts from "../components/FeaturedProducts";
 import { getAllPosts, getAllCollections } from "../lib/api";
 import FeaturedArticles from "../components/FeaturedArticles";
 
-export default function DocsPage({ featuredProducts, featuredPosts }) {
+export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) {
     return <Layout>
         <Banner title="Styleguide" />
 
@@ -218,16 +218,16 @@ export default function DocsPage({ featuredProducts, featuredPosts }) {
 }
 
 export function getStaticProps() {
-    const products = getAllCollections();
-    const posts = getAllPosts();
-    const featuredProducts = products.filter(product =>
-        ['CHIL', 'APRI', 'GHER', 'HONE', 'PICK4', 'RAIN', 'MARI', 'OLIV', 'ORAN'].indexOf(product.sku) >= 0)
-    const featuredPosts = posts.filter(post => post.isFeatured);
+    // const products = getAllCollections();
+    // const posts = getAllPosts();
+    // const featuredProducts = products.filter(product =>
+    //     ['CHIL', 'APRI', 'GHER', 'HONE', 'PICK4', 'RAIN', 'MARI', 'OLIV', 'ORAN'].indexOf(product.sku) >= 0)
+    // const featuredPosts = posts.filter(post => post.isFeatured);
 
     return {
         props: {
-            featuredProducts,
-            featuredPosts
+            // featuredProducts,
+            // featuredPosts
         }
     }
 }
