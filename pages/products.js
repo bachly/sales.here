@@ -1,7 +1,7 @@
 import { Banner } from "../components/Banner";
 import Container from "../components/Container";
 import Layout from "../components/Layout";
-import { getAllProducts } from "../lib/api";
+import { getAllCollections } from "../lib/api";
 
 export default function ProductsPage({ products }) {
     return <Layout>
@@ -23,7 +23,7 @@ export default function ProductsPage({ products }) {
 }
 
 export function getStaticProps() {
-    const products = getAllProducts();
+    const products = getAllCollections();
 
     return {
         props: {

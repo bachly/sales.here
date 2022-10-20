@@ -6,7 +6,7 @@ import BannerSliderWithTextAndImage from "../components/BannerSliderWithTextAndI
 import BannerSliderWithImage from "../components/BannerSliderWithImage";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";
 import FeaturedProducts from "../components/FeaturedProducts";
-import { getAllPosts, getAllProducts } from "../lib/api";
+import { getAllPosts, getAllCollections } from "../lib/api";
 import FeaturedArticles from "../components/FeaturedArticles";
 
 export default function StyleguidePage({ featuredProducts, featuredPosts }) {
@@ -218,7 +218,7 @@ export default function StyleguidePage({ featuredProducts, featuredPosts }) {
 }
 
 export function getStaticProps() {
-    const products = getAllProducts();
+    const products = getAllCollections();
     const posts = getAllPosts();
     const featuredProducts = products.filter(product =>
         ['CHIL', 'APRI', 'GHER', 'HONE', 'PICK4', 'RAIN', 'MARI', 'OLIV', 'ORAN'].indexOf(product.sku) >= 0)
