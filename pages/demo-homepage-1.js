@@ -6,7 +6,7 @@ import { getAllPosts, getAllProducts } from "../lib/api";
 
 export default function Homepage({ heroBanners, featuredProducts, featuredPosts, featuredCollections }) {
     return <Layout>
-        <section id="highdust-lights" className="bg-dust-light py-2">
+        <section id="highlights" className="bg-dust-light py-2">
             <div className="max-w-4xl mx-auto">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center">
