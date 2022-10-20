@@ -1,7 +1,5 @@
 import Layout from "../components/Layout"
 
-import HeroBanner1 from "../public/banners/hero1.png"
-
 export default function Homepage({ }) {
     return <Layout>
         <section id="hero" className="mt-4">
