@@ -1,4 +1,6 @@
-# Handily | NextJS Lifestyle Blog & Online Store
+# Handily | A premium multipurpose NextJS theme that is practical and easy to maintain 
+
+Lifestyle Blog & Online Store
 
 ## Update this theme to match your brand
 
