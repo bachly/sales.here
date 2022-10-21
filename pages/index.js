@@ -1,5 +1,8 @@
+import Image from "next/future/image";
 import Link from "next/link";
 import Meta from "../components/Meta";
+
+import DemoScreenshotFashionSales from '../public/img/demos/Handily Demo - Fashion Sales.png'
 
 export default function IndexPage({ }) {
     return <div>
@@ -54,10 +57,14 @@ export default function IndexPage({ }) {
                     </p>
                     <div className="mt-12">
                         <div className="grid grid-cols-4 gap-12">
-                            <div>
-                                <div className="h-96 w-full bg-neutral-800"></div>
-                                <div className="mt-2 text-white uppercase text-sm text-center">Fashion Store</div>
-                            </div>
+                            <Link href="/fashion-store" passHref={true}>
+                                <a className="block group">
+                                    <div className="pb-3/2 relative overflow-hidden group-hover:-translate-y-3 transform duration-300">
+                                        <Image src={DemoScreenshotFashionSales} className="absolute top-0 left-0 w-full" />
+                                    </div>
+                                    <div className="mt-4 text-white uppercase text-sm text-center">Fashion Store</div>
+                                </a>
+                            </Link>
                             <div>
                                 <div className="h-96 w-full bg-neutral-800"></div>
                                 <div className="mt-2 text-white uppercase text-sm text-center">Lifestyle Blog</div>
