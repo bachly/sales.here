@@ -32,11 +32,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        "dust": {
-          "primary": "#705546",
-          "secondary": "#32231E",
-          "light": "#F1E7DB",
-          "dark": "#1E150B",
+        "coffee": {
+          "primary": "#634832",
+          "secondary": "#38220F",
+          "light": "#ECE0D1",
+          "dark": "#170E05",
+          "danger": "#A92C11"
         },
         "ocean": {
           "primary": "#2E889F",

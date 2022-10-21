@@ -47,7 +47,7 @@
     }
 
     blockquote, .blockquote {
-        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-dust-primary block pl-6
+        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-coffee-primary block pl-6
     }
 }
 
@@ -90,7 +90,7 @@ button.splide__arrow {
         active:bg-gray-1000 active:text-white
 }
 
-.button.dust-secondary {
+.button.coffee-secondary {
     @apply bg-stone-900 text-white
         hover:bg-black
         active:bg-black
@@ -101,10 +101,10 @@ button.splide__arrow {
         active:scale-100
 }
 
-.button.dust-primary {
-    @apply bg-dust-primary border-dust-primary text-gray-1000 
-        hover:bg-dust-secondary hover:border-dust-secondary
-        active:bg-dust-secondary
+.button.coffee-primary {
+    @apply bg-coffee-primary border-coffee-primary text-gray-1000 
+        hover:bg-coffee-secondary hover:border-coffee-secondary
+        active:bg-coffee-secondary
 }
 
 /** Link styles **/
@@ -137,7 +137,7 @@ a.with-chevron:before {
     right: 0;
     height: 3px;
     width: 0%;
-    background: theme('colors.dust.secondary')
+    background: theme('colors.coffee.secondary')
 }
 
 a.with-chevron:hover:before {

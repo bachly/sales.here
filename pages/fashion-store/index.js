@@ -3,10 +3,13 @@ import FeaturedProducts from "../../components/FeaturedProducts";
 import { ExchangeIcon, LockIcon, PhoneIcon, TruckIcon } from "../../components/Icons";
 import FashionStoreLayout from "../../components/FashionStoreLayout";
 import { getAllCollections } from "../../lib/api";
+import Link from "next/link";
+
+const DEMO_BASE_URL = '/fashion-store';
 
 export default function HomepageForOnlineStore({ heroBanners, collections, featuredProducts }) {
     return <FashionStoreLayout>
-        <section id="highlights" className="bg-dust-light py-2">
+        <section id="highlights" className="bg-coffee-light py-2">
             <div className="max-w-4xl mx-auto">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center">
@@ -35,10 +38,10 @@ export default function HomepageForOnlineStore({ heroBanners, collections, featu
             <section id="hero" className="mt-4">
                 <div className="max-w-9xl mx-auto px-4">
                     <div className="grid grid-cols-2 gap-4">
-                        <div className="pb-2/3 bg-dust-light relative">
+                        <div className="pb-2/3 bg-coffee-light relative">
                             <Image alt={`Image for ${heroBanners[0].title}`} src={`${heroBanners[0].image}`} fill={true} />
                         </div>
-                        <div className="pb-2/3 bg-dust-light relative">
+                        <div className="pb-2/3 bg-coffee-light relative">
                             <Image alt={`Image for ${heroBanners[1].title}`} src={`${heroBanners[1].image}`} fill={true} />
                         </div>
                     </div>
@@ -54,14 +57,16 @@ export default function HomepageForOnlineStore({ heroBanners, collections, featu
 
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {collections.map(collection => {
-                        return <div key={collection.title} className="pb-2/3 relative">
-                            <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
-                            <div className="flex items-center justify-center -top-6">
-                                <div className="bg-dust-dark py-1 px-4 text-dust-light">
-                                    {collection.title}
+                        return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.title}>
+                            <a className="pb-2/3 relative">
+                                <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
+                                <div className="flex items-center justify-center -top-6">
+                                    <div className="bg-coffee-dark py-1 px-4 text-coffee-light">
+                                        {collection.title}
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </a>
+                        </Link>
                     })}
                 </div>
             </div>

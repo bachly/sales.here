@@ -7,7 +7,7 @@ export default function ({ onClick, children, primary, secondary, disabled, clas
         </button>
     }
 
-    return <button className={clsx(primary && "dust-primary", secondary && "dust-secondary", `button ${className}`)} onClick={onClick}>
+    return <button className={clsx(primary && "coffee-primary", secondary && "coffee-secondary", `button ${className}`)} onClick={onClick}>
         {children}
     </button>
 }
