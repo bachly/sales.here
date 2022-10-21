@@ -30,15 +30,15 @@ export default function IndexPage({ }) {
             </header>
 
             <section id="HeroSection">
-                <div className="pt-24"></div>
+                <div className="pt-48"></div>
                 <div className="max-w-8xl mx-auto">
-                    <h1 className="text-8xl font-black max-w-3xl uppercase">Multipurpose NextJS Theme</h1>
+                    <h1 className="text-7xl font-black max-w-3xl uppercase">Multipurpose NextJS Theme</h1>
                     <p className="mt-4 text-2xl max-w-lg">
                         A smart solution for any NextJS starters. <i>Handily</i> is a unique Multi-Concept NextJS Theme with a clean and modern design.
                     </p>
                     <button className="mt-10 bg-black text-white px-8 py-2 rounded-full text-lg">View demos</button>
                 </div>
-                <div className="pt-24"></div>
+                <div className="pt-48"></div>
             </section>
 
             <section id="demos" className="bg-black">
@@ -46,11 +46,11 @@ export default function IndexPage({ }) {
                 <div className="max-w-8xl mx-auto">
                     <h2 className="text-5xl text-white uppercase font-black text-center">
                         Stunning layouts for <br />
-                        starter or prototype
+                        starting any project
                     </h2>
                     <p className="mt-4 text-base max-w-xl text-white mx-auto text-center">
-                        Handily comes with pre-made dummy but premium website &amp; web app layouts.
-                        Reusable components can be removed, mixed and matched to create new layouts and a solid foundation for your project.
+                        Handily comes with pre-made dummy but premium layouts for any website &amp; web app.
+                        Reusable components can be moved, mixed and matched to create new layouts and a solid foundation for your project.
                     </p>
                     <div className="mt-12">
                         <div className="grid grid-cols-4 gap-12">
@@ -64,27 +64,11 @@ export default function IndexPage({ }) {
                             </div>
                             <div>
                                 <div className="h-96 w-full bg-neutral-800"></div>
-                                <div className="mt-2 text-white uppercase text-sm text-center">Movies Dashboard</div>
-                            </div>
-                            <div>
-                                <div className="h-96 w-full bg-neutral-800"></div>
-                                <div className="mt-2 text-white uppercase text-sm text-center">IT Professional Resume</div>
-                            </div>
-                            <div>
-                                <div className="h-96 w-full bg-neutral-800"></div>
-                                <div className="mt-2 text-white uppercase text-sm text-center">Travel Store</div>
-                            </div>
-                            <div>
-                                <div className="h-96 w-full bg-neutral-800"></div>
-                                <div className="mt-2 text-white uppercase text-sm text-center">Travel Blog</div>
-                            </div>
-                            <div>
-                                <div className="h-96 w-full bg-neutral-800"></div>
-                                <div className="mt-2 text-white uppercase text-sm text-center">Travel Dashboard</div>
-                            </div>
-                            <div>
-                                <div className="h-96 w-full bg-neutral-800"></div>
                                 <div className="mt-2 text-white uppercase text-sm text-center">Travel Agency</div>
+                            </div>
+                            <div>
+                                <div className="h-96 w-full bg-neutral-800"></div>
+                                <div className="mt-2 text-white uppercase text-sm text-center">Movies Search</div>
                             </div>
                         </div>
                     </div>
@@ -115,13 +99,13 @@ export default function IndexPage({ }) {
                     <div className="grid grid-cols-2 gap-8">
                         <div className="bg-neutral-100 p-12">
                             <div className="text-3xl font-black uppercase">
-                                Simple to Complex Frontend.
+                                Simple to Complex Components.
                             </div>
                         </div>
                         <div className="">
                             <div className="pb-1/3 bg-neutral-100 p-12">
                                 <div className="text-3xl font-black uppercase">
-                                    Minimal Backend Code.
+                                    Sample Backend Integration.
                                 </div>
                             </div>
                             <div className="mt-8 pb-1/3 bg-neutral-100 p-12">
@@ -138,6 +122,12 @@ export default function IndexPage({ }) {
             <section id="Breakdown" className="bg-black">
                 <div className="pt-24"></div>
                 <div className="max-w-8xl mx-auto">
+                    <h2 className="text-5xl text-white uppercase font-black text-center">
+                        Get Handily
+                    </h2>
+                    <p className="mt-4 text-base max-w-xl text-white mx-auto text-center">
+                        Handily is coming out by the end of 2022.
+                    </p>
                 </div>
                 <div className="pt-24"></div>
             </section>
