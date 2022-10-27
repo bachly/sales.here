@@ -58,12 +58,12 @@ export default function HomepageForOnlineStore({ heroBanners, collections, featu
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {collections.map(collection => {
                         return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.title}>
-                            <a className="pb-2/3 relative">
-                                <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
-                                <div className="flex items-center justify-center -top-6">
-                                    <div className="bg-coffee-dark py-1 px-4 text-coffee-light">
-                                        {collection.title}
-                                    </div>
+                            <a className="block">
+                                <div className="pb-2/3 relative bg-neutral-100">
+                                    <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
+                                </div>
+                                <div className="w-full text-center py-2 px-4 text-coffee-dark">
+                                    {collection.title}
                                 </div>
                             </a>
                         </Link>

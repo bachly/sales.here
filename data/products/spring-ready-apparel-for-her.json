@@ -1,7 +1,7 @@
 {
   "title": "Spring Ready Apparel For Her",
   "handle": "spring-ready-apparel-for-her",
-  "image": "/img/products/spring-ready-apparel-for-her/_main.jpeg",
+  "image": "https://samples.here.li/products/spring-ready-apparel-for-her/_main.jpeg",
   "description": "UP TO 70% OFF",
   "products": {
     "vico-moretti-womens-dress-apricotflower-print": {
@@ -11,9 +11,9 @@
       "compareAtPrice": "$141",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Colour: Apricot &amp; Flower print</li><li>Material: 65% Polyester, 30% Cotton, 5% Spandex</li><li>Square collar</li><li>Short Sleeves</li><li>Printed</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotflower-print_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotflower-print_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotflower-print_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotflower-print_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotflower-print_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotflower-print_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-dress-white": {
@@ -23,9 +23,9 @@
       "compareAtPrice": "$141",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> V-neckline Maxi Dress In White</li><li>Material: 80% Cotton, 20% Polyester</li><li>Colour: White</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-white_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-white_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-white_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-white_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-white_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-white_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-dress-brown": {
@@ -35,9 +35,9 @@
       "compareAtPrice": "$147",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> Frilled neckline Slit Dress In Brown</li><li>Material: 65% Polyester, 35% Rayon</li><li>Colour: Brown</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-brown_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-brown_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-brown_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-brown_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-brown_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-brown_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-blouse-black": {
@@ -47,9 +47,9 @@
       "compareAtPrice": "$89",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> V-neckline Poet sleeves Blouse In Black</li><li>Material: 95% Polyester, 5% Spandex</li><li>Colour: Black</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-black_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-black_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-black_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-black_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-black_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-black_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-dress-orange": {
@@ -59,8 +59,8 @@
       "compareAtPrice": "$147",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> V-neckline Batwing sleeves Dress In Orange</li><li>Material: 65% Polyester, 35% Rayon</li><li>Colour: Orange</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-orange_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-orange_img-1.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-orange_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-orange_img-1.jpeg"
       ]
     },
     "vico-moretti-womens-dress-khaki": {
@@ -70,9 +70,9 @@
       "compareAtPrice": "$147",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> Sweatheart Maxi Dress In Khaki</li><li>Material: 65% Polyester, 35% Rayon</li><li>Colour: Khaki</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-khaki_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-khaki_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-khaki_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-khaki_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-khaki_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-khaki_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-blouse-white": {
@@ -82,9 +82,9 @@
       "compareAtPrice": "$99",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> V-neckline Butterly sleeves Blouse In White</li><li>Material: 95% Polyester, 5% Spandex</li><li>Colour: White</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-white_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-white_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-white_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-white_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-white_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blouse-white_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-dress-apricotleopard-print": {
@@ -94,10 +94,10 @@
       "compareAtPrice": "$132",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Colour: Apricot &amp; Leopard print</li><li>Material: 65% Polyester, 30% Cotton, 5% Spandex</li><li>Round collar</li><li>Long Sleeves</li><li>Printed</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-2.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-3.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-2.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotleopard-print_img-3.jpeg"
       ]
     },
     "vico-moretti-womens-jumpsuit-apricot": {
@@ -107,9 +107,9 @@
       "compareAtPrice": "$158",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> Lapel neckline Sleeveless Jumpsuit In Apricot</li><li>Material: 65% Polyester, 35% Rayon</li><li>Colour: Apricot</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-apricot_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-apricot_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-apricot_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-apricot_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-apricot_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-apricot_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-dress-blackprint": {
@@ -119,9 +119,9 @@
       "compareAtPrice": "$141",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Colour: Black &amp; Print</li><li>Material: 100% Polyester </li><li>V-collar</li><li>Long Sleeves</li><li>Printed</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-blackprint_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-blackprint_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-blackprint_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-blackprint_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-blackprint_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-blackprint_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-dress-apricotpolka-dot": {
@@ -131,10 +131,10 @@
       "compareAtPrice": "$141",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Colour: Apricot &amp; Polka dot</li><li>Material: 100% Polyester </li><li>V-collar</li><li>Long Sleeves</li><li>Printed</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-2.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-3.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-2.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-apricotpolka-dot_img-3.jpeg"
       ]
     },
     "vico-moretti-womens-set-shirt-and-shorts-white": {
@@ -144,8 +144,8 @@
       "compareAtPrice": "$167",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> Shirt collar Long sleeves Set (Shirt &amp; Shorts) In White</li><li>Material: 80% Polyester, 20% Cotton</li><li>Colour: White</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-white_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-white_img-1.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-white_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-white_img-1.jpeg"
       ]
     },
     "vico-moretti-womens-dress-black": {
@@ -155,9 +155,9 @@
       "compareAtPrice": "$132",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Round neckline Midi Dress In Black</li><li>Material: 65% Polyester, 35% Cotton</li><li>Colour: Black</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-black_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-black_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-black_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-black_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-black_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-black_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-jumpsuit-white": {
@@ -167,9 +167,9 @@
       "compareAtPrice": "$147",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> Round neckline Flare Jumpsuit In White</li><li>Material: 95% Polyester, 5% Spandex</li><li>Colour: White</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-white_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-white_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-white_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-white_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-white_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-white_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-dress-yellowflower-print": {
@@ -179,10 +179,10 @@
       "compareAtPrice": "$128",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Colour: Yellow &amp; Flower print</li><li>Material: 100% Polyester </li><li>Round collar</li><li>Long Sleeves</li><li>Printed</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-2.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-3.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-2.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-yellowflower-print_img-3.jpeg"
       ]
     },
     "vico-moretti-womens-blazer-apricotprint": {
@@ -192,9 +192,9 @@
       "compareAtPrice": "$141",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Colour: Apricot &amp; Print</li><li>Material: 65% Polyester, 35% Cotton</li><li>Lapel collar</li><li>Long Sleeves</li><li>Buttons</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blazer-apricotprint_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blazer-apricotprint_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-blazer-apricotprint_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blazer-apricotprint_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blazer-apricotprint_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-blazer-apricotprint_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-set-shirt-and-shorts-red": {
@@ -204,8 +204,8 @@
       "compareAtPrice": "$167",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> Shirt collar Long sleeves Set (Shirt &amp; Shorts) In Red</li><li>Material: 80% Polyester, 20% Cotton</li><li>Colour: Red</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-red_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-red_img-1.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-red_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-set-shirt-and-shorts-red_img-1.jpeg"
       ]
     },
     "vico-moretti-womens-dress-purple": {
@@ -215,8 +215,8 @@
       "compareAtPrice": "$132",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li></li><li>Material: 65% Polyester, 35% Cotton</li><li>V-collar</li><li>Short Sleeves</li><li>Colour: Purple</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-purple_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-purple_img-1.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-purple_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-purple_img-1.jpeg"
       ]
     },
     "vico-moretti-womens-jumpsuit-black": {
@@ -226,8 +226,8 @@
       "compareAtPrice": "$132",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li></li><li>Material: 65% Polyester, 35% Cotton</li><li>Boat neckline</li><li>Short Sleeves</li><li>Colour: Black</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-black_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-black_img-1.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-black_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-jumpsuit-black_img-1.jpeg"
       ]
     },
     "vico-moretti-womens-dress-red": {
@@ -237,9 +237,9 @@
       "compareAtPrice": "$141",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li> Wrap Maxi Dress In Red</li><li>Material: 65% Polyester, 35% Rayon</li><li>Colour: Red</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-red_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-red_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-red_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-red_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-red_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-dress-red_img-2.jpeg"
       ]
     },
     "vico-moretti-womens-t-shirt-white": {
@@ -249,9 +249,9 @@
       "compareAtPrice": "$99",
       "body": "<div><p><b>Product Descriptions:</b></p><ul><li>Round neckline Short sleeves T-shirt In White</li><li>Material: 95% Polyester, 5% Spandex</li><li>Colour: White</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/vico%20size%20chart.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-t-shirt-white_img-0.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-t-shirt-white_img-1.jpeg",
-        "/img/products/spring-ready-apparel-for-her/vico-moretti-womens-t-shirt-white_img-2.jpeg"
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-t-shirt-white_img-0.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-t-shirt-white_img-1.jpeg",
+        "https://samples.here.li/products/spring-ready-apparel-for-her/vico-moretti-womens-t-shirt-white_img-2.jpeg"
       ]
     }
   }
