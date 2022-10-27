@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const DEMO_BASE_URL = '/fashion-store';
 
-export default function HomepageForOnlineStore({ heroBanners, collections, featuredProducts }) {
+export default function HomepageForOnlineStore({ featuredCollections, collections, featuredProducts }) {
     return <FashionStoreLayout>
         <section id="highlights" className="bg-coffee-light py-2">
             <div className="max-w-4xl mx-auto">
@@ -34,16 +34,19 @@ export default function HomepageForOnlineStore({ heroBanners, collections, featu
             </div>
         </section>
 
-        {heroBanners &&
+        {featuredCollections && featuredCollections.length > 0 &&
             <section id="hero" className="mt-4">
                 <div className="max-w-9xl mx-auto px-4">
                     <div className="grid grid-cols-2 gap-4">
-                        <div className="pb-2/3 bg-coffee-light relative">
-                            <Image alt={`Image for ${heroBanners[0].title}`} src={`${heroBanners[0].image}`} fill={true} />
-                        </div>
-                        <div className="pb-2/3 bg-coffee-light relative">
-                            <Image alt={`Image for ${heroBanners[1].title}`} src={`${heroBanners[1].image}`} fill={true} />
-                        </div>
+                        {featuredCollections.map(collection => {
+                            return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true}>
+                                <a>
+                                    <div className="pb-2/3 bg-coffee-light relative">
+                                        <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
+                                    </div>
+                                </a>
+                            </Link>
+                        })}
                     </div>
                 </div>
             </section>}
@@ -59,7 +62,7 @@ export default function HomepageForOnlineStore({ heroBanners, collections, featu
                     {collections.map(collection => {
                         return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.title}>
                             <a className="block">
-                                <div className="pb-2/3 relative bg-neutral-100">
+                                <div className="pb-2/3 relative bg-coffee-light">
                                     <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
                                 </div>
                                 <div className="w-full text-center py-2 px-4 text-coffee-dark">
@@ -80,12 +83,20 @@ export default function HomepageForOnlineStore({ heroBanners, collections, featu
 
 export function getStaticProps() {
     const collections = getAllCollections({
-        fields: ["title", "image"]
+        fields: ["title", "image", "handle"]
     });
+
+    const featuredCollections = collections.filter(collection => {
+        return [
+            "spring-ready-apparel-for-her",
+            "personalised-gifts"
+        ].indexOf(collection.handle) >= 0
+    })
 
     return {
         props: {
             collections,
+            featuredCollections
         }
     }
 }
