@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Mulish:semibold,bold,black&display=swap");
 
+:root {
+    --color-brand-primary: #634832;
+    --color-brand-secondary: #38220F;
+    --color-brand-light: #ECE0D1;
+    --color-brand-dark: #170E05;
+    --color-brand-danger: #A92C11;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

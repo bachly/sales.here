@@ -32,6 +32,13 @@ module.exports = {
     },
     extend: {
       colors: {
+        "brand": {
+          "primary": "var(--color-brand-primary)",
+          "secondary": "var(--color-brand-secondary)",
+          "light": "var(--color-brand-light)",
+          "dark": "var(--color-brand-dark)",
+          "danger": "var(--color-brand-danger)"
+        },
         "coffee": {
           "primary": "#634832",
           "secondary": "#38220F",
