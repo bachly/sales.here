@@ -1,11 +1,10 @@
 import fs from 'fs'
 import path from 'path'
 import { useRouter } from "next/router"
-import { productFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
+import { collectionFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
 import FashionStoreLayout from '../../../components/FashionStoreLayout'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/future/image'
 
 const DEMO_BASE_URL = '/fashion-store';
 
@@ -85,7 +84,7 @@ export default function CollectionPage({ source, collection }) {
                                         <div className="grid grid-cols-5 gap-1">
                                             {Object.keys(collection.products).map(key => {
                                                 const product = collection.products[key];
-                                                return <Link key={key} href={`${DEMO_BASE_URL}/product/${product.handle}`} passHref={true}>
+                                                return <Link key={key} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
                                                     <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-coffee-primary hover:border-opacity-20 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "480px" }}>
                                                             <div className="h-full flex flex-col justify-center">
@@ -130,7 +129,7 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
-    const paths = productFilePaths
+    const paths = collectionFilePaths
         // Remove file extensions for page paths
         .map((path) => path.replace(/\.json?$/, ''))
         // Map the path into the static paths object required by Next.js

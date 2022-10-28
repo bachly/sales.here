@@ -1,12 +1,12 @@
 {
   "title": "Big Brand Runners | Price Drop",
-  "handle": "big-brand-runners-or-price-drop",
+  "slug": "big-brand-runners-or-price-drop",
   "image": "https://samples.here.li/products/big-brand-runners-or-price-drop/_main.jpeg",
   "description": "UP TO 50% OFF",
   "products": {
     "new-balance-classics-mens-574-running-shoes-burgundy": {
       "title": "New Balance Classics Men's 574 Running Shoes Burgundy",
-      "handle": "new-balance-classics-mens-574-running-shoes-burgundy",
+      "slug": "new-balance-classics-mens-574-running-shoes-burgundy",
       "price": "$75.65",
       "body": "<div><b>Product Descriptions:</b><ul><li>Running Shoes</li><li>Colour: Burgundy</li><li>Materials: Suede and mesh upper</li><li>Lightweight EVA foam cushioning in the midsole and heel increases comfort</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/4750204e-a701-4b51-87d6-7654ad61da88/sizecharts/New%20Balance%20Mens.JPG\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
       "images": [
@@ -16,7 +16,7 @@
     },
     "puma-mens-accent-running-shoes-puma-white-and-bluemazing": {
       "title": "Puma Men's Accent Running Shoes Puma White & Bluemazing",
-      "handle": "puma-mens-accent-running-shoes-puma-white-and-bluemazing",
+      "slug": "puma-mens-accent-running-shoes-puma-white-and-bluemazing",
       "price": "$33.15",
       "compareAtPrice": "$80",
       "body": "<div><b class=\"opt-hide\">Product Descriptions:</b><ul><li>Running Shoes</li><li>Colour: Puma White &amp; Bluemazing</li><li>Materials: Mesh upper</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/4750204e-a701-4b51-87d6-7654ad61da88/sizecharts/Puma%20Men%27s%20Apparel.jpg\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",

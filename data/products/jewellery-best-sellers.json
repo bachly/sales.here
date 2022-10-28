@@ -1,12 +1,12 @@
 {
   "title": "Jewellery Best Sellers",
-  "handle": "jewellery-best-sellers",
+  "slug": "jewellery-best-sellers",
   "image": "https://samples.here.li/products/jewellery-best-sellers/_main.jpeg",
   "description": "UP TO 85% OFF",
   "products": {
     "18k-white-gold-plated-pave-encompassed-with-love-morganite-created-necklace": {
       "title": "18K White Gold Plated Pave Encompassed With Love Morganite Created Necklace",
-      "handle": "18k-white-gold-plated-pave-encompassed-with-love-morganite-created-necklace",
+      "slug": "18k-white-gold-plated-pave-encompassed-with-love-morganite-created-necklace",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>18K White Gold Plated Pave Encompassed With Love Morganite Created Necklace<ul><li>18K Gold Plated</li><li>Made with Swarovski® Crystals</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -17,7 +17,7 @@
     },
     "18k-rose-gold-plated-bohemian-filigree-laser-cut-earring": {
       "title": "18k Rose Gold Plated Bohemian Filigree Laser Cut Earring",
-      "handle": "18k-rose-gold-plated-bohemian-filigree-laser-cut-earring",
+      "slug": "18k-rose-gold-plated-bohemian-filigree-laser-cut-earring",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>18k Rose Gold Plated Bohemian Filigree Laser Cut Earring<ul><li>18K Gold Plated</li><li>-</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -32,7 +32,7 @@
     },
     "18k-rose-gold-plated-mesh-knot-twisted-stud-earring": {
       "title": "18K Rose Gold Plated Mesh Knot Twisted Stud Earring",
-      "handle": "18k-rose-gold-plated-mesh-knot-twisted-stud-earring",
+      "slug": "18k-rose-gold-plated-mesh-knot-twisted-stud-earring",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>18K Rose Gold Plated Mesh Knot Twisted Stud Earring<ul><li>18K Gold Plated</li><li>-</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -42,7 +42,7 @@
     },
     "womens-18k-white-gold-plated-our-hearts-together-ring-blue-and-red": {
       "title": "Women's 18K White Gold Plated Our Hearts Together Ring - Blue & Red",
-      "handle": "womens-18k-white-gold-plated-our-hearts-together-ring-blue-and-red",
+      "slug": "womens-18k-white-gold-plated-our-hearts-together-ring-blue-and-red",
       "price": "$15",
       "compareAtPrice": "$135",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>Ring Size: 11</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -52,7 +52,7 @@
     },
     "pave-triangle-18k-gold-plated-earring-adorned-with-crystals": {
       "title": "Pave Triangle  18K Gold Plated Earring adorned With Crystals",
-      "handle": "pave-triangle-18k-gold-plated-earring-adorned-with-crystals",
+      "slug": "pave-triangle-18k-gold-plated-earring-adorned-with-crystals",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>Pave Triangle  18K Gold Plated Earring adorned With Crystals<ul><li>18K Gold Plated</li><li>Made with Swarovski® Crystals</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -65,7 +65,7 @@
     },
     "gold-plated-singapore-chain-necklace-16-inch": {
       "title": "Gold Plated Singapore Chain Necklace - 16 Inch",
-      "handle": "gold-plated-singapore-chain-necklace-16-inch",
+      "slug": "gold-plated-singapore-chain-necklace-16-inch",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>Gold Plated Singapore Chain Necklace - 16 Inch<ul><li>Gold Plated</li><li>-</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -79,7 +79,7 @@
     },
     "18k-gold-plated-round-hoop-earring": {
       "title": "18k Gold Plated Round Hoop Earring",
-      "handle": "18k-gold-plated-round-hoop-earring",
+      "slug": "18k-gold-plated-round-hoop-earring",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>18k Gold Plated Round Hoop Earring<ul><li>18K Gold Plated</li><li>-</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -94,7 +94,7 @@
     },
     "18k-gold-plated-bracelet-pave-id-link-in-emerald-green": {
       "title": "18K Gold Plated Bracelet Pave ID Link In Emerald Green",
-      "handle": "18k-gold-plated-bracelet-pave-id-link-in-emerald-green",
+      "slug": "18k-gold-plated-bracelet-pave-id-link-in-emerald-green",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>18K Gold Plated Bracelet Pave ID Link In Emerald Green<ul><li>18K Gold Plated</li><li>Made with Manmade Gemestones</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -104,7 +104,7 @@
     },
     "womens-18k-gold-plated-byzantine-bracelet": {
       "title": "Women's 18K Gold Plated Byzantine Bracelet",
-      "handle": "womens-18k-gold-plated-byzantine-bracelet",
+      "slug": "womens-18k-gold-plated-byzantine-bracelet",
       "price": "$15",
       "compareAtPrice": "$135",
       "body": "<div><b>The Details</b><br><ul><li>18K Gold Plated</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -116,7 +116,7 @@
     },
     "womens-18k-gold-plated-magical-unicorn-rainbow-pave-necklace": {
       "title": "Women's 18K Gold Plated Magical Unicorn Rainbow Pave Necklace",
-      "handle": "womens-18k-gold-plated-magical-unicorn-rainbow-pave-necklace",
+      "slug": "womens-18k-gold-plated-magical-unicorn-rainbow-pave-necklace",
       "price": "$15",
       "compareAtPrice": "$135",
       "body": "<div><b>The Details</b><br><ul><li>18K Gold Plated</li><li>Necklace Dimensions: 18\" Inches +2\" Extender</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -128,7 +128,7 @@
     },
     "18k-gold-plated-necklace-adorned-with-crystals": {
       "title": "18K Gold Plated Necklace adorned With Crystals",
-      "handle": "18k-gold-plated-necklace-adorned-with-crystals",
+      "slug": "18k-gold-plated-necklace-adorned-with-crystals",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>18K Gold Plated Necklace adorned With Crystals<ul><li>18K Gold Plated</li><li>Made with Swarovski® Crystals</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -140,7 +140,7 @@
     },
     "18k-gold-plated-bohemian-filigree-laser-cut-earring": {
       "title": "18k Gold Plated Bohemian Filigree Laser Cut Earring",
-      "handle": "18k-gold-plated-bohemian-filigree-laser-cut-earring",
+      "slug": "18k-gold-plated-bohemian-filigree-laser-cut-earring",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>18k Gold Plated Bohemian Filigree Laser Cut Earring<ul><li>18K Gold Plated</li><li>-</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -154,7 +154,7 @@
     },
     "womens-18k-white-gold-plated-bamboo-bangle": {
       "title": "Women's 18K White Gold Plated Bamboo Bangle",
-      "handle": "womens-18k-white-gold-plated-bamboo-bangle",
+      "slug": "womens-18k-white-gold-plated-bamboo-bangle",
       "price": "$15",
       "compareAtPrice": "$150",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -166,7 +166,7 @@
     },
     "womens-18k-gold-plated-threader-earrings": {
       "title": "Women's 18K Gold Plated Threader Earrings",
-      "handle": "womens-18k-gold-plated-threader-earrings",
+      "slug": "womens-18k-gold-plated-threader-earrings",
       "price": "$12",
       "compareAtPrice": "$78",
       "body": "<div><b>The Details</b><br><ul><li>18K Gold Plated</li><li>Hypoallergenic; Safe for the skin.<ul><li>18K Gold Plated</li><li>-</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></li></ul></div>",
@@ -178,7 +178,7 @@
     },
     "womens-18k-white-gold-plated-6-pack-stud-earrings": {
       "title": "Women's 18K White Gold Plated 6 Pack Stud Earrings",
-      "handle": "womens-18k-white-gold-plated-6-pack-stud-earrings",
+      "slug": "womens-18k-white-gold-plated-6-pack-stud-earrings",
       "price": "$19",
       "compareAtPrice": "$161",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>6 Pack Set Includes: 6 Stud Earrings</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -191,7 +191,7 @@
     },
     "womens-18k-white-gold-plated-charm-bracelet": {
       "title": "Women's 18K White Gold Plated Charm Bracelet",
-      "handle": "womens-18k-white-gold-plated-charm-bracelet",
+      "slug": "womens-18k-white-gold-plated-charm-bracelet",
       "price": "$15",
       "compareAtPrice": "$135",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -203,7 +203,7 @@
     },
     "womens-18k-white-gold-plated-sisters-amethyst-heart-necklace": {
       "title": "Women's 18K White Gold Plated Sisters Amethyst Heart Necklace",
-      "handle": "womens-18k-white-gold-plated-sisters-amethyst-heart-necklace",
+      "slug": "womens-18k-white-gold-plated-sisters-amethyst-heart-necklace",
       "price": "$15",
       "compareAtPrice": "$135",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>Necklace Dimensions: 18\" Inches +2\" Extender</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -215,7 +215,7 @@
     },
     "womens-4-colors-you-are-my-daisy-bracelet-pack": {
       "title": "Women's 4 Colors You Are My Daisy Bracelet Pack",
-      "handle": "womens-4-colors-you-are-my-daisy-bracelet-pack",
+      "slug": "womens-4-colors-you-are-my-daisy-bracelet-pack",
       "price": "$15",
       "compareAtPrice": "$135",
       "body": "<div><b>The Details</b><br><ul><li>18K Gold Plated</li><li>4 Pack Set Includes: 4 Daisy Bracelets</li><li>Hypoallergenic; Safe for the skin.<ul><li>Daisy Pendant 4 Piece Colorful Bracelet Set</li><li>-</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></li></ul></div>",
@@ -228,7 +228,7 @@
     },
     "pave-baugette-cuff-stud-earring-embellished-with-crystals-in-18k-rose-gold-plated": {
       "title": "Pave Baugette Cuff Stud Earring embellished With Crystals In 18k Rose Gold Plated",
-      "handle": "pave-baugette-cuff-stud-earring-embellished-with-crystals-in-18k-rose-gold-plated",
+      "slug": "pave-baugette-cuff-stud-earring-embellished-with-crystals-in-18k-rose-gold-plated",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>Pave Baugette Cuff Stud Earring embellished With Crystals In 18k Rose Gold Plated<ul><li>18K Gold Plated</li><li>Made with Swarovski® Crystals</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -238,7 +238,7 @@
     },
     "womens-18k-white-gold-plated-circle-princess-halo-ring": {
       "title": "Women's 18K White Gold Plated Circle Princess Halo Ring",
-      "handle": "womens-18k-white-gold-plated-circle-princess-halo-ring",
+      "slug": "womens-18k-white-gold-plated-circle-princess-halo-ring",
       "price": "$15",
       "compareAtPrice": "$150",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>Ring Size: 6</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -250,7 +250,7 @@
     },
     "womens-18k-white-gold-plated-double-pave-ring": {
       "title": "Women's 18K White Gold Plated Double Pave Ring",
-      "handle": "womens-18k-white-gold-plated-double-pave-ring",
+      "slug": "womens-18k-white-gold-plated-double-pave-ring",
       "price": "$15",
       "compareAtPrice": "$150",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>Ring Size: 8</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",
@@ -263,7 +263,7 @@
     },
     "white-topaz-gemstone-round-4-prong-stud-18k-rose-gold-plated": {
       "title": "White Topaz Gemstone Round 4 Prong Stud 18K Rose Gold Plated",
-      "handle": "white-topaz-gemstone-round-4-prong-stud-18k-rose-gold-plated",
+      "slug": "white-topaz-gemstone-round-4-prong-stud-18k-rose-gold-plated",
       "price": "$12",
       "compareAtPrice": "$63",
       "body": "<div>White Topaz Gemstone Round 4 Prong Stud 18K Rose Gold Plated<ul><li>18K Gold Plated</li><li>Manmade Gemstones</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></div>",
@@ -273,7 +273,7 @@
     },
     "womens-18k-white-gold-plated-our-hearts-together-ring-purple": {
       "title": "Women's 18K White Gold Plated Our Hearts Together Ring - Purple",
-      "handle": "womens-18k-white-gold-plated-our-hearts-together-ring-purple",
+      "slug": "womens-18k-white-gold-plated-our-hearts-together-ring-purple",
       "price": "$15",
       "compareAtPrice": "$135",
       "body": "<div><b>The Details</b><br><ul><li>18K White Gold Plated</li><li>Ring Size: 6</li><li>Hypoallergenic; Safe for the skin.<ul><li>18K White Gold Plated</li><li>Made with Manmade Gemestones</li><li>Hypoallergenic</li><li>Safe on Skin</li><li>Fashion Jewellery designed in Italy</li></ul></li></ul></div>",
@@ -286,7 +286,7 @@
     },
     "womens-84-skulls-big-and-bold-triple-skull-chain": {
       "title": "Women's 84 Skulls' Big and Bold Triple Skull Chain",
-      "handle": "womens-84-skulls-big-and-bold-triple-skull-chain",
+      "slug": "womens-84-skulls-big-and-bold-triple-skull-chain",
       "price": "$19",
       "compareAtPrice": "$146",
       "body": "<div><b>The Details</b><br><ul><li>316L Stainless Steel</li><li>Hypoallergenic; Safe for the skin.</li></ul></div>",

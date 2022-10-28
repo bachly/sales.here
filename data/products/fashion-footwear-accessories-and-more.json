@@ -1,13 +1,13 @@
 {
   "title": "Fashion, Footwear, Accessories & More",
-  "handle": "fashion-footwear-accessories-and-more",
+  "slug": "fashion-footwear-accessories-and-more",
   "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg",
   "image": "https://samples.here.li/products/fashion-footwear-accessories-and-more/_main.jpeg",
   "description": "50% OFF RRP | 3 DAYS ONLY",
   "products": {
     "bambury-adults-unisex-printed-hoodet-hooded-blanket-bunny-lilac-white-one-size": {
       "title": "Bambury Adults Unisex Printed Hoodet Hooded Blanket Bunny Lilac White - One Size",
-      "handle": "bambury-adults-unisex-printed-hoodet-hooded-blanket-bunny-lilac-white-one-size",
+      "slug": "bambury-adults-unisex-printed-hoodet-hooded-blanket-bunny-lilac-white-one-size",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Bambury-Bambury-Adults-Unisex-Printed-Hoodet-Hooded-Blanket-Bunny-Lilac-White-One-Size/s/9_2t-j8o50Cm0JSm6_a3Kw?ssf=false",
       "price": "$29",
       "compareAtPrice": "$40.95",
@@ -23,7 +23,7 @@
     },
     "sheraton-luxury-maison-soho-5-piece-towel-pack-charcoal": {
       "title": "Sheraton Luxury Maison Soho 5 Piece Towel Pack - Charcoal",
-      "handle": "sheraton-luxury-maison-soho-5-piece-towel-pack-charcoal",
+      "slug": "sheraton-luxury-maison-soho-5-piece-towel-pack-charcoal",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Sheraton-Luxury-Maison-Sheraton-Luxury-Maison-Soho-5-Piece-Towel-Pack-Charcoal/s/jXwK4DDLQUquCsu4QHPMTw?ssf=false",
       "price": "$44",
       "compareAtPrice": "$112.75",
@@ -38,7 +38,7 @@
     },
     "calvin-klein-mens-jogger": {
       "title": "Calvin Klein Men's Jogger",
-      "handle": "calvin-klein-mens-jogger",
+      "slug": "calvin-klein-mens-jogger",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Underwear-Calvin-Klein-Men-s-Jogger/s/KKjt_eIqgU6pYtv73NQFcw?ssf=false",
       "price": "$40.99",
       "compareAtPrice": "$48",
@@ -49,7 +49,7 @@
     },
     "sheraton-luxury-maison-soho-5-piecetowel-pack-grey": {
       "title": "Sheraton Luxury Maison Soho 5 PieceTowel Pack - Grey",
-      "handle": "sheraton-luxury-maison-soho-5-piecetowel-pack-grey",
+      "slug": "sheraton-luxury-maison-soho-5-piecetowel-pack-grey",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Sheraton-Luxury-Maison-Sheraton-Luxury-Maison-Soho-5-PieceTowel-Pack-Grey/s/MryVtgwVyUShqtKyAJT_HQ?ssf=false",
       "price": "$44",
       "compareAtPrice": "$112.75",
@@ -64,7 +64,7 @@
     },
     "hurley-mens-one-and-only-flip-flops-blackwhite": {
       "title": "Hurley Men's One And Only Flip Flops - Black/White",
-      "handle": "hurley-mens-one-and-only-flip-flops-blackwhite",
+      "slug": "hurley-mens-one-and-only-flip-flops-blackwhite",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Hurley-Hurley-Men-s-One-And-Only-Flip-Flops-Black-White/s/zf9UvJA4F0y4Y4JuO6UbNw?ssf=false",
       "price": "$14.99",
       "compareAtPrice": "$23.01",
@@ -77,7 +77,7 @@
     },
     "freezeframe-brazilian-butt-lift-100-ml": {
       "title": "Freezeframe Brazilian Butt Lift - 100 mL",
-      "handle": "freezeframe-brazilian-butt-lift-100-ml",
+      "slug": "freezeframe-brazilian-butt-lift-100-ml",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Freezeframe-Freezeframe-Brazilian-Butt-Lift-100-mL/s/97Xw0vSlX0qFknVZqthHug?ssf=false",
       "price": "$27",
       "compareAtPrice": "$42",
@@ -90,7 +90,7 @@
     },
     "calvin-klein-underwear-womens-monochrome-lightly-lined-triangle-obsess": {
       "title": "Calvin Klein Underwear Women's Monochrome Lightly Lined Triangle - Obsess",
-      "handle": "calvin-klein-underwear-womens-monochrome-lightly-lined-triangle-obsess",
+      "slug": "calvin-klein-underwear-womens-monochrome-lightly-lined-triangle-obsess",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Underwear-Calvin-Klein-Underwear-Women-s-Monochrome-Lightly-Lined-Triangle-Obsess/s/R6rqQAaVpkeQZFhXBQYsbg?ssf=false",
       "price": "$19.99",
       "compareAtPrice": "$39.96",
@@ -102,7 +102,7 @@
     },
     "hurley-mens-one-and-only-velcro-slide-blackwhite": {
       "title": "Hurley Men's One And Only Velcro Slide - Black/White",
-      "handle": "hurley-mens-one-and-only-velcro-slide-blackwhite",
+      "slug": "hurley-mens-one-and-only-velcro-slide-blackwhite",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Hurley-Hurley-Men-s-One-And-Only-Velcro-Slide-Black-White/s/4-YgqNMx70KLL_GScToI9g?ssf=false",
       "price": "$25",
       "compareAtPrice": "$35",
@@ -115,7 +115,7 @@
     },
     "calvin-klein-womens-wristlet-clutch-black": {
       "title": "Calvin Klein Women's Wristlet Clutch Black",
-      "handle": "calvin-klein-womens-wristlet-clutch-black",
+      "slug": "calvin-klein-womens-wristlet-clutch-black",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Calvin-Klein-Women-s-Wristlet-Clutch-Black/s/gEdIWN0sWUuB-Sa1H-2khw?ssf=false",
       "price": "$45",
       "compareAtPrice": "$54.95",
@@ -128,7 +128,7 @@
     },
     "calvin-klein-womens-ck-reyna-backpack-black-silver-hardware": {
       "title": "Calvin Klein Women's CK Reyna Backpack Black Silver Hardware",
-      "handle": "calvin-klein-womens-ck-reyna-backpack-black-silver-hardware",
+      "slug": "calvin-klein-womens-ck-reyna-backpack-black-silver-hardware",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Calvin-Klein-Women-s-CK-Reyna-Backpack-Black-Silver-Hardware/s/36u2MDENPkafR_uZuHuscw?ssf=false",
       "price": "$129",
       "compareAtPrice": "$150",
@@ -142,7 +142,7 @@
     },
     "tommy-hilfiger-womens-laura-solid-logo-leggings-beige-heather": {
       "title": "Tommy Hilfiger Women's Laura Solid Logo Leggings - Beige Heather",
-      "handle": "tommy-hilfiger-womens-laura-solid-logo-leggings-beige-heather",
+      "slug": "tommy-hilfiger-womens-laura-solid-logo-leggings-beige-heather",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Tommy-Hilfiger-Tommy-Hilfiger-Women-s-Laura-Solid-Logo-Leggings-Beige-Heather/s/2LUsbtAzs0iQuST7Ws0ILQ?ssf=false",
       "price": "$39",
       "compareAtPrice": "$60.95",
@@ -157,7 +157,7 @@
     },
     "speedo-womens-powerstrike-leaderback-one-piece-black-powerstrike": {
       "title": "Speedo Womens Powerstrike Leaderback One Piece Black/ Powerstrike",
-      "handle": "speedo-womens-powerstrike-leaderback-one-piece-black-powerstrike",
+      "slug": "speedo-womens-powerstrike-leaderback-one-piece-black-powerstrike",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Speedo-Speedo-Womens-Powerstrike-Leaderback-One-Piece-Black-Powerstrike/s/-vmqa0Ky_EebQtZp2q6Mdg?ssf=false",
       "price": "$49",
       "compareAtPrice": "$51",
@@ -169,7 +169,7 @@
     },
     "tommy-hilfiger-mens-3-pack-statement-flex-trunks-dark-navy": {
       "title": "Tommy Hilfiger Men's 3 Pack Statement Flex Trunks - Dark Navy",
-      "handle": "tommy-hilfiger-mens-3-pack-statement-flex-trunks-dark-navy",
+      "slug": "tommy-hilfiger-mens-3-pack-statement-flex-trunks-dark-navy",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Tommy-Hilfiger-Tommy-Hilfiger-Men-s-3-Pack-Statement-Flex-Trunks-Dark-Navy/s/Q7aVmQHg60ibSFvByMCOtA?ssf=false",
       "price": "$49",
       "compareAtPrice": "$50.95",
@@ -186,7 +186,7 @@
     },
     "3-pack-calvin-klein-mens-trunk-shoreline-high-rise": {
       "title": "3 Pack Calvin Klein Men's Trunk Shoreline High Rise",
-      "handle": "3-pack-calvin-klein-mens-trunk-shoreline-high-rise",
+      "slug": "3-pack-calvin-klein-mens-trunk-shoreline-high-rise",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Underwear-3-Pack-Calvin-Klein-Men-s-Trunk-Shoreline-High-Rise/s/g80r0SoEn0mRvlcgaoQZLA?ssf=false",
       "price": "$39.99",
       "compareAtPrice": "$49.96",
@@ -197,7 +197,7 @@
     },
     "3-pack-calvin-klein-mens-trunk-black-high-rise": {
       "title": "3 Pack Calvin Klein Men's Trunk Black High Rise",
-      "handle": "3-pack-calvin-klein-mens-trunk-black-high-rise",
+      "slug": "3-pack-calvin-klein-mens-trunk-black-high-rise",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Underwear-3-Pack-Calvin-Klein-Men-s-Trunk-Black-High-Rise/s/KHu45ULXNk6wilFVyr8fLA?ssf=false",
       "price": "$39.99",
       "compareAtPrice": "$49.96",
@@ -208,7 +208,7 @@
     },
     "shiseido-synchro-skin-glow-luminizing-fluid-foundation-golden-3-30ml": {
       "title": "Shiseido Synchro Skin Glow Luminizing Fluid Foundation Golden 3 30ml",
-      "handle": "shiseido-synchro-skin-glow-luminizing-fluid-foundation-golden-3-30ml",
+      "slug": "shiseido-synchro-skin-glow-luminizing-fluid-foundation-golden-3-30ml",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Shiseido-Shiseido-Synchro-Skin-Glow-Luminizing-Fluid-Foundation-Golden-3-30ml/s/T5VIDxY9q0CUAfUAB8_Eww?ssf=false",
       "price": "$25",
       "compareAtPrice": "$47",
@@ -219,7 +219,7 @@
     },
     "royal-comfort-mulberry-soft-silk-hypoallergenic-pillowcase-twin-pack-51-x-76cm-champagne-pink": {
       "title": "Royal Comfort Mulberry Soft Silk Hypoallergenic Pillowcase Twin Pack 51 x 76cm - Champagne Pink",
-      "handle": "royal-comfort-mulberry-soft-silk-hypoallergenic-pillowcase-twin-pack-51-x-76cm-champagne-pink",
+      "slug": "royal-comfort-mulberry-soft-silk-hypoallergenic-pillowcase-twin-pack-51-x-76cm-champagne-pink",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Royal-Comfort-Royal-Comfort-Mulberry-Soft-Silk-Hypoallergenic-Pillowcase-Twin-Pack-51-x-76cm-Champagne-Pink/s/m0HoyYeFuUKWCoihXjklqw?ssf=false",
       "price": "$29",
       "compareAtPrice": "$200",
@@ -235,7 +235,7 @@
     },
     "tommy-hilfiger-mens-signature-hp-duffle-bag-th-deep-black": {
       "title": "Tommy Hilfiger Men's Signature HP Duffle Bag - Th Deep Black",
-      "handle": "tommy-hilfiger-mens-signature-hp-duffle-bag-th-deep-black",
+      "slug": "tommy-hilfiger-mens-signature-hp-duffle-bag-th-deep-black",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Tommy-Hilfiger-Tommy-Hilfiger-Men-s-Signature-HP-Duffle-Bag-Th-Deep-Black/s/QSyM_syC8kaeYwO4alA2dw?ssf=false",
       "price": "$75",
       "compareAtPrice": "$94",
@@ -248,7 +248,7 @@
     },
     "3-pack-calvin-klein-mens-low-rise-trunk-blackturbulencegrey-heather": {
       "title": "3 Pack Calvin Klein Men's Low Rise Trunk Black/Turbulence/Grey Heather",
-      "handle": "3-pack-calvin-klein-mens-low-rise-trunk-blackturbulencegrey-heather",
+      "slug": "3-pack-calvin-klein-mens-low-rise-trunk-blackturbulencegrey-heather",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Underwear-3-Pack-Calvin-Klein-Men-s-Low-Rise-Trunk-Black-Turbulence-Grey-Heather/s/6hsw1B0yPU6ycto9J5PDNQ?ssf=false",
       "price": "$39.99",
       "compareAtPrice": "$49.96",
@@ -266,7 +266,7 @@
     },
     "tommy-hilfiger-womens-lily-mono-jacquard-crossbody-bag-navy-stone": {
       "title": "Tommy Hilfiger Women's Lily Mono Jacquard Crossbody Bag  Navy Stone",
-      "handle": "tommy-hilfiger-womens-lily-mono-jacquard-crossbody-bag-navy-stone",
+      "slug": "tommy-hilfiger-womens-lily-mono-jacquard-crossbody-bag-navy-stone",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Tommy-Hilfiger-Tommy-Hilfiger-Women-s-Lily-Mono-Jacquard-Crossbody-Bag-Navy-Stone/s/wV7MvsHirEOlVo7gfpA3vw?ssf=false",
       "price": "$89",
       "compareAtPrice": "$100",
@@ -279,7 +279,7 @@
     },
     "australian-shepherd-ugg-unisex-ugg-slippers-australia-premium-sheepskin-muffin-scuff-chestnut": {
       "title": "Australian Shepherd Ugg Unisex UGG Slippers Australia Premium Sheepskin Muffin Scuff - Chestnut",
-      "handle": "australian-shepherd-ugg-unisex-ugg-slippers-australia-premium-sheepskin-muffin-scuff-chestnut",
+      "slug": "australian-shepherd-ugg-unisex-ugg-slippers-australia-premium-sheepskin-muffin-scuff-chestnut",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Australian-Shepherd-Ugg-Australian-Shepherd-Ugg-Unisex-UGG-Slippers-Australia-Premium-Sheepskin-Muffin-Scuff-Chestnut/s/KiptUCdnUEqy-G1hdpLJxA?ssf=false",
       "price": "$34.95",
       "compareAtPrice": "$41.41",
@@ -297,7 +297,7 @@
     },
     "calvin-klein-3-pack-mens-trunk-black": {
       "title": "Calvin Klein 3 Pack Men's Trunk - Black",
-      "handle": "calvin-klein-3-pack-mens-trunk-black",
+      "slug": "calvin-klein-3-pack-mens-trunk-black",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Underwear-Calvin-Klein-3-Pack-Men-s-Trunk-Black/s/ceefG_HA70iuIXeO-zO_VQ?ssf=false",
       "price": "$39.99",
       "compareAtPrice": "$49.96",
@@ -309,7 +309,7 @@
     },
     "calvin-klein-performance-womens-hooded-jacket-with-side-snaps-white": {
       "title": "Calvin Klein Performance Women's Hooded Jacket With Side Snaps White",
-      "handle": "calvin-klein-performance-womens-hooded-jacket-with-side-snaps-white",
+      "slug": "calvin-klein-performance-womens-hooded-jacket-with-side-snaps-white",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Performance-Calvin-Klein-Performance-Women-s-Hooded-Jacket-With-Side-Snaps-White/s/n9mjxnJK-EyzvL5VZpnnTw?ssf=false",
       "price": "$89",
       "compareAtPrice": "$110",
@@ -323,7 +323,7 @@
     },
     "3-pack-calvin-klein-mens-cotton-classics-trunk-underwear-shorelinedeep-depthsgrey-heather": {
       "title": "3 Pack Calvin Klein Men's Cotton Classics Trunk Underwear - Shoreline/Deep Depths/Grey Heather",
-      "handle": "3-pack-calvin-klein-mens-cotton-classics-trunk-underwear-shorelinedeep-depthsgrey-heather",
+      "slug": "3-pack-calvin-klein-mens-cotton-classics-trunk-underwear-shorelinedeep-depthsgrey-heather",
       "originalUrl": "https://www.ozsale.com.au/shop/sale/fashion-footwear-accessories-and-more/s/9nfbSuhDyEOiMDYZA9qnhg/product/Calvin-Klein-Underwear-3-Pack-Calvin-Klein-Men-s-Cotton-Classics-Trunk-Underwear-Shoreline-Deep-Depths-Grey-Heather/s/fa8MvnASh0_BCVB5aZEj1g?ssf=false",
       "price": "$39.99",
       "compareAtPrice": "$49.96",

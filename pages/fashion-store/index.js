@@ -83,14 +83,14 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
 
 export function getStaticProps() {
     const collections = getAllCollections({
-        fields: ["title", "image", "handle"]
+        fields: ["title", "image", "slug"]
     });
 
     const featuredCollections = collections.filter(collection => {
         return [
             "spring-ready-apparel-for-her",
             "personalised-gifts"
-        ].indexOf(collection.handle) >= 0
+        ].indexOf(collection.slug) >= 0
     })
 
     return {

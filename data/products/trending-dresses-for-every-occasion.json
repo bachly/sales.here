@@ -1,12 +1,12 @@
 {
   "title": "Trending Dresses For Every Occasion",
-  "handle": "trending-dresses-for-every-occasion",
+  "slug": "trending-dresses-for-every-occasion",
   "image": "https://samples.here.li/products/trending-dresses-for-every-occasion/_main.jpeg",
   "description": "$59 & UNDER",
   "products": {
     "anette-womens-polka-dot-print-halterneck-lace-up-dress-red-and-white-print": {
       "title": "Anette Women's Polka Dot Print Halterneck Lace-Up Dress - Red & White Print",
-      "handle": "anette-womens-polka-dot-print-halterneck-lace-up-dress-red-and-white-print",
+      "slug": "anette-womens-polka-dot-print-halterneck-lace-up-dress-red-and-white-print",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Polka Dot Print Halterneck Lace-Up Dress Red &amp; White Print<ul><li>Colour: Red &amp; White Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -19,7 +19,7 @@
     },
     "anette-womens-slip-dress-white": {
       "title": "Anette Women's Slip Dress - White",
-      "handle": "anette-womens-slip-dress-white",
+      "slug": "anette-womens-slip-dress-white",
       "price": "$45",
       "compareAtPrice": "$168",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Slip Dress White<ul><li>Colour: White</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -33,7 +33,7 @@
     },
     "anette-womens-dress-red-and-cell": {
       "title": "Anette Women's Dress - Red & Cell",
-      "handle": "anette-womens-dress-red-and-cell",
+      "slug": "anette-womens-dress-red-and-cell",
       "price": "$49",
       "compareAtPrice": "$177",
       "body": "<div><p><b>Product Descriptions:</b></p>Ruffled Plaid Dress<ul><li>Colour: Red &amp; Cell</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -45,7 +45,7 @@
     },
     "anette-womens-dress-orange": {
       "title": "Anette Women's Dress - Orange",
-      "handle": "anette-womens-dress-orange",
+      "slug": "anette-womens-dress-orange",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Leopard-Breasted Dress Slip Dress<ul><li>Colour: Orange</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -59,7 +59,7 @@
     },
     "anette-womens-belt-tie-knot-sleeveless-dot-ladies-dress-light-coffee": {
       "title": "Anette Women's Belt Tie Knot Sleeveless Dot Ladies Dress - Light Coffee",
-      "handle": "anette-womens-belt-tie-knot-sleeveless-dot-ladies-dress-light-coffee",
+      "slug": "anette-womens-belt-tie-knot-sleeveless-dot-ladies-dress-light-coffee",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Belt Tie Knot Sleeveless Dot Ladies Dress Light Coffee<ul><li>Colour: Light Coffee</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -73,7 +73,7 @@
     },
     "anette-womens-polka-dot-print-halterneck-lace-up-dress-black-and-yellow-floral-print": {
       "title": "Anette Women's Polka Dot Print Halterneck Lace-Up Dress - Black & Yellow Floral Print",
-      "handle": "anette-womens-polka-dot-print-halterneck-lace-up-dress-black-and-yellow-floral-print",
+      "slug": "anette-womens-polka-dot-print-halterneck-lace-up-dress-black-and-yellow-floral-print",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Polka Dot Print Halterneck Lace-Up Dress Black &amp; Yellow Floral Print<ul><li>Colour: Black &amp; Yellow Floral Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -85,7 +85,7 @@
     },
     "anette-womens-v-neck-casual-jacquard-puff-dress-camel": {
       "title": "Anette Women's V-Neck Casual Jacquard Puff Dress - Camel",
-      "handle": "anette-womens-v-neck-casual-jacquard-puff-dress-camel",
+      "slug": "anette-womens-v-neck-casual-jacquard-puff-dress-camel",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's V-Neck Casual Jacquard Puff Dress Camel<ul><li>Colour: Camel</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -99,7 +99,7 @@
     },
     "anette-womens-short-sleeve-button-print-dress-orange-and-pink-print": {
       "title": "Anette Women's Short Sleeve Button Print Dress - Orange & Pink Print",
-      "handle": "anette-womens-short-sleeve-button-print-dress-orange-and-pink-print",
+      "slug": "anette-womens-short-sleeve-button-print-dress-orange-and-pink-print",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Short Sleeve Button Print Dress Orange &amp; Pink Print<ul><li>Colour: Orange &amp; Pink Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -113,7 +113,7 @@
     },
     "anette-womens-dress-black-and-polka-dot": {
       "title": "Anette Women's Dress - Black & Polka dot",
-      "handle": "anette-womens-dress-black-and-polka-dot",
+      "slug": "anette-womens-dress-black-and-polka-dot",
       "price": "$55",
       "compareAtPrice": "$187",
       "body": "<div><p><b>Product Descriptions:</b></p>Little Tuck Dress<ul><li>Colour: Black &amp; Polka Dot</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -125,7 +125,7 @@
     },
     "anette-womens-plaid-puff-sleeve-dress-pink-and-white-cell": {
       "title": "Anette Women's Plaid Puff Sleeve Dress - Pink & White Cell",
-      "handle": "anette-womens-plaid-puff-sleeve-dress-pink-and-white-cell",
+      "slug": "anette-womens-plaid-puff-sleeve-dress-pink-and-white-cell",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Plaid Puff Sleeve Dress Pink &amp; White Cell<ul><li>Colour: Pink &amp; White Cell</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -139,7 +139,7 @@
     },
     "anette-womens-lace-dress-black": {
       "title": "Anette Women's Lace Dress - Black",
-      "handle": "anette-womens-lace-dress-black",
+      "slug": "anette-womens-lace-dress-black",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Lace Dress Black<ul><li>Colour: Black</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -151,7 +151,7 @@
     },
     "anette-womens-polka-dot-print-halterneck-lace-up-dress-coffee-and-white-polka-dot": {
       "title": "Anette Women's Polka Dot Print Halterneck Lace-Up Dress - Coffee & White Polka Dot",
-      "handle": "anette-womens-polka-dot-print-halterneck-lace-up-dress-coffee-and-white-polka-dot",
+      "slug": "anette-womens-polka-dot-print-halterneck-lace-up-dress-coffee-and-white-polka-dot",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Polka Dot Print Halterneck Lace-Up Dress Coffee &amp; White Polka Dot<ul><li>Colour: Coffee &amp; White Polka Dot</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -163,7 +163,7 @@
     },
     "anette-womens-dress-pale-green": {
       "title": "Anette Women's Dress - Pale green",
-      "handle": "anette-womens-dress-pale-green",
+      "slug": "anette-womens-dress-pale-green",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Tube Top Dress<ul><li>Colour: Pale Green</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -177,7 +177,7 @@
     },
     "anette-womens-short-sleeve-button-print-dress-yellow-and-multicolor-print": {
       "title": "Anette Women's Short Sleeve Button Print Dress - Yellow & Multicolor Print",
-      "handle": "anette-womens-short-sleeve-button-print-dress-yellow-and-multicolor-print",
+      "slug": "anette-womens-short-sleeve-button-print-dress-yellow-and-multicolor-print",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Short Sleeve Button Print Dress Yellow &amp; Multicolor Print<ul><li>Colour: Yellow &amp; Multicolor Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -191,7 +191,7 @@
     },
     "anette-womens-dress-black": {
       "title": "Anette Women's Dress - Black",
-      "handle": "anette-womens-dress-black",
+      "slug": "anette-womens-dress-black",
       "price": "$49",
       "compareAtPrice": "$177",
       "body": "<div><p><b>Product Descriptions:</b></p>V Neck Sleeveless Slit Dress<ul><li>Colour: Black</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -203,7 +203,7 @@
     },
     "anette-womens-polka-dot-print-halterneck-lace-up-dress-cream-and-brown-print": {
       "title": "Anette Women's Polka Dot Print Halterneck Lace-Up Dress - Cream & Brown Print",
-      "handle": "anette-womens-polka-dot-print-halterneck-lace-up-dress-cream-and-brown-print",
+      "slug": "anette-womens-polka-dot-print-halterneck-lace-up-dress-cream-and-brown-print",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Polka Dot Print Halterneck Lace-Up Dress Cream &amp; Brown Print<ul><li>Colour: Cream &amp; Brown Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -216,7 +216,7 @@
     },
     "anette-womens-v-neck-five-point-flared-sleeves-orange-and-pink-print": {
       "title": "Anette Women's V-Neck Five-Point Flared Sleeves Orange & Pink Print",
-      "handle": "anette-womens-v-neck-five-point-flared-sleeves-orange-and-pink-print",
+      "slug": "anette-womens-v-neck-five-point-flared-sleeves-orange-and-pink-print",
       "price": "$55",
       "compareAtPrice": "$187",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's V-Neck Five-Point Flared Sleeves Orange &amp; Pink Print<ul><li>Colour: Orange &amp; Pink Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -230,7 +230,7 @@
     },
     "anette-womens-floral-dress-green-and-white-floral-print": {
       "title": "Anette Women's Floral Dress - Green & White Floral Print",
-      "handle": "anette-womens-floral-dress-green-and-white-floral-print",
+      "slug": "anette-womens-floral-dress-green-and-white-floral-print",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Floral Dress Green &amp; White Floral Print<ul><li>Colour: Green &amp; White Floral Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -244,7 +244,7 @@
     },
     "anette-womens-slanted-shoulder-lace-dress-black": {
       "title": "Anette Women's Slanted Shoulder Lace Dress - Black",
-      "handle": "anette-womens-slanted-shoulder-lace-dress-black",
+      "slug": "anette-womens-slanted-shoulder-lace-dress-black",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Slanted Shoulder Lace Dress Black<ul><li>Colour: Black</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -258,7 +258,7 @@
     },
     "anette-womens-plaid-puff-sleeve-dress-blue-and-white-cell": {
       "title": "Anette Women's Plaid Puff Sleeve Dress - Blue & White Cell",
-      "handle": "anette-womens-plaid-puff-sleeve-dress-blue-and-white-cell",
+      "slug": "anette-womens-plaid-puff-sleeve-dress-blue-and-white-cell",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Plaid Puff Sleeve Dress Blue &amp; White Cell<ul><li>Colour: Blue &amp; White Cell</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -272,7 +272,7 @@
     },
     "anette-womens-polka-dot-print-halterneck-lace-up-dress-yellow-and-white-polka-dot": {
       "title": "Anette Women's Polka Dot Print Halterneck Lace-Up Dress - Yellow & White Polka Dot",
-      "handle": "anette-womens-polka-dot-print-halterneck-lace-up-dress-yellow-and-white-polka-dot",
+      "slug": "anette-womens-polka-dot-print-halterneck-lace-up-dress-yellow-and-white-polka-dot",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Polka Dot Print Halterneck Lace-Up Dress Yellow &amp; White Polka Dot<ul><li>Colour: Yellow &amp; White Polka Dot</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -285,7 +285,7 @@
     },
     "anette-womens-dress-navy": {
       "title": "Anette Women's Dress - Navy",
-      "handle": "anette-womens-dress-navy",
+      "slug": "anette-womens-dress-navy",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Tube Top Dress<ul><li>Colour: Navy</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -299,7 +299,7 @@
     },
     "anette-womens-v-neck-five-point-flared-sleeves-red-rose-and-pink-print": {
       "title": "Anette Women's V-Neck Five-Point Flared Sleeves Red Rose & Pink Print",
-      "handle": "anette-womens-v-neck-five-point-flared-sleeves-red-rose-and-pink-print",
+      "slug": "anette-womens-v-neck-five-point-flared-sleeves-red-rose-and-pink-print",
       "price": "$55",
       "compareAtPrice": "$187",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's V-Neck Five-Point Flared Sleeves Red Rose &amp; Pink Print<ul><li>Colour: Red Rose &amp; Pink Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -313,7 +313,7 @@
     },
     "anette-womens-halter-neck-sleeveless-tie-waist-dress-yellow": {
       "title": "Anette Women's Halter Neck Sleeveless Tie Waist Dress - Yellow",
-      "handle": "anette-womens-halter-neck-sleeveless-tie-waist-dress-yellow",
+      "slug": "anette-womens-halter-neck-sleeveless-tie-waist-dress-yellow",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Halter Neck Sleeveless Tie Waist Dress Yellow<ul><li>Colour: Yellow</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -327,7 +327,7 @@
     },
     "anette-womens-dress-blue": {
       "title": "Anette Women's Dress - Blue",
-      "handle": "anette-womens-dress-blue",
+      "slug": "anette-womens-dress-blue",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Solid Color Round Neck Dress<ul><li>Colour: Blue</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -339,7 +339,7 @@
     },
     "anette-womens-short-sleeve-button-print-dress-pink-and-white-print": {
       "title": "Anette Women's Short Sleeve Button Print Dress - Pink & White Print",
-      "handle": "anette-womens-short-sleeve-button-print-dress-pink-and-white-print",
+      "slug": "anette-womens-short-sleeve-button-print-dress-pink-and-white-print",
       "price": "$59",
       "compareAtPrice": "$206",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Short Sleeve Button Print Dress Pink &amp; White Print<ul><li>Colour: Pink &amp; White Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -353,7 +353,7 @@
     },
     "anette-womens-tank-tops-blue": {
       "title": "Anette Women's Tank Tops - Blue",
-      "handle": "anette-womens-tank-tops-blue",
+      "slug": "anette-womens-tank-tops-blue",
       "price": "$35",
       "compareAtPrice": "$119",
       "body": "<div><p><b>Product Descriptions:</b></p>Halterneck Tie Top<ul><li>Colour: Blue</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -365,7 +365,7 @@
     },
     "anette-womens-belt-tie-knot-sleeveless-dot-ladies-dress-green": {
       "title": "Anette Women's Belt Tie Knot Sleeveless Dot Ladies Dress - Green",
-      "handle": "anette-womens-belt-tie-knot-sleeveless-dot-ladies-dress-green",
+      "slug": "anette-womens-belt-tie-knot-sleeveless-dot-ladies-dress-green",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Belt Tie Knot Sleeveless Dot Ladies Dress Green<ul><li>Colour: Green</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -379,7 +379,7 @@
     },
     "anette-womens-short-sleeve-patchwork-contrast-loose-swing-dress-white-and-khaki": {
       "title": "Anette Women's Short Sleeve Patchwork Contrast Loose Swing Dress - White & Khaki",
-      "handle": "anette-womens-short-sleeve-patchwork-contrast-loose-swing-dress-white-and-khaki",
+      "slug": "anette-womens-short-sleeve-patchwork-contrast-loose-swing-dress-white-and-khaki",
       "price": "$49",
       "compareAtPrice": "$177",
       "body": "<div><p><b>Product Descriptions:</b></p>Anette Women's Short Sleeve Patchwork Contrast Loose Swing Dress White &amp; Khaki<ul><li>Colour: White &amp; Khaki</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -393,7 +393,7 @@
     },
     "anette-womens-jumpsuit-apricot-and-brown-print": {
       "title": "Anette Women's Jumpsuit - Apricot & Brown print",
-      "handle": "anette-womens-jumpsuit-apricot-and-brown-print",
+      "slug": "anette-womens-jumpsuit-apricot-and-brown-print",
       "price": "$55",
       "compareAtPrice": "$196",
       "body": "<div><p><b>Product Descriptions:</b></p>Printed Lace-Up Wide-Leg Jumpsuit<ul><li>Colour: Apricot &amp; Brown Print</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
@@ -407,7 +407,7 @@
     },
     "anette-womens-dress-green": {
       "title": "Anette Women's Dress - Green",
-      "handle": "anette-womens-dress-green",
+      "slug": "anette-womens-dress-green",
       "price": "$55",
       "compareAtPrice": "$187",
       "body": "<div><p><b>Product Descriptions:</b></p>Square Neck Dress<ul><li>Colour: Green</li><li>Material: 95% Polyester, 5% Spandex</li></ul><br><a href=\"https://cdn.mysalemarketplace.com/v1/files/public/1e7ffea1-f31c-46e4-89c7-66882ae9660e/sizecharts/Anette.png\" target=\"_blank\" class=\"textLinkTopBottom\">Size Guide</a></div>",
