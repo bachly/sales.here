@@ -39,7 +39,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                 <div className="max-w-9xl mx-auto px-4">
                     <div className="grid grid-cols-2 gap-4">
                         {featuredCollections.map(collection => {
-                            return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true}>
+                            return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
                                 <a>
                                     <div className="pb-2/3 bg-coffee-light relative">
                                         <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
@@ -60,7 +60,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
 
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {collections.map(collection => {
-                        return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.title}>
+                        return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
                             <a className="block">
                                 <div className="pb-2/3 relative bg-coffee-light">
                                     <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
