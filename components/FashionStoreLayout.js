@@ -3,6 +3,7 @@ import Meta from './Meta';
 import PackageJSON from '../package.json';
 import Container from "./Container";
 import { UserIcon, CartIcon, SearchIcon, PhoneIcon, TruckIcon, ExchangeIcon, LockIcon } from "./Icons";
+import Logo from "../public/logo.svg";
 
 const DEMO_BASE_URL = '/fashion-store';
 
@@ -54,7 +55,77 @@ export default function Layout({ children }) {
 
             {children}
 
-            <footer id="Footer" className="pt-32" />
+            <section id="seoBlob" className="mt-20">
+                <div className="max-w-7xl mx-auto">
+                    <div className="columns-2 text-xs gap-12 text-coffee-dark text-opacity-50 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisi facilisis, auctor velit eget, commodo ante. Nunc eu consectetur purus. Sed tincidunt ullamcorper erat vitae bibendum. Proin vel neque non ante rutrum dapibus et eget urna. Nulla ultrices commodo interdum. Duis malesuada bibendum nibh, ac lacinia felis posuere nec. Nam ullamcorper porttitor ullamcorper. Nullam luctus ipsum tellus, id volutpat diam feugiat eu. Donec ultricies ante at justo rutrum, a pretium eros ultrices. Phasellus nisi ex, ullamcorper nec vulputate vel, porttitor tempus libero. Sed ac nulla a nunc congue mollis. Cras commodo mattis ornare. Integer vel fermentum turpis, in ornare justo.
+
+                        Phasellus purus dui, pharetra a suscipit non, elementum nec turpis. Proin tincidunt pulvinar dui, vitae blandit sapien gravida eu. Curabitur placerat finibus varius. Quisque accumsan semper quam ut vehicula. Suspendisse ut posuere turpis. Nulla dapibus libero lectus, sit amet malesuada lacus rhoncus eu. Ut nisi nisl, tempor a mi vel, malesuada ullamcorper justo. Nam blandit eu lacus non lobortis. Morbi id nisi vitae ex interdum tincidunt a eget diam. Praesent vitae aliquet diam. Curabitur quis metus interdum, volutpat dui a, posuere velit. Phasellus aliquet, felis nec fringilla porta, velit turpis convallis lectus, quis aliquam nisi arcu ut nulla. Pellentesque a pharetra est.
+                    </div>
+                </div>
+            </section>
+
+            <section id="subscription" className="mt-12 py-8 bg-coffee-secondary">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex items-center">
+                        <h2 className="text-white text-2xl flex-1">Subscribe to new things</h2>
+                        <div className="flex items-center justify-end flex-1">
+                            <input placeholder="Your email address" className="w-1/2 py-3 px-6 rounded-md bg-white bg-opacity-10 placeholder-coffee-light placeholder-opacity-50" />
+                            <button className="py-3 px-6 bg-white rounded-md ml-2">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="Footer" className="py-16">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex">
+                        <div className="w-1/3">
+                            <div className="h-full flex flex-col">
+                                <div className="flex-1">
+                                    <Link href={`${DEMO_BASE_URL}`}>
+                                        <a className="w-24 flex items-center relative text-white fill-current" style={{ top: '3px' }}>
+                                            <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
+                                        </a>
+                                    </Link>
+                                    <div className="text-sm">Life made easy.</div>
+                                </div>
+                                <div className="text-xs">
+                                    An online store by Handily Pty Ltd. ABN: 123567890
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-2/3">
+                            <div className="grid grid-cols-3 items-start">
+                                <div>
+                                    <div className="uppercase text-sm mb-2 font-bold">About</div>
+                                    <a href="#" className="block py-1">About us</a>
+                                    <a href="#" className="block py-1">Contact us</a>
+                                    <a href="#" className="block py-1">Terms & Conditions</a>
+                                    <a href="#" className="block py-1">Shipping & Delivery</a>
+                                    <a href="#" className="block py-1">Return Policy</a>
+                                </div>
+                                <div>
+                                    <div className="uppercase text-sm mb-2 font-bold">Collections</div>
+                                    <a href="#" className="block py-1">Men Apparel</a>
+                                    <a href="#" className="block py-1">Women Apparel</a>
+                                    <a href="#" className="block py-1">Kids Clothing</a>
+                                    <a href="#" className="block py-1">Furniture</a>
+                                    <a href="#" className="block py-1">Clearance</a>
+                                </div>
+                                <div>
+                                    <div className="uppercase text-sm mb-2 font-bold">Brands</div>
+                                    <a href="#" className="block py-1">Clothing Brands</a>
+                                    <a href="#" className="block py-1">Accessory Brands</a>
+                                    <a href="#" className="block py-1">Furniture Brands</a>
+                                    <a href="#" className="block py-1">Children Brands</a>
+                                    <a href="#" className="block py-1">Generic Brands</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }
