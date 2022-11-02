@@ -1,6 +1,6 @@
 import { Banner } from "../../components/Banner";
 import Container from "../../components/Container";
-import Layout from "../../components/FashionStoreLayout";
+import Layout from "../../components/RetailStoreLayout";
 import { getAllPosts } from "../../lib/api";
 
 export default function DashboardPage({ products }) {

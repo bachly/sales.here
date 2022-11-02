@@ -1,14 +1,14 @@
 import Image from "next/future/image";
 import FeaturedProducts from "../../components/FeaturedProducts";
 import { ExchangeIcon, LockIcon, PhoneIcon, TruckIcon } from "../../components/Icons";
-import FashionStoreLayout from "../../components/FashionStoreLayout";
+import RetailStoreLayout from "../../components/RetailStoreLayout";
 import { getAllCollections } from "../../lib/api";
 import Link from "next/link";
 
-const DEMO_BASE_URL = '/fashion-store';
+const DEMO_BASE_URL = '/retail';
 
 export default function HomepageForOnlineStore({ featuredCollections, collections, featuredProducts }) {
-    return <FashionStoreLayout>
+    return <RetailStoreLayout>
         <section id="highlights" className="bg-coffee-light py-2">
             <div className="max-w-4xl mx-auto">
                 <div className="flex items-center justify-between">
@@ -78,7 +78,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
         {featuredProducts &&
             <FeaturedProducts title={"Best Sellers This Week"} products={featuredProducts} />
         }
-    </FashionStoreLayout>
+    </RetailStoreLayout>
 }
 
 export function getStaticProps() {

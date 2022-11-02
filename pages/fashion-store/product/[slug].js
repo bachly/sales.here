@@ -2,14 +2,14 @@ import fs from 'fs'
 import path from 'path'
 import { useRouter } from "next/router"
 import { productFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
-import FashionStoreLayout from '../../../components/FashionStoreLayout'
+import RetailStoreLayout from '../../../components/RetailStoreLayout'
 import Head from 'next/head'
 import Link from 'next/link'
 import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../../components/Icons'
 import _ from 'underscore'
 import Image from 'next/future/image'
 
-const DEMO_BASE_URL = '/fashion-store';
+const DEMO_BASE_URL = '/retail';
 
 export default function ProductPage({ product, collection }) {
     const router = useRouter()
@@ -31,7 +31,7 @@ export default function ProductPage({ product, collection }) {
                 router.isFallback ? (
                     <>Loading…</>
                 ) : (
-                    <FashionStoreLayout>
+                    <RetailStoreLayout>
                         <Head>
                             <title>{product.title}</title>
                             <meta name="description" content={product.description} />
@@ -184,7 +184,7 @@ export default function ProductPage({ product, collection }) {
                                     </div>
                                 </section>}
                         </main>
-                    </FashionStoreLayout>
+                    </RetailStoreLayout>
                 )
             }
         </>

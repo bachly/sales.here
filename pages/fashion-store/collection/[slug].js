@@ -2,11 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import { useRouter } from "next/router"
 import { collectionFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
-import FashionStoreLayout from '../../../components/FashionStoreLayout'
+import RetailStoreLayout from '../../../components/RetailStoreLayout'
 import Head from 'next/head'
 import Link from 'next/link'
 
-const DEMO_BASE_URL = '/fashion-store';
+const DEMO_BASE_URL = '/retail';
 
 export default function CollectionPage({ source, collection }) {
     const router = useRouter()
@@ -21,7 +21,7 @@ export default function CollectionPage({ source, collection }) {
                 router.isFallback ? (
                     <>Loading…</>
                 ) : (
-                    <FashionStoreLayout post={collection}>
+                    <RetailStoreLayout post={collection}>
                         <Head>
                             <title>{collection.title}</title>
                             <meta name="description" content={collection.description} />
@@ -103,7 +103,7 @@ export default function CollectionPage({ source, collection }) {
                                 </div>
                             </section>
                         </main>
-                    </FashionStoreLayout>
+                    </RetailStoreLayout>
                 )
             }
         </>

@@ -5,7 +5,7 @@ import Container from "./Container";
 import { UserIcon, CartIcon, SearchIcon, PhoneIcon, TruckIcon, ExchangeIcon, LockIcon } from "./Icons";
 import Logo from "../public/logo.svg";
 
-const DEMO_BASE_URL = '/fashion-store';
+const DEMO_BASE_URL = '/retail';
 
 export default function Layout({ children }) {
     const sitename = `${PackageJSON.site_settings.sitename}`;

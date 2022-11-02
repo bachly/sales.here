@@ -57,12 +57,12 @@ export default function IndexPage({ }) {
                     </p>
                     <div className="mt-12">
                         <div className="grid grid-cols-4 gap-12">
-                            <Link href="/fashion-store" passHref={true}>
+                            <Link href="/retail" passHref={true}>
                                 <a className="block group">
                                     <div className="pb-3/2 relative overflow-hidden group-hover:-translate-y-3 transform duration-300">
                                         <Image src={DemoScreenshotFashionSales} className="absolute top-0 left-0 w-full" />
                                     </div>
-                                    <div className="mt-4 text-white uppercase text-sm text-center">Fashion Store</div>
+                                    <div className="mt-4 text-white uppercase text-sm text-center">Retail Store</div>
                                 </a>
                             </Link>
                             <div>
