@@ -9,7 +9,7 @@ const DEMO_BASE_URL = '/retail';
 
 export default function HomepageForOnlineStore({ featuredCollections, collections, featuredProducts }) {
     return <RetailStoreLayout>
-        <section id="highlights" className="bg-coffee-light py-2">
+        <section id="highlights" className="bg-brand-light py-2">
             <div className="max-w-4xl mx-auto">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center">
@@ -41,7 +41,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                         {featuredCollections.map(collection => {
                             return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
                                 <a>
-                                    <div className="pb-2/3 bg-coffee-light relative">
+                                    <div className="pb-2/3 bg-brand-light relative">
                                         <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
                                     </div>
                                 </a>
@@ -62,10 +62,10 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                     {collections.map(collection => {
                         return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
                             <a className="block">
-                                <div className="pb-2/3 relative bg-coffee-light">
+                                <div className="pb-2/3 relative bg-brand-light">
                                     <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
                                 </div>
-                                <div className="w-full text-center py-2 px-4 text-coffee-dark">
+                                <div className="w-full text-center py-2 px-4 text-brand-dark">
                                     {collection.title}
                                 </div>
                             </a>
@@ -88,7 +88,7 @@ export function getStaticProps() {
 
     const featuredCollections = collections.filter(collection => {
         return [
-            "spring-ready-apparel-for-her",
+            "fashion-footwear-accessories-and-more",
             "personalised-gifts"
         ].indexOf(collection.slug) >= 0
     })

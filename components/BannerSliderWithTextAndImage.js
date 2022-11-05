@@ -18,7 +18,7 @@ export default function BannerSliderWithTextAndImage() {
                                 <div className="">
                                     <span className="inline-block text-3xl bg-black text-white py-1 px-5">BIG ADVENTURE</span>
                                     <br />
-                                    <span className="mt-1 inline-block text-8xl font-black font-sans bg-coffee-primary py-1 px-5">BIG SALE</span>
+                                    <span className="mt-1 inline-block text-8xl font-black font-sans bg-brand-primary py-1 px-5">BIG SALE</span>
                                     <br />
                                     <span className="mt-1 inline-block text-3xl font-semibold bg-black py-1 px-5 text-white font-serif">ONLY 2 DAYS LEFT</span>
                                 </div>
@@ -42,7 +42,7 @@ export default function BannerSliderWithTextAndImage() {
                                 <br />
                                 <span className="text-8xl font-black font-sans">TRACKSUITS</span>
                                 <br />
-                                <span className="mt-2 inline-block text-4xl font-semibold bg-coffee-primary text-black py-1 px-5 text-white rounded-lg font-serif">UP TO 30% OFF</span>
+                                <span className="mt-2 inline-block text-4xl font-semibold bg-brand-primary text-black py-1 px-5 text-white rounded-lg font-serif">UP TO 30% OFF</span>
                             </div>
                             <div className="mt-16">
                                 <LinkAsButton href="#">Shop now</LinkAsButton>

@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Mulish:semibold,bold,black&display=swap");
 
-:root {
-    --color-brand-primary: #634832;
-    --color-brand-secondary: #38220F;
-    --color-brand-light: #ECE0D1;
-    --color-brand-dark: #170E05;
-    --color-brand-danger: #A92C11;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +10,14 @@
 @import '@splidejs/react-splide/css/core';
 
 @layer base {
+    :root {
+        --color-brand-primary: 99 72 50;
+        --color-brand-secondary: 56 34 15;
+        --color-brand-light: 236 224 209;
+        --color-brand-dark: 23 14 5;
+        --color-brand-danger: 169 44 17;
+    }
+
     h1.display, .h1.display {
         @apply text-8xl text-gray-900 font-black tracking-tight
     }
@@ -55,7 +55,7 @@
     }
 
     blockquote, .blockquote {
-        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-coffee-primary block pl-6
+        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-brand-primary block pl-6
     }
 }
 
@@ -98,7 +98,7 @@ button.splide__arrow {
         active:bg-gray-1000 active:text-white
 }
 
-.button.coffee-secondary {
+.button.brand-secondary {
     @apply bg-stone-900 text-white
         hover:bg-black
         active:bg-black
@@ -109,10 +109,10 @@ button.splide__arrow {
         active:scale-100
 }
 
-.button.coffee-primary {
-    @apply bg-coffee-primary border-coffee-primary text-gray-1000 
-        hover:bg-coffee-secondary hover:border-coffee-secondary
-        active:bg-coffee-secondary
+.button.brand-primary {
+    @apply bg-brand-primary border-brand-primary text-gray-1000 
+        hover:bg-brand-secondary hover:border-brand-secondary
+        active:bg-brand-secondary
 }
 
 /** Link styles **/
@@ -145,7 +145,7 @@ a.with-chevron:before {
     right: 0;
     height: 3px;
     width: 0%;
-    background: theme('colors.coffee.secondary')
+    background: theme('colors.brand.secondary')
 }
 
 a.with-chevron:hover:before {

@@ -33,19 +33,19 @@ module.exports = {
     extend: {
       colors: {
         "brand": {
-          "primary": "var(--color-brand-primary)",
-          "secondary": "var(--color-brand-secondary)",
-          "light": "var(--color-brand-light)",
-          "dark": "var(--color-brand-dark)",
-          "danger": "var(--color-brand-danger)"
+          "primary": "rgb(var(--color-brand-primary) / <alpha-value>)",
+          "secondary": "rgb(var(--color-brand-secondary) / <alpha-value>)",
+          "light": "rgb(var(--color-brand-light) / <alpha-value>)",
+          "dark": "rgb(var(--color-brand-dark) / <alpha-value>)",
+          "danger": "rgb(var(--color-brand-danger) / <alpha-value>)",
         },
-        "coffee": {
-          "primary": "#634832",
-          "secondary": "#38220F",
-          "light": "#ECE0D1",
-          "dark": "#170E05",
-          "danger": "#A92C11"
-        },
+        // "brand": {
+        //   "primary": "#634832",
+        //   "secondary": "#38220F",
+        //   "light": "#ECE0D1",
+        //   "dark": "#170E05",
+        //   "danger": "#A92C11"
+        // },
         "ocean": {
           "primary": "#2E889F",
           "secondary": "#155362",

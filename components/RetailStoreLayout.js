@@ -10,11 +10,11 @@ const DEMO_BASE_URL = '/retail';
 export default function Layout({ children }) {
     const sitename = `${PackageJSON.site_settings.sitename}`;
     return (
-        <div id="Layout" className="min-h-screen font-body">
+        <div id="Layout" className="min-h-screen font-body bg-brand-light bg-opacity-5">
             <Meta />
 
-            <header id="Header">
-                <div className="bg-coffee-primary text-coffee-light py-1 text-center text-sm uppercase">
+            <header id="Header" className="bg-brand-light bg-opacity-5">
+                <div className="bg-brand-primary text-brand-light py-1 text-center text-sm uppercase">
                     We ship nationwide. 30-day return policy. Free standard shipping on orders over $75.
                 </div>
                 <Container>
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
                                 <NavLink href={`${DEMO_BASE_URL}`}>Furniture</NavLink>
                                 <NavLink href={`${DEMO_BASE_URL}`}>BRANDS</NavLink>
                                 <NavLink href={`${DEMO_BASE_URL}`}>
-                                    <span className="text-coffee-danger">CLEARANCE</span>
+                                    <span className="text-brand-danger">CLEARANCE</span>
                                 </NavLink>
                             </div>
                             <div className="flex itens-center">
@@ -57,7 +57,7 @@ export default function Layout({ children }) {
 
             <section id="seoBlob" className="mt-20">
                 <div className="max-w-7xl mx-auto">
-                    <div className="columns-2 text-xs gap-12 text-coffee-dark text-opacity-50 leading-relaxed">
+                    <div className="columns-2 text-xs gap-12 text-brand-dark text-opacity-50 leading-relaxed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisi facilisis, auctor velit eget, commodo ante. Nunc eu consectetur purus. Sed tincidunt ullamcorper erat vitae bibendum. Proin vel neque non ante rutrum dapibus et eget urna. Nulla ultrices commodo interdum. Duis malesuada bibendum nibh, ac lacinia felis posuere nec. Nam ullamcorper porttitor ullamcorper. Nullam luctus ipsum tellus, id volutpat diam feugiat eu. Donec ultricies ante at justo rutrum, a pretium eros ultrices. Phasellus nisi ex, ullamcorper nec vulputate vel, porttitor tempus libero. Sed ac nulla a nunc congue mollis. Cras commodo mattis ornare. Integer vel fermentum turpis, in ornare justo.
 
                         Phasellus purus dui, pharetra a suscipit non, elementum nec turpis. Proin tincidunt pulvinar dui, vitae blandit sapien gravida eu. Curabitur placerat finibus varius. Quisque accumsan semper quam ut vehicula. Suspendisse ut posuere turpis. Nulla dapibus libero lectus, sit amet malesuada lacus rhoncus eu. Ut nisi nisl, tempor a mi vel, malesuada ullamcorper justo. Nam blandit eu lacus non lobortis. Morbi id nisi vitae ex interdum tincidunt a eget diam. Praesent vitae aliquet diam. Curabitur quis metus interdum, volutpat dui a, posuere velit. Phasellus aliquet, felis nec fringilla porta, velit turpis convallis lectus, quis aliquam nisi arcu ut nulla. Pellentesque a pharetra est.
@@ -65,12 +65,12 @@ export default function Layout({ children }) {
                 </div>
             </section>
 
-            <section id="subscription" className="mt-12 py-8 bg-coffee-secondary">
+            <section id="subscription" className="mt-12 py-8 bg-brand-primary">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center">
                         <h2 className="text-white text-2xl flex-1">Subscribe to new things</h2>
                         <div className="flex items-center justify-end flex-1">
-                            <input placeholder="Your email address" className="w-1/2 py-3 px-6 rounded-md bg-white bg-opacity-10 placeholder-coffee-light placeholder-opacity-50" />
+                            <input placeholder="Your email address" className="w-1/2 py-3 px-6 rounded-md bg-white bg-opacity-10 placeholder-brand-light placeholder-opacity-50" />
                             <button className="py-3 px-6 bg-white rounded-md ml-2">Submit</button>
                         </div>
                     </div>
