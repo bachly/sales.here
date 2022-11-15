@@ -15,7 +15,7 @@ export default function IndexPage({ }) {
                         <div className="relative z-10 flex items-center">
                             <Link href="/">
                                 <a className="mr-4 flex items-center relative font-black text-3xl" title="Click to go back to Homepage">
-                                    HANDILY
+                                    The1Template
                                 </a>
                             </Link>
                             <div className="ml-6 flex-1 flex items-center">
@@ -35,9 +35,9 @@ export default function IndexPage({ }) {
             <section id="HeroSection">
                 <div className="pt-48"></div>
                 <div className="max-w-8xl mx-auto">
-                    <h1 className="text-7xl font-black max-w-3xl uppercase">Multipurpose NextJS Theme</h1>
+                    <h1 className="text-7xl font-black max-w-3xl uppercase">Multi-purpose<br/>and Minimal</h1>
                     <p className="mt-4 text-2xl max-w-lg">
-                        A smart solution for any NextJS starters. <i>Handily</i> is a unique Multi-Concept NextJS Theme with a clean and modern design.
+                        A simple starting point for any online store, hybrid app and brand, <i>The1Template</i> is a unique Multi-Concept Theme with a clean and modern design.
                     </p>
                     <button className="mt-10 bg-black text-white px-8 py-2 rounded-full text-lg">View demos</button>
                 </div>
@@ -52,7 +52,7 @@ export default function IndexPage({ }) {
                         starting any project
                     </h2>
                     <p className="mt-4 text-base max-w-xl text-white mx-auto text-center">
-                        Handily comes with pre-made dummy but premium layouts for any website &amp; web app.
+                        The1Template comes with pre-made dummy but premium layouts for any website &amp; web app.
                         Reusable components can be moved, mixed and matched to create new layouts and a solid foundation for your project.
                     </p>
                     <div className="mt-12">
@@ -83,24 +83,19 @@ export default function IndexPage({ }) {
                 <div className="pt-24"></div>
             </section>
 
-            <section id="Highlight1" className="bg-neutral-100">
+            <section id="features" className="">
                 <div className="pt-48"></div>
                 <div className="max-w-8xl mx-auto">
                     <h2 className="text-5xl uppercase font-black">
-                        Unique branding<br />
-                        with only 5 colors
+                        Features
                     </h2>
                     <p className="mt-8 text-base max-w-xl font-bold">
-                        Handily comes with pre-selected and pro-selected color palettes.
+                        The1Template comes with pre-selected and pro-selected color palettes.
                         Each palette has only 5 colors. Thanks to clever design,
                         they are enough to create a unique feel to your brand
                         and keep maintainability at the minimum.
                     </p>
                 </div>
-                <div className="pt-48"></div>
-            </section>
-
-            <section id="Highlight2" className="bg-white">
                 <div className="pt-24"></div>
                 <div className="max-w-8xl mx-auto">
                     <div className="grid grid-cols-2 gap-8">
@@ -126,14 +121,14 @@ export default function IndexPage({ }) {
                 <div className="pt-24"></div>
             </section>
 
-            <section id="Breakdown" className="bg-black">
+            <section id="support" className="bg-black">
                 <div className="pt-24"></div>
                 <div className="max-w-8xl mx-auto">
                     <h2 className="text-5xl text-white uppercase font-black text-center">
-                        Get Handily
+                        Support
                     </h2>
                     <p className="mt-4 text-base max-w-xl text-white mx-auto text-center">
-                        Handily is coming out by the end of 2022.
+                        Get free professional support on how to use this template.
                     </p>
                 </div>
                 <div className="pt-24"></div>

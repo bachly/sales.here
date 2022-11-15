@@ -2,8 +2,9 @@ import Link from "next/link";
 import Meta from './Meta';
 import PackageJSON from '../package.json';
 import Container from "./Container";
-import { UserIcon, CartIcon, SearchIcon, PhoneIcon, TruckIcon, ExchangeIcon, LockIcon } from "./Icons";
+import { UserIcon, CartIcon, SearchIcon, PhoneIcon, TruckIcon, ExchangeIcon, LockIcon, MenuIcon } from "./Icons";
 import Logo from "../public/logo.svg";
+import Announcement from "./Announcement";
 
 const DEMO_BASE_URL = '/retail';
 
@@ -13,44 +14,64 @@ export default function Layout({ children }) {
         <div id="Layout" className="min-h-screen font-body bg-brand-light bg-opacity-5">
             <Meta />
 
-            <header id="Header" className="bg-brand-light bg-opacity-5">
-                <div className="bg-brand-primary text-brand-light py-1 text-center text-sm uppercase">
+            <header id="Header" className="bg-brand-light bg-opacity-5 relative z-10">
+                <Announcement>
                     We ship nationwide. 30-day return policy. Free standard shipping on orders over $75.
-                </div>
+                </Announcement>
                 <Container>
-                    <div className="relative py-4">
-                        <div className="relative z-10 flex items-center">
+                    <div className="pt-6 pb-2">
+                        <div className="flex items-center justify-between">
+                            <div className="w-64">
+                                <div className="flex itens-center">
+                                    <NavIconLink href="#">
+                                        <MenuIcon />
+                                    </NavIconLink>
+                                    <NavIconLink href="#">
+                                        <SearchIcon />
+                                    </NavIconLink>
+                                </div>
+                            </div>
+
                             <Link href={`${DEMO_BASE_URL}`}>
                                 <a className="w-24 flex items-center relative" style={{ top: '3px' }}>
                                     <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
                                 </a>
                             </Link>
-                            <div className="ml-6 flex-1 flex items-center">
-                                <NavLink href={`${DEMO_BASE_URL}`}>Men</NavLink>
-                                <NavLink href={`${DEMO_BASE_URL}`}>Women</NavLink>
-                                <NavLink href={`${DEMO_BASE_URL}`}>Home</NavLink>
-                                <NavLink href={`${DEMO_BASE_URL}`}>Beauty</NavLink>
-                                <NavLink href={`${DEMO_BASE_URL}`}>Kids</NavLink>
-                                <NavLink href={`${DEMO_BASE_URL}`}>Furniture</NavLink>
-                                <NavLink href={`${DEMO_BASE_URL}`}>BRANDS</NavLink>
-                                <NavLink href={`${DEMO_BASE_URL}`}>
-                                    <span className="text-brand-danger">CLEARANCE</span>
-                                </NavLink>
-                            </div>
-                            <div className="flex itens-center">
-                                <NavIconLink href="/styleguide">
-                                    <SearchIcon />
-                                </NavIconLink>
-                                <NavIconLink href="/styleguide">
-                                    <UserIcon />
-                                </NavIconLink>
-                                <NavIconLink href="/styleguide">
-                                    <CartIcon />
-                                </NavIconLink>
+                            <div className="w-64">
+                                <div className="flex itens-center justify-end">
+                                    <NavIconLink href="#">
+                                        <UserIcon />
+                                    </NavIconLink>
+                                    <NavIconLink href="#">
+                                        <CartIcon />
+                                    </NavIconLink>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </Container>
+                <div className="mt-4 flex-1 flex items-center justify-center pb-3">
+                    <NavLink href={`${DEMO_BASE_URL}`}>
+                        Men
+                        {/* <div className="absolute bg-white top-full left-0 w-full py-2 shadow-xl border border-brand-dark border-opacity-10">
+                                        <div className="max-w-7xl mx-auto">
+                                            <div className="font-bold py-2 mx-4 border-b border-gray-100 mb-2">Men</div>
+                                            <NavLink2 href="#">Clothing</NavLink2>
+                                            <NavLink2 href="#">Footwear</NavLink2>
+                                            <NavLink2 href="#">Accessories</NavLink2>
+                                        </div>
+                                    </div> */}
+                    </NavLink>
+                    <NavLink href={`${DEMO_BASE_URL}`}>Women</NavLink>
+                    <NavLink href={`${DEMO_BASE_URL}`}>Home</NavLink>
+                    <NavLink href={`${DEMO_BASE_URL}`}>Beauty</NavLink>
+                    <NavLink href={`${DEMO_BASE_URL}`}>Kids</NavLink>
+                    <NavLink href={`${DEMO_BASE_URL}`}>Furniture</NavLink>
+                    <NavLink href={`${DEMO_BASE_URL}`}>BRANDS</NavLink>
+                    <NavLink href={`${DEMO_BASE_URL}`}>
+                        <span className="text-brand-danger">CLEARANCE</span>
+                    </NavLink>
+                </div>
             </header>
 
             {children}
@@ -130,9 +151,18 @@ export default function Layout({ children }) {
     )
 }
 
-function NavLink({ href, children }) {
+function NavLink({ href = "#", children }) {
     return <Link href={href}>
-        <a className="ml-8 leading-none flex items-center text-opacity-70 hover:text-opacity-100 transition duration-200">
+        <a className="ml-8 leading-none flex items-center transition duration-200">
+            {children}
+        </a>
+    </Link>
+}
+
+
+function NavLink2({ href = "#", children }) {
+    return <Link href={href}>
+        <a className="py-1 px-4 leading-none flex items-center transition duration-200 hover:text-brand-primary relative text-sm">
             {children}
         </a>
     </Link>
@@ -140,7 +170,7 @@ function NavLink({ href, children }) {
 
 function NavIconLink({ href, children }) {
     return <Link href={href}>
-        <a className="ml-4 leading-none tracking-wide text-sm flex items-center text-opacity-70 hover:text-opacity-100 transition duration-200">
+        <a className="ml-4 leading-none tracking-wide text-sm flex items-center transition duration-200">
             {children}
         </a>
     </Link>

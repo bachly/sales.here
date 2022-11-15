@@ -49,14 +49,14 @@ export default function ProductPage({ product, collection }) {
 
                             <section id="breadcrumbs" className="bg-brand-light py-2">
                                 <div className="max-w-7xl mx-auto px-4">
-                                    <div className="flex items-center flex-row flex-wrap">
+                                    <div className="flex items-center justify-center flex-row flex-wrap">
                                         <Link href={`${DEMO_BASE_URL}`} passHref={true}>
                                             <a className="text-brand-dark text-sm hover:underline">Shop</a>
                                         </Link>
                                         <span className="px-2 text-base">&raquo;</span>
                                         <a onClick={goToCollectionPage()} className="text-brand-dark text-sm hover:underline cursor-pointer">{collection.title}</a>
                                         <span className="px-2 text-base">&raquo;</span>
-                                        <h1 className="text-sm text-brand-dark text-opacity-50">{product.title}</h1>
+                                        <div className="text-sm text-brand-dark text-opacity-50">{product.title}</div>
                                     </div>
                                 </div>
                             </section>

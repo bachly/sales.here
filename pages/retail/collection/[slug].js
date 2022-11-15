@@ -37,12 +37,12 @@ export default function CollectionPage({ source, collection }) {
 
                         <main className="">
 
-                            <section id="breadcrumbs" className="bg-brand-dark py-6">
+                            <section id="breadcrumbs" className="bg-brand-light py-6">
                                 <div className="max-w-4xl mx-auto">
                                     <Link href={`${DEMO_BASE_URL}`} passHref={true}>
-                                        <a className="block text-center text-brand-light text-sm underline">SHOP</a>
+                                        <a className="block text-center text-brand-dark text-sm underline">SHOP</a>
                                     </Link>
-                                    <h1 className="mt-1 text-3xl font-bold text-center text-brand-light">{collection.title}</h1>
+                                    <h1 className="mt-1 text-3xl font-bold text-center text-brand-dark">{collection.title}</h1>
                                 </div>
                             </section>
 
