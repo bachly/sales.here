@@ -27,6 +27,16 @@ Version 1:
 2. Replace `site_settings` properties in `package.json` with your own values
 3. Replace favicon files in `public/favicons` directory with your own favicon files
 
-## FAQs
+## Banners
 
-### How to generate favicons?
+- Dresses
+- Shoes
+- Men Clothes
+- Beauty
+- Pet
+- Kids Clothes
+- Kids Toys
+- Personalisation
+- Accessories
+- Home
+
