@@ -65,7 +65,7 @@ export default function ProductPage({ product, collection }) {
                                 <div className="max-w-7xl mx-auto px-4">
                                     <div className="pt-12 flex items-start flex-wrap">
                                         <div id="productMedia" className="w-1/2">
-                                            <div className="w-full bg-light bg-opacity-50 relative">
+                                            <div className="w-full bg-light relative">
                                                 <img src={product.images[0]} className="w-full" />
                                             </div>
                                         </div>

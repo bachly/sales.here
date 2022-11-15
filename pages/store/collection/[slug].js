@@ -37,7 +37,7 @@ export default function CollectionPage({ source, collection }) {
 
                         <main className="">
 
-                            <section id="breadcrumbs" className="bg-light py-6">
+                            <section id="pageTitle" className="bg-light py-6">
                                 <div className="max-w-4xl mx-auto">
                                     <Link href={`${DEMO_BASE_URL}`} passHref={true}>
                                         <a className="block text-center text-dark text-sm underline">SHOP</a>
@@ -46,8 +46,8 @@ export default function CollectionPage({ source, collection }) {
                                 </div>
                             </section>
 
-                            <section id="filters" className="py-3 bg-light bg-opacity-30">
-                                <div className="max-w-8xl mx-auto">
+                            <section id="filters" className="py-3 shadow-sm">
+                                <div className="max-w-8xl mx-auto px-4">
                                     <div className="flex items-center justify-between">
                                         <div>
                                             <button className="px-6 py-2 bg-white border-2 border-dark border-opacity-20 hover:bg-primary hover:text-light transition duration-100 rounded-md mr-6">

@@ -34,7 +34,8 @@ module.exports = {
       colors: {
         "primary": "rgb(var(--color-primary) / <alpha-value>)",
         "secondary": "rgb(var(--color-secondary) / <alpha-value>)",
-        "light": "rgb(var(--color-light) / <alpha-value>)",
+        "light": "#f2f0ed",
+        "body": "#fdfdfd",
         "dark": "rgb(var(--color-dark) / <alpha-value>)",
         "danger": "rgb(var(--color-danger) / <alpha-value>)",
         // "brand": {

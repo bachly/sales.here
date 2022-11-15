@@ -3,28 +3,210 @@ import Meta from './Meta';
 import PackageJSON from '../package.json';
 import Container from "./Container";
 import { UserIcon, CartIcon, SearchIcon, PhoneIcon, TruckIcon, ExchangeIcon, LockIcon, MenuIcon } from "./Icons";
-import Logo from "../public/logo.svg";
 import Announcement from "./Announcement";
 
 const DEMO_BASE_URL = '/store';
 
+const MENU = {
+    clothing: {
+        "links": [
+            {
+                "label": "Shirts",
+                "url": "#"
+            },
+            {
+                "label": "T-shirts",
+                "url": "#"
+            },
+            {
+                "label": "Pants",
+                "url": "#"
+            },
+            {
+                "label": "Shorts",
+                "url": "#"
+            },
+            {
+                "label": "Underwear",
+                "url": "#"
+            },
+            {
+                "label": "Outerwear",
+                "url": "#"
+            },
+            {
+                "label": "Socks",
+                "url": "#"
+            },
+            {
+                "label": "Swimwear",
+                "url": "#"
+            },
+            {
+                "label": "Activewear",
+                "url": "#"
+            },
+            {
+                "label": "Sleepwear",
+                "url": "#"
+            },
+            {
+                "label": "Suits",
+                "url": "#"
+            }
+        ]
+    },
+    "footwear": {
+        "links": [
+            {
+                "label": "Sneakers",
+                "url": "#"
+            },
+            {
+                "label": "Trainers",
+                "url": "#"
+            },
+            {
+                "label": "Sandals",
+                "url": "#"
+            },
+            {
+                "label": "Boots",
+                "url": "#"
+            },
+            {
+                "label": "Thongs",
+                "url": "#"
+            },
+            {
+                "label": "Formal Shoes",
+                "url": "#"
+            },
+            {
+                "label": "Ugg Boots",
+                "url": "#"
+            }
+        ]
+    },
+    "accessories": {
+        "links": [
+            {
+                "label": "Watches",
+                "url": "#"
+            },
+            {
+                "label": "Bags",
+                "url": "#"
+            },
+            {
+                "label": "Hats",
+                "url": "#"
+            },
+            {
+                "label": "Sunglasses",
+                "url": "#"
+            },
+            {
+                "label": "Wallets",
+                "url": "#"
+            },
+            {
+                "label": "Belts",
+                "url": "#"
+            },
+            {
+                "label": "Toes",
+                "url": "#"
+            },
+            {
+                "label": "Cufflinks",
+                "url": "#"
+            },
+            {
+                "label": "Keyholders",
+                "url": "#"
+            },
+            {
+                "label": "Techcases",
+                "url": "#"
+            },
+            {
+                "label": "Optical Glasses",
+                "url": "#"
+            },
+        ]
+    },
+    "publicPages": {
+        "links": [
+            {
+                "label": "Homepage",
+                "url": `${DEMO_BASE_URL}`
+            },
+            {
+                "label": "Collection Page",
+                "url": `${DEMO_BASE_URL}/collection/personalised-gifts`
+            },
+            {
+                "label": "Product Page",
+                "url": "#"
+            },
+            {
+                "label": "Blog Page",
+                "url": "#"
+            },
+            {
+                "label": "Article Page",
+                "url": "#"
+            },
+            {
+                "label": "Login Page",
+                "url": "#"
+            },
+            {
+                "label": "Register Page",
+                "url": "#"
+            },
+            {
+                "label": "Cart Page",
+                "url": "#"
+            },
+            {
+                "label": "Terms & Conditions",
+                "url": "#"
+            }
+        ]
+    },
+    "privatePages": {
+        "links": [
+            {
+                "label": "Account Page",
+                "url": "#"
+            },
+            {
+                "label": "Order Page",
+                "url": "#"
+            },
+        ]
+    }
+}
+
 export default function LayoutStore({ children }) {
     const sitename = `${PackageJSON.site_settings.sitename}`;
     return (
-        <div id="Layout" className="min-h-screen font-body bg-light bg-opacity-5">
+        <div id="Layout" className="min-h-screen font-body bg-body">
             <Meta />
 
-            <header id="Header" className="bg-light bg-opacity-5 relative z-10">
+            <header id="Header" className="bg-body relative z-10">
                 <Announcement>
                     We ship nationwide. 30-day return policy. Free standard shipping on orders over $75.
                 </Announcement>
                 <Container>
-                    <div className="pt-6 pb-2">
+                    <div className="py-6">
                         <div className="flex items-center justify-between">
                             <div className="w-64">
                                 <div className="flex itens-center">
                                     <NavIconLink href="#">
-                                        <MenuIcon />
+                                        <PhoneIcon />
                                     </NavIconLink>
                                     <NavIconLink href="#">
                                         <SearchIcon />
@@ -50,27 +232,93 @@ export default function LayoutStore({ children }) {
                         </div>
                     </div>
                 </Container>
-                <div className="mt-4 flex-1 flex items-center justify-center pb-3">
-                    <NavLink href={`${DEMO_BASE_URL}`}>
-                        Men
-                        {/* <div className="absolute bg-white top-full left-0 w-full py-2 shadow-xl border border-dark border-opacity-10">
-                                        <div className="max-w-7xl mx-auto px-4">
-                                            <div className="font-bold py-2 mx-4 border-b border-gray-100 mb-2">Men</div>
-                                            <NavLink2 href="#">Clothing</NavLink2>
-                                            <NavLink2 href="#">Footwear</NavLink2>
-                                            <NavLink2 href="#">Accessories</NavLink2>
+                <div className="mb-2 flex-1">
+                    <div className="relative">
+                        <div className="flex items-center justify-center">
+                            <nav className="megamenu">
+                                <span className="megamenu__label">Megamenu</span>
+                                <div className="megamenu__content">
+                                    <div className="px-4 font-bold pb-2 border-b border-gray-200 mb-3">Megamenu</div>
+                                    <div className="flex items-start justify-between">
+                                        <div className="flex items-start">
+                                            <div className="w-40">
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Clothing</div>
+                                                {MENU.clothing.links.map(link => {
+                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                })}
+                                            </div>
+                                            <div className="w-40">
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Footwear</div>
+                                                {MENU.footwear.links.map(link => {
+                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                })}
+                                            </div>
+                                            <div className="w-40">
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Accessories</div>
+                                                {MENU.accessories.links.map(link => {
+                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                })}
+                                            </div>
                                         </div>
-                                    </div> */}
-                    </NavLink>
-                    <NavLink href={`${DEMO_BASE_URL}`}>Women</NavLink>
-                    <NavLink href={`${DEMO_BASE_URL}`}>Home</NavLink>
-                    <NavLink href={`${DEMO_BASE_URL}`}>Beauty</NavLink>
-                    <NavLink href={`${DEMO_BASE_URL}`}>Kids</NavLink>
-                    <NavLink href={`${DEMO_BASE_URL}`}>Furniture</NavLink>
-                    <NavLink href={`${DEMO_BASE_URL}`}>BRANDS</NavLink>
-                    <NavLink href={`${DEMO_BASE_URL}`}>
-                        <span className="text-danger">CLEARANCE</span>
-                    </NavLink>
+                                        <div className="w-40">
+                                            <div className="text-xs font-bold px-4 pb-2 uppercase">BRANDS</div>
+                                            {MENU.accessories.links.map(link => {
+                                                return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                            })}
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                            <nav className="menu">
+                                <span className="menu__label">Dropdown</span>
+                                <div className="menu__content">
+                                    <div className="flex items-start justify-between">
+                                        <div className="flex items-start">
+                                            <div className="w-40">
+                                                {MENU.clothing.links.map(link => {
+                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                })}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                            <nav className="menu">
+                                <span className="menu__label">Page Layouts</span>
+                                <div className="menu__content">
+                                    <div className="flex items-start justify-between">
+                                        <div className="flex items-start">
+                                            <div>
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Public pages</div>
+                                                {MENU.publicPages.links.map(link => {
+                                                    return <Link href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                })}
+                                            </div>
+                                            <div>
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Private pages</div>
+                                                {MENU.privatePages.links.map(link => {
+                                                    return <Link href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                })}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </nav>
+                            <nav className="menu">
+                                <Link href={`${DEMO_BASE_URL}/styleguide`}>
+                                    <a className="menu__label">STYLEGUIDE</a>
+                                </Link>
+                            </nav>
+                            <nav className="menu">
+                                <Link href={`${DEMO_BASE_URL}/banners`}>
+                                    <a className="menu__label">
+                                        <span className="text-danger">BANNERS</span>
+                                    </a>
+                                </Link>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </header>
 
@@ -149,23 +397,6 @@ export default function LayoutStore({ children }) {
             </footer>
         </div>
     )
-}
-
-function NavLink({ href = "#", children }) {
-    return <Link href={href}>
-        <a className="ml-8 leading-none flex items-center transition duration-200">
-            {children}
-        </a>
-    </Link>
-}
-
-
-function NavLink2({ href = "#", children }) {
-    return <Link href={href}>
-        <a className="py-1 px-4 leading-none flex items-center transition duration-200 hover:text-primary relative text-sm">
-            {children}
-        </a>
-    </Link>
 }
 
 function NavIconLink({ href, children }) {

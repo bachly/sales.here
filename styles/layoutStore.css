@@ -1,0 +1,41 @@
+/** mega menu **/
+.megamenu {
+    @apply mx-1 leading-none flex items-center transition duration-200 cursor-default
+}
+
+.megamenu__label {
+    @apply px-2 py-2 text-gray-500;
+}
+
+.megamenu__content {
+    @apply bg-body hidden absolute top-full w-full left-0 py-4 px-8 shadow-xl border-b border-dark border-opacity-10
+}
+
+.megamenu:hover > .megamenu__label {
+    @apply text-gray-900
+}
+
+.megamenu:hover > .megamenu__content {
+    @apply block
+}
+
+/** nestedmenu menu **/
+.menu {
+    @apply mx-1 leading-none flex items-center transition duration-200 cursor-default relative
+}
+
+.menu__label {
+    @apply px-2 py-2 text-gray-500;
+}
+
+.menu__content {
+    @apply bg-body hidden absolute top-full left-0 py-4 shadow-xl border-b border-dark border-opacity-10
+}
+
+.menu:hover > .menu__label {
+    @apply text-gray-900
+}
+
+.menu:hover > .menu__content {
+    @apply block
+}
