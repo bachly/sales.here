@@ -1,7 +1,5 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Link from 'next/link';
-import Container from "./Container";
-import { ArrowRight } from './Icons';
 
 function ProductThumbnail({ image, title }) {
     return <div className="h-full bg-white border border-neutral-100 shadow-md rounded-sm overflow-hidden flex flex-col">

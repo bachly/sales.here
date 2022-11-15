@@ -2,7 +2,7 @@ import Link from "next/link";
 import Meta from './Meta';
 import PackageJSON from '../package.json';
 import Container from "./Container";
-import { UserIcon, CartIcon, SearchIcon, PhoneIcon, TruckIcon, ExchangeIcon, LockIcon, MenuIcon } from "./Icons";
+import { UserIcon, CartIcon, SearchIcon, PhoneIcon } from "./Icons";
 import Announcement from "./Announcement";
 
 const DEMO_BASE_URL = '/store';
@@ -244,26 +244,26 @@ export default function LayoutStore({ children }) {
                                             <div className="w-40">
                                                 <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Clothing</div>
                                                 {MENU.clothing.links.map(link => {
-                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
                                             <div className="w-40">
                                                 <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Footwear</div>
                                                 {MENU.footwear.links.map(link => {
-                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
                                             <div className="w-40">
                                                 <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Accessories</div>
                                                 {MENU.accessories.links.map(link => {
-                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
                                         </div>
                                         <div className="w-40">
                                             <div className="text-xs font-bold px-4 pb-2 uppercase">BRANDS</div>
                                             {MENU.accessories.links.map(link => {
-                                                return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                             })}
                                         </div>
                                     </div>
@@ -276,7 +276,7 @@ export default function LayoutStore({ children }) {
                                         <div className="flex items-start">
                                             <div className="w-40">
                                                 {MENU.clothing.links.map(link => {
-                                                    return <Link href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
                                         </div>
@@ -291,13 +291,13 @@ export default function LayoutStore({ children }) {
                                             <div>
                                                 <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Public pages</div>
                                                 {MENU.publicPages.links.map(link => {
-                                                    return <Link href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                    return <Link key={link.label} href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
                                             <div>
                                                 <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Private pages</div>
                                                 {MENU.privatePages.links.map(link => {
-                                                    return <Link href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                    return <Link key={link.label} href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
                                         </div>
@@ -306,12 +306,12 @@ export default function LayoutStore({ children }) {
                                 </div>
                             </nav>
                             <nav className="menu">
-                                <Link href={`${DEMO_BASE_URL}/styleguide`}>
+                                <Link href={`/styleguide`}>
                                     <a className="menu__label">STYLEGUIDE</a>
                                 </Link>
                             </nav>
                             <nav className="menu">
-                                <Link href={`${DEMO_BASE_URL}/banners`}>
+                                <Link href={`/banners`}>
                                     <a className="menu__label">
                                         <span className="text-danger">BANNERS</span>
                                     </a>

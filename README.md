@@ -19,6 +19,7 @@ Version 1:
 - Product pricing
 - Collection filters
 - Collection pagination / infinite scroll
+- Product Options
 
 ## Update this theme to match your brand
 

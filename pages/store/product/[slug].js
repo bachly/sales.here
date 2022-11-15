@@ -7,12 +7,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../../components/Icons'
 import _ from 'underscore'
-import Image from 'next/future/image'
+import ProductMedia from '../../../components/ProductMedia'
 
 const DEMO_BASE_URL = '/store';
 
 export default function ProductPage({ product, collection }) {
     const router = useRouter()
+    const productMedia = product.images && product.images.map(image => ({ type: 'image', src: image }))
 
     if (!router.isFallback && !product?.slug) {
         return <>404</>
@@ -64,10 +65,9 @@ export default function ProductPage({ product, collection }) {
                             <section id="productDetails">
                                 <div className="max-w-7xl mx-auto px-4">
                                     <div className="pt-12 flex items-start flex-wrap">
-                                        <div id="productMedia" className="w-1/2">
-                                            <div className="w-full bg-light relative">
-                                                <img src={product.images[0]} className="w-full" />
-                                            </div>
+
+                                        <div className="w-1/2">
+                                            <ProductMedia media={productMedia} />
                                         </div>
 
                                         <div id="productForm" className="w-1/2 px-12">
@@ -166,7 +166,7 @@ export default function ProductPage({ product, collection }) {
                                     <div className="max-w-7xl mx-auto px-4">
                                         <h2 className="py-12 text-center">You may also like</h2>
                                         <div className="grid grid-cols-5 gap-1">
-                                            {_.first(Object.keys(collection.products), 5).map((key, index) => {
+                                            {_.first(Object.keys(collection.products), 5).map((key) => {
                                                 const product = collection.products[key];
                                                 return <Link key={key} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
                                                     <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-primary hover:border-opacity-20 transition duration-200">

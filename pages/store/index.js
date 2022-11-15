@@ -20,7 +20,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                         padding: '20%'
                     }}>
                         {featuredCollections.map(collection => {
-                            return <SplideSlide>
+                            return <SplideSlide key={collection.slug}>
                                 <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
                                     <a>
                                         <div className="pb-2/3 bg-light relative">

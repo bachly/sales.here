@@ -10,8 +10,6 @@ import FeaturedArticles from "../components/FeaturedArticles";
 
 export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) {
     return <Layout>
-        <Banner title="Styleguide" />
-
         <Container>
             <div className="mt-20 pt-8 border-t-2 border-gray-200 w-12"></div>
             <h2>Typography</h2>
@@ -176,10 +174,6 @@ export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) 
             <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
             <h2>Banner Slider with Image</h2>
         </Container>
-
-        <div className="mt-12">
-            <BannerSliderWithImage />
-        </div>
 
         <Container>
             <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
