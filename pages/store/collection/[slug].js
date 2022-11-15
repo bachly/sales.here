@@ -2,11 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import { useRouter } from "next/router"
 import { collectionFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
-import RetailStoreLayout from '../../../components/RetailStoreLayout'
+import LayoutStore from '../../../components/LayoutStore'
 import Head from 'next/head'
 import Link from 'next/link'
 
-const DEMO_BASE_URL = '/retail';
+const DEMO_BASE_URL = '/store';
 
 export default function CollectionPage({ source, collection }) {
     const router = useRouter()
@@ -21,7 +21,7 @@ export default function CollectionPage({ source, collection }) {
                 router.isFallback ? (
                     <>Loading…</>
                 ) : (
-                    <RetailStoreLayout post={collection}>
+                    <LayoutStore post={collection}>
                         <Head>
                             <title>{collection.title}</title>
                             <meta name="description" content={collection.description} />
@@ -37,29 +37,29 @@ export default function CollectionPage({ source, collection }) {
 
                         <main className="">
 
-                            <section id="breadcrumbs" className="bg-brand-light py-6">
+                            <section id="breadcrumbs" className="bg-light py-6">
                                 <div className="max-w-4xl mx-auto">
                                     <Link href={`${DEMO_BASE_URL}`} passHref={true}>
-                                        <a className="block text-center text-brand-dark text-sm underline">SHOP</a>
+                                        <a className="block text-center text-dark text-sm underline">SHOP</a>
                                     </Link>
-                                    <h1 className="mt-1 text-3xl font-bold text-center text-brand-dark">{collection.title}</h1>
+                                    <h1 className="mt-1 text-3xl font-bold text-center text-dark">{collection.title}</h1>
                                 </div>
                             </section>
 
-                            <section id="filters" className="py-3 bg-brand-light bg-opacity-30">
+                            <section id="filters" className="py-3 bg-light bg-opacity-30">
                                 <div className="max-w-8xl mx-auto">
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <button className="px-6 py-2 bg-white border-2 border-brand-dark border-opacity-20 hover:bg-brand-primary hover:text-brand-light transition duration-100 rounded-md mr-6">
+                                            <button className="px-6 py-2 bg-white border-2 border-dark border-opacity-20 hover:bg-primary hover:text-light transition duration-100 rounded-md mr-6">
                                                 <span className="flex items-center">
                                                     Filters
                                                 </span>
                                             </button>
-                                            <button className="text-sm px-3 py-1 bg-brand-primary bg-opacity-20 hover:bg-brand-primary hover:bg-opacity-30 transition duration-100 rounded-md mr-2">Size: M</button>
-                                            <button className="text-sm px-3 py-1 bg-brand-primary bg-opacity-20 hover:bg-brand-primary hover:bg-opacity-30 transition duration-100 rounded-md">Brand: Gudilio</button>
+                                            <button className="text-sm px-3 py-1 bg-primary bg-opacity-20 hover:bg-primary hover:bg-opacity-30 transition duration-100 rounded-md mr-2">Size: M</button>
+                                            <button className="text-sm px-3 py-1 bg-primary bg-opacity-20 hover:bg-primary hover:bg-opacity-30 transition duration-100 rounded-md">Brand: Gudilio</button>
                                         </div>
                                         <div>
-                                            <select className="px-2 py-2 bg-white border-2 border-brand-dark border-opacity-20 transition duration-100 rounded-md">
+                                            <select className="px-2 py-2 bg-white border-2 border-dark border-opacity-20 transition duration-100 rounded-md">
                                                 <option value="bestselling">
                                                     Bestselling
                                                 </option>
@@ -85,7 +85,7 @@ export default function CollectionPage({ source, collection }) {
                                             {Object.keys(collection.products).map(key => {
                                                 const product = collection.products[key];
                                                 return <Link key={key} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
-                                                    <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-brand-primary hover:border-opacity-20 transition duration-200">
+                                                    <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-primary hover:border-opacity-20 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "480px" }}>
                                                             <div className="h-full flex flex-col justify-center">
                                                                 <img src={product.images[0]}/>
@@ -103,7 +103,7 @@ export default function CollectionPage({ source, collection }) {
                                 </div>
                             </section>
                         </main>
-                    </RetailStoreLayout>
+                    </LayoutStore>
                 )
             }
         </>

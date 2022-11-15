@@ -2,14 +2,14 @@ import fs from 'fs'
 import path from 'path'
 import { useRouter } from "next/router"
 import { productFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
-import RetailStoreLayout from '../../../components/RetailStoreLayout'
+import LayoutStore from '../../../components/LayoutStore'
 import Head from 'next/head'
 import Link from 'next/link'
 import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../../components/Icons'
 import _ from 'underscore'
 import Image from 'next/future/image'
 
-const DEMO_BASE_URL = '/retail';
+const DEMO_BASE_URL = '/store';
 
 export default function ProductPage({ product, collection }) {
     const router = useRouter()
@@ -31,7 +31,7 @@ export default function ProductPage({ product, collection }) {
                 router.isFallback ? (
                     <>Loading…</>
                 ) : (
-                    <RetailStoreLayout>
+                    <LayoutStore>
                         <Head>
                             <title>{product.title}</title>
                             <meta name="description" content={product.description} />
@@ -47,16 +47,16 @@ export default function ProductPage({ product, collection }) {
 
                         <main className="">
 
-                            <section id="breadcrumbs" className="bg-brand-light py-2">
+                            <section id="breadcrumbs" className="bg-light py-2">
                                 <div className="max-w-7xl mx-auto px-4">
                                     <div className="flex items-center justify-center flex-row flex-wrap">
                                         <Link href={`${DEMO_BASE_URL}`} passHref={true}>
-                                            <a className="text-brand-dark text-sm hover:underline">Shop</a>
+                                            <a className="text-dark text-sm hover:underline">Shop</a>
                                         </Link>
                                         <span className="px-2 text-base">&raquo;</span>
-                                        <a onClick={goToCollectionPage()} className="text-brand-dark text-sm hover:underline cursor-pointer">{collection.title}</a>
+                                        <a onClick={goToCollectionPage()} className="text-dark text-sm hover:underline cursor-pointer">{collection.title}</a>
                                         <span className="px-2 text-base">&raquo;</span>
-                                        <div className="text-sm text-brand-dark text-opacity-50">{product.title}</div>
+                                        <div className="text-sm text-dark text-opacity-50">{product.title}</div>
                                     </div>
                                 </div>
                             </section>
@@ -65,7 +65,7 @@ export default function ProductPage({ product, collection }) {
                                 <div className="max-w-7xl mx-auto px-4">
                                     <div className="pt-12 flex items-start flex-wrap">
                                         <div id="productMedia" className="w-1/2">
-                                            <div className="w-full bg-brand-light bg-opacity-50 relative">
+                                            <div className="w-full bg-light bg-opacity-50 relative">
                                                 <img src={product.images[0]} className="w-full" />
                                             </div>
                                         </div>
@@ -87,10 +87,10 @@ export default function ProductPage({ product, collection }) {
                                                     <div className="text-3xl font-black">
                                                         {product.price}
                                                     </div>
-                                                    <div className="ml-2 text-base line-through text-brand-dark text-opacity-40">
+                                                    <div className="ml-2 text-base line-through text-dark text-opacity-40">
                                                         {product.compareAtPrice}
                                                     </div>
-                                                    <div className="ml-2 text-sm py-1 px-2 rounded-md bg-brand-primary text-brand-light">
+                                                    <div className="ml-2 text-sm py-1 px-2 rounded-md bg-primary text-light">
                                                         -40%
                                                     </div>
                                                 </div>
@@ -109,14 +109,14 @@ export default function ProductPage({ product, collection }) {
                                             </div>
 
                                             <div id="productForm" className="mt-6 max-w-sm">
-                                                <div className="flex items-center rounded-md bg-brand-light p-3 ">
+                                                <div className="flex items-center rounded-md bg-light p-3 ">
                                                     <div className="bg-white flex items-center rounded-md h-12">
                                                         <button className="text-xl h-12 px-3">-</button>
                                                         <input type="text" className="h-12 bg-white w-10 text-center mx-1" defaultValue="1" />
                                                         <button className="text-xl h-12 px-3">+</button>
                                                     </div>
                                                     <div className="flex-1 ml-3">
-                                                        <button className="w-full bg-brand-primary text-brand-light hover:bg-brand-secondary transition duration-200 h-12 rounded-md text-xl">
+                                                        <button className="w-full bg-primary text-light hover:bg-secondary transition duration-200 h-12 rounded-md text-xl">
                                                             Add to cart
                                                         </button>
                                                     </div>
@@ -152,10 +152,11 @@ export default function ProductPage({ product, collection }) {
                             <section id="productDescription" className="mt-12">
                                 <div className="max-w-7xl mx-auto px-4">
                                     <hr />
-                                    <div className="my-6 columns-2 gap-12">
-                                        <div className="font-bold text-sm">Product Description</div>
-                                        <div className="mt-2" dangerouslySetInnerHTML={{ __html: product.body }}></div>
+                                    <div className="mt-6 mb-4 font-bold text-xl">Product Description</div>
+                                    <div className="columns-3 gap-12">
+                                        <div dangerouslySetInnerHTML={{ __html: product.body }}></div>
                                     </div>
+                                    <div className="pt-8"></div>
                                     <hr />
                                 </div>
                             </section>
@@ -168,7 +169,7 @@ export default function ProductPage({ product, collection }) {
                                             {_.first(Object.keys(collection.products), 5).map((key, index) => {
                                                 const product = collection.products[key];
                                                 return <Link key={key} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
-                                                    <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-brand-primary hover:border-opacity-20 transition duration-200">
+                                                    <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-primary hover:border-opacity-20 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "480px" }}>
                                                             <div className="h-full flex flex-col justify-center">
                                                                 <img src={product.images[0]} />
@@ -184,7 +185,7 @@ export default function ProductPage({ product, collection }) {
                                     </div>
                                 </section>}
                         </main>
-                    </RetailStoreLayout>
+                    </LayoutStore>
                 )
             }
         </>

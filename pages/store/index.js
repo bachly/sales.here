@@ -1,32 +1,40 @@
 import Image from "next/future/image";
 import FeaturedProducts from "../../components/FeaturedProducts";
-import { ExchangeIcon, LockIcon, PhoneIcon, TruckIcon } from "../../components/Icons";
-import RetailStoreLayout from "../../components/RetailStoreLayout";
+import LayoutStore from "../../components/LayoutStore";
 import { getAllCollections } from "../../lib/api";
 import Link from "next/link";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-const DEMO_BASE_URL = '/retail';
+const DEMO_BASE_URL = '/store';
 
 export default function HomepageForOnlineStore({ featuredCollections, collections, featuredProducts }) {
-    return <RetailStoreLayout>
+    return <LayoutStore>
         {featuredCollections && featuredCollections.length > 0 &&
             <section id="hero">
-                <div className="max-w-9xl mx-auto px-4">
-                    <div className="grid grid-cols-2 gap-4">
+                <div className="max-w-9xl mx-auto">
+                    <Splide options={{
+                        type: 'loop',
+                        gap: '1rem',
+                        perPage: 1,
+                        arrows: false,
+                        padding: '20%'
+                    }}>
                         {featuredCollections.map(collection => {
-                            return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
-                                <a>
-                                    <div className="pb-2/3 bg-brand-light relative">
-                                        <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
-                                    </div>
-                                </a>
-                            </Link>
+                            return <SplideSlide>
+                                <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
+                                    <a>
+                                        <div className="pb-2/3 bg-light relative">
+                                            <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
+                                        </div>
+                                    </a>
+                                </Link>
+                            </SplideSlide>
                         })}
-                    </div>
+                    </Splide>
                 </div>
             </section>}
 
-        <section id="shop-the-sale" className="mt-8">
+        <section id="features" className="mt-16">
             <div className="max-w-9xl mx-auto px-4">
 
                 <div className="text-center">
@@ -37,10 +45,10 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                     {collections.map(collection => {
                         return <Link href={`${DEMO_BASE_URL}/collection/${collection.slug}`} passHref={true} key={collection.slug}>
                             <a className="block">
-                                <div className="pb-2/3 relative bg-brand-light">
+                                <div className="pb-2/3 relative bg-light">
                                     <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />
                                 </div>
-                                <div className="w-full text-center py-2 px-4 text-brand-dark">
+                                <div className="w-full text-center py-2 px-4 text-dark">
                                     {collection.title}
                                 </div>
                             </a>
@@ -53,7 +61,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
         {featuredProducts &&
             <FeaturedProducts title={"Best Sellers This Week"} products={featuredProducts} />
         }
-    </RetailStoreLayout>
+    </LayoutStore>
 }
 
 export function getStaticProps() {
@@ -63,6 +71,7 @@ export function getStaticProps() {
 
     const featuredCollections = collections.filter(collection => {
         return [
+            "tommy-hilfiger-lacoste-hugo-boss-watches",
             "fashion-footwear-accessories-and-more",
             "personalised-gifts"
         ].indexOf(collection.slug) >= 0

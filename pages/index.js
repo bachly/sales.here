@@ -2,7 +2,7 @@ import Image from "next/future/image";
 import Link from "next/link";
 import Meta from "../components/Meta";
 
-import DemoScreenshotFashionSales from '../public/img/demos/Handily Demo - Fashion Sales.png'
+import OnlineStoreDemoImage from '../public/img/demos/OnlineStoreDemo.png'
 
 export default function IndexPage({ }) {
     return <div>
@@ -57,12 +57,12 @@ export default function IndexPage({ }) {
                     </p>
                     <div className="mt-12">
                         <div className="grid grid-cols-4 gap-12">
-                            <Link href="/retail" passHref={true}>
+                            <Link href="/store" passHref={true}>
                                 <a className="block group">
                                     <div className="pb-3/2 relative overflow-hidden group-hover:-translate-y-3 transform duration-300">
-                                        <Image src={DemoScreenshotFashionSales} className="absolute top-0 left-0 w-full" />
+                                        <Image src={OnlineStoreDemoImage} className="absolute top-0 left-0 w-full" />
                                     </div>
-                                    <div className="mt-4 text-white uppercase text-sm text-center">Retail Store</div>
+                                    <div className="mt-4 text-white uppercase text-sm text-center">Online Store</div>
                                 </a>
                             </Link>
                             <div>

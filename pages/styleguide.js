@@ -1,7 +1,7 @@
 import { Banner } from "../components/Banner";
 import Button from "../components/Button";
 import Container from "../components/Container";
-import Layout from "../components/RetailStoreLayout";
+import Layout from "../components/LayoutStore";
 import BannerSliderWithTextAndImage from "../components/BannerSliderWithTextAndImage";
 import BannerSliderWithImage from "../components/BannerSliderWithImage";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";

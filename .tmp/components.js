@@ -1,5 +1,5 @@
 export function Highglihts() {
-    return <section id="highlights" className="bg-brand-light py-2">
+    return <section id="highlights" className="bg-light py-2">
         <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">

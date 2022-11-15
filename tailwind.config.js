@@ -32,13 +32,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        "brand": {
-          "primary": "rgb(var(--color-brand-primary) / <alpha-value>)",
-          "secondary": "rgb(var(--color-brand-secondary) / <alpha-value>)",
-          "light": "rgb(var(--color-brand-light) / <alpha-value>)",
-          "dark": "rgb(var(--color-brand-dark) / <alpha-value>)",
-          "danger": "rgb(var(--color-brand-danger) / <alpha-value>)",
-        },
+        "primary": "rgb(var(--color-primary) / <alpha-value>)",
+        "secondary": "rgb(var(--color-secondary) / <alpha-value>)",
+        "light": "rgb(var(--color-light) / <alpha-value>)",
+        "dark": "rgb(var(--color-dark) / <alpha-value>)",
+        "danger": "rgb(var(--color-danger) / <alpha-value>)",
         // "brand": {
         //   "primary": "#634832",
         //   "secondary": "#38220F",

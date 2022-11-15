@@ -11,11 +11,11 @@
 
 @layer base {
     :root {
-        --color-brand-primary: 99 72 50;
-        --color-brand-secondary: 56 34 15;
-        --color-brand-light: 236 224 209;
-        --color-brand-dark: 23 14 5;
-        --color-brand-danger: 169 44 17;
+        --color-primary: 99 72 50;
+        --color-secondary: 56 34 15;
+        --color-light: 236 224 209;
+        --color-dark: 23 14 5;
+        --color-danger: 169 44 17;
     }
 
     h1.display, .h1.display {
@@ -55,7 +55,7 @@
     }
 
     blockquote, .blockquote {
-        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-brand-primary block pl-6
+        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-primary block pl-6
     }
 }
 
@@ -98,7 +98,7 @@ button.splide__arrow {
         active:bg-gray-1000 active:text-white
 }
 
-.button.brand-secondary {
+.button.secondary {
     @apply bg-stone-900 text-white
         hover:bg-black
         active:bg-black
@@ -109,10 +109,10 @@ button.splide__arrow {
         active:scale-100
 }
 
-.button.brand-primary {
-    @apply bg-brand-primary border-brand-primary text-gray-1000 
-        hover:bg-brand-secondary hover:border-brand-secondary
-        active:bg-brand-secondary
+.button.primary {
+    @apply bg-primary border-primary text-gray-1000 
+        hover:bg-secondary hover:border-secondary
+        active:bg-secondary
 }
 
 /** Link styles **/
@@ -145,7 +145,7 @@ a.with-chevron:before {
     right: 0;
     height: 3px;
     width: 0%;
-    background: theme('colors.brand.secondary')
+    background: theme('colors.secondary')
 }
 
 a.with-chevron:hover:before {

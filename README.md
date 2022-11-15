@@ -1,6 +1,20 @@
-# Handily | A premium multipurpose NextJS theme that is practical and easy to maintain 
+# The1Template | A minimal multipurpose theme for any starter project 
 
-Lifestyle Blog & Online Store
+## Features
+
+Version 1:
+- [Done] Header that allows for big logo
+- Global search
+- Dropdown menus
+- All banners are at 3:2 ratios, reusable, versatile for all platforms and screensizes.
+- A simple set of 5 colours for branding: primary, secondary, body, text, danger.
+- [Done] Sliding banners
+- [Done] Simple homepage with eye-catching banners
+- [Done] Versatile product grid to allow for images of any sizes to fit in
+- Product media slider
+- Product details breakdown
+- Subscription form
+- Advanced Cart page
 
 ## Update this theme to match your brand
 
