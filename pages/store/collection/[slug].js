@@ -78,9 +78,10 @@ export default function CollectionPage({ source, collection }) {
 
                             <section id="products-grid" className="mt-6">
                                 <div className="max-w-8xl mx-auto">
-                                    {collection.productList && collection.productList.length > 0 ?
+                                    {collection.products && Object.keys(collection.products).length > 0 ?
                                         <div className="grid grid-cols-5 gap-1">
-                                            {collection.productList.map(product => {
+                                            {Object.keys(collection.products).map(productSlug => {
+                                                const product = collection.products[productSlug];
                                                 return <Link key={product.slug} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
                                                     <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-primary hover:border-opacity-20 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "480px" }}>

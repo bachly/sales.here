@@ -212,7 +212,7 @@ export const getStaticPaths = async () => {
     const collections = storeData.collections;
 
     const paths = _.flatten(Object.keys(collections).map(collectionSlug => {
-        return collections[collectionSlug].products.map(productSlug => {
+        return Object.keys(collections[collectionSlug].products).map(productSlug => {
             return `${collectionSlug}_${productSlug}`
         })
     }))
