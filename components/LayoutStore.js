@@ -232,7 +232,7 @@ export default function LayoutStore({ children }) {
                         </div>
                     </div>
                 </Container>
-                <div className="mb-2 flex-1">
+                <div className="mb-4 flex-1">
                     <div className="relative">
                         <div className="flex items-center justify-center">
                             <nav className="megamenu">

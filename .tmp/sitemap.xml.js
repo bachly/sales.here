@@ -1,4 +1,4 @@
-import { getAllPosts } from "../lib/api";
+import { getAllPosts } from "../lib/utils";
 
 function generateSiteMap(posts) {
     return `<?xml version="1.0" encoding="UTF-8"?>

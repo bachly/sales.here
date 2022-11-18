@@ -29,14 +29,12 @@ Version 1:
 
 ## Banners
 
-- Dresses
+- Women Dresses
+- Personalisation
 - Shoes
-- Men Clothes
+- Accessories
 - Beauty
 - Pet
-- Kids Clothes
-- Kids Toys
-- Personalisation
-- Accessories
+- Kids
 - Home
 

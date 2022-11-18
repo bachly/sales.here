@@ -158,67 +158,13 @@ export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) 
                 </div>
             </div>
         </Container>
-
-        <Container>
-            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
-            <h2>Banner Slider with Text and Image</h2>
-        </Container>
-
-        <div className="mt-12">
-            <BannerSliderWithTextAndImage />
-        </div>
-
-        <Container>
-            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
-            <h2>Banner Slider with Image</h2>
-        </Container>
-
-        <Container>
-            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
-            <div className="flex items-start">
-                <div className="w-1/3">
-                    <h2>Product Slider</h2>
-                </div>
-                <div className="w-1/2">
-                    Product Slider utilises the SplideJS library to display multiple thumbnails.
-                    You can modify the same component to display collections etc.
-                </div>
-            </div>
-        </Container>
-
-        <div className="mt-12">
-            <FeaturedProducts title="Featured Products" products={featuredProducts} />
-        </div>
-
-        <Container>
-            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
-            <div className="flex items-start">
-                <div className="w-1/3">
-                    <h2>Article Slider</h2>
-                </div>
-                <div className="w-1/2">
-                    Article Slider utilises the SplideJS library to display multiple article thumbnails.
-                </div>
-            </div>
-        </Container>
-
-        <div className="mt-12">
-            <FeaturedArticles title="Featured Articles" posts={featuredPosts} />
-        </div>
     </Layout>
 }
 
 export function getStaticProps() {
-    // const products = getAllCollections();
-    // const posts = getAllPosts();
-    // const featuredProducts = products.filter(product =>
-    //     ['CHIL', 'APRI', 'GHER', 'HONE', 'PICK4', 'RAIN', 'MARI', 'OLIV', 'ORAN'].indexOf(product.sku) >= 0)
-    // const featuredPosts = posts.filter(post => post.isFeatured);
-
     return {
         props: {
-            // featuredProducts,
-            // featuredPosts
+
         }
     }
 }

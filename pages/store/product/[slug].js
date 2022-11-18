@@ -1,13 +1,11 @@
-import fs from 'fs'
-import path from 'path'
 import { useRouter } from "next/router"
-import { productFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
 import LayoutStore from '../../../components/LayoutStore'
 import Head from 'next/head'
 import Link from 'next/link'
 import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../../components/Icons'
 import _ from 'underscore'
 import ProductMedia from '../../../components/ProductMedia'
+import { getStoreData } from '../../../lib/utils'
 
 const DEMO_BASE_URL = '/store';
 
@@ -161,7 +159,7 @@ export default function ProductPage({ product, collection }) {
                                 </div>
                             </section>
 
-                            {collection.products && Object.keys(collection.products).length > 0 &&
+                            {/* {collection.products && Object.keys(collection.products).length > 0 &&
                                 <section className="mt-6" id="productRecommendations">
                                     <div className="max-w-7xl mx-auto px-4">
                                         <h2 className="py-12 text-center">You may also like</h2>
@@ -183,7 +181,7 @@ export default function ProductPage({ product, collection }) {
                                             })}
                                         </div>
                                     </div>
-                                </section>}
+                                </section>} */}
                         </main>
                     </LayoutStore>
                 )
@@ -194,30 +192,30 @@ export default function ProductPage({ product, collection }) {
 
 export const getStaticProps = async ({ params }) => {
     const slugs = params.slug.split('_');
-
     const collectionSlug = slugs[0];
     const productSlug = slugs[1];
 
-    const fullPath = path.join(PRODUCTS_PATH, `${collectionSlug}.json`)
-    const source = fs.readFileSync(fullPath)
-    const stat = fs.statSync(fullPath)
-    const collection = JSON.parse(source)
-    const productData = collection.products[productSlug]
+    const storeData = getStoreData({ productType: 'watches' });
+    const product = storeData.products[productSlug];
+    const collection = storeData.collections[collectionSlug];
 
     return {
         props: {
             collection,
-            product: {
-                ...productData,
-                publishedTime: stat.ctime.toISOString(),
-                modifiedTime: stat.mtime.toISOString()
-            }
+            product
         },
     }
 }
 
 export const getStaticPaths = async () => {
-    const paths = productFilePaths()
+    const storeData = getStoreData({ productType: 'watches' });
+    const collections = storeData.collections;
+
+    const paths = _.flatten(Object.keys(collections).map(collectionSlug => {
+        return collections[collectionSlug].products.map(productSlug => {
+            return `${collectionSlug}_${productSlug}`
+        })
+    }))
         // Map the path into the static paths object required by Next.js
         .map((slug) => ({ params: { slug } }))
 

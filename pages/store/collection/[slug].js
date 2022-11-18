@@ -1,10 +1,8 @@
-import fs from 'fs'
-import path from 'path'
 import { useRouter } from "next/router"
-import { collectionFilePaths, PRODUCTS_PATH } from "../../../lib/utils"
 import LayoutStore from '../../../components/LayoutStore'
 import Head from 'next/head'
 import Link from 'next/link'
+import { getCollectionBySlug, getStoreData } from '../../../lib/utils'
 
 const DEMO_BASE_URL = '/store';
 
@@ -80,15 +78,14 @@ export default function CollectionPage({ source, collection }) {
 
                             <section id="products-grid" className="mt-6">
                                 <div className="max-w-8xl mx-auto">
-                                    {collection.products && Object.keys(collection.products).length > 0 ?
+                                    {collection.productList && collection.productList.length > 0 ?
                                         <div className="grid grid-cols-5 gap-1">
-                                            {Object.keys(collection.products).map(key => {
-                                                const product = collection.products[key];
-                                                return <Link key={key} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
+                                            {collection.productList.map(product => {
+                                                return <Link key={product.slug} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
                                                     <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-primary hover:border-opacity-20 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "480px" }}>
                                                             <div className="h-full flex flex-col justify-center">
-                                                                <img src={product.images[0]}/>
+                                                                <img src={product.images[0]} />
                                                             </div>
                                                         </div>
                                                         <div className="text-sm">
@@ -111,28 +108,18 @@ export default function CollectionPage({ source, collection }) {
 }
 
 export const getStaticProps = async ({ params }) => {
-    const fullPath = path.join(PRODUCTS_PATH, `${params.slug}.json`)
-    const source = fs.readFileSync(fullPath)
-    const stat = fs.statSync(fullPath)
-    const data = JSON.parse(source)
-
+    const collection = getCollectionBySlug({ productType: "watches", slug: params.slug })
     return {
         props: {
-            collection: {
-                ...data,
-                slug: params.slug,
-                publishedTime: stat.ctime.toISOString(),
-                modifiedTime: stat.mtime.toISOString()
-            }
+            collection
         },
     }
 }
 
 export const getStaticPaths = async () => {
-    const paths = collectionFilePaths
-        // Remove file extensions for page paths
-        .map((path) => path.replace(/\.json?$/, ''))
-        // Map the path into the static paths object required by Next.js
+    const storeData = getStoreData({ productType: 'watches' });
+    const collections = storeData.collections;
+    const paths = Object.keys(collections)
         .map((slug) => ({ params: { slug } }))
 
     return {
