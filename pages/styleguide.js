@@ -1,10 +1,7 @@
 import Button from "../components/Button";
 import Container from "../components/Container";
 import Layout from "../components/LayoutStore";
-import BannerSliderWithTextAndImage from "../components/BannerSliderWithTextAndImage";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";
-import FeaturedProducts from "../components/FeaturedProducts";
-import FeaturedArticles from "../components/FeaturedArticles";
 
 export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) {
     return <Layout>
