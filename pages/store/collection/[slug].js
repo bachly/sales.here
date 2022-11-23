@@ -2,7 +2,8 @@ import { useRouter } from "next/router"
 import LayoutStore from '../../../components/LayoutStore'
 import Head from 'next/head'
 import Link from 'next/link'
-import { getCollectionBySlug, getStoreData } from '../../../lib/utils'
+import { getCollectionBySlug, getStoreCollections } from '../../../lib/utils'
+import Image from "next/future/image"
 
 const DEMO_BASE_URL = '/store';
 
@@ -35,17 +36,20 @@ export default function CollectionPage({ source, collection }) {
 
                         <main className="">
 
-                            <section id="pageTitle" className="bg-light py-6">
-                                <div className="max-w-4xl mx-auto">
-                                    <Link href={`${DEMO_BASE_URL}`} passHref={true}>
-                                        <a className="block text-center text-dark text-sm underline">SHOP</a>
-                                    </Link>
-                                    <h1 className="mt-1 text-3xl font-bold text-center text-dark">{collection.title}</h1>
+                            <section id="pageTitle" className="bg-light">
+                                <div className="max-w-7xl mx-auto px-8 py-6">
+                                    <div className="flex flex-col items-center justify-center">
+                                        <Link href={`${DEMO_BASE_URL}`} passHref={true}>
+                                            <a className="block text-dark text-sm underline">SHOP</a>
+                                        </Link>
+                                        <h1 className="mt-1 text-3xl font-bold text-dark">{collection.title}</h1>
+                                        <div>{collection.description}</div>
+                                    </div>
                                 </div>
                             </section>
 
                             <section id="filters" className="py-3 shadow-sm">
-                                <div className="max-w-8xl mx-auto px-4">
+                                <div className="max-w-7xl mx-auto px-8">
                                     <div className="flex items-center justify-between">
                                         <div>
                                             <button className="px-6 py-2 bg-white border-2 border-dark border-opacity-20 hover:bg-primary hover:text-light transition duration-100 rounded-md mr-6">
@@ -77,9 +81,9 @@ export default function CollectionPage({ source, collection }) {
                             </section>
 
                             <section id="products-grid" className="mt-6">
-                                <div className="max-w-8xl mx-auto">
+                                <div className="max-w-7xl mx-auto px-8">
                                     {collection.products && Object.keys(collection.products).length > 0 ?
-                                        <div className="grid grid-cols-5 gap-1">
+                                        <div className="grid grid-cols-4 gap-1">
                                             {Object.keys(collection.products).map(productSlug => {
                                                 const product = collection.products[productSlug];
                                                 return <Link key={product.slug} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
@@ -109,7 +113,7 @@ export default function CollectionPage({ source, collection }) {
 }
 
 export const getStaticProps = async ({ params }) => {
-    const collection = getCollectionBySlug({ productType: "watches", slug: params.slug })
+    const collection = getCollectionBySlug({ slug: params.slug })
     return {
         props: {
             collection
@@ -118,8 +122,7 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
-    const storeData = getStoreData({ productType: 'watches' });
-    const collections = storeData.collections;
+    const collections = getStoreCollections();
     const paths = Object.keys(collections)
         .map((slug) => ({ params: { slug } }))
 

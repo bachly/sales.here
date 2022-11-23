@@ -1,0 +1,99 @@
+{
+    "men-watches": {
+        "title": "Mens Watches",
+        "image": "/img/banners/watch-store-collection-banner-1.png",
+        "products": {
+            "hugo-boss-mens-jet-watch-model-1513280": {},
+            "tommy-hilfiger-mens-black-damon-watch-model-1791420": {},
+            "tommy-hilfiger-mens-brown-daniel-watch-model-1710418": {},
+            "hugo-boss-mens-watch-model-1513839": {},
+            "tommy-hilfiger-mens-essence-hugo-boss-watch": {},
+            "lacoste-mens-club-2011158-watch-silver": {},
+            "tommy-hilfiger-mens-larson-1791921-watch-black": {},
+            "tommy-hilfiger-mens-sawyer-watch-model-1710422": {},
+            "guess-mens-dash-w1256g3-watch-blueblueblue": {},
+            "tommy-hilfiger-mens-blue-bank-watch-model-1791721": {},
+            "hugo-boss-mens-associate-watch-model-1513806": {},
+            "lacoste-mens-stainless-steel-silver-2011017-watch": {},
+            "tommy-hilfiger-mens-sullivan-1791884-watch-brown": {},
+            "guess-mens-bolt-w1302g2-watch-multicolourblackblack": {},
+            "tommy-hilfiger-mens-curis-watch-model-1791170": {},
+            "tommy-hilfiger-mens-carter-1791911-watch-blue": {}
+        }
+    },
+    "women-watches": {
+        "title": "Women Watches",
+        "image": "/img/banners/watch-store-collection-banner-2.png",
+        "products": {
+            "tommy-hilfiger-womens-multicolour-angela-watch": {},
+            "tommy-hilfiger-womens-silver-sunray-watch-model-1782210": {},
+            "tommy-hilfiger-womens-analogue-sunray-watch": {},
+            "tommy-hilfiger-womens-jenna-watch-model-1782296": {},
+            "tommy-hilfiger-womens-multi-dial-gold-1782424-watch": {},
+            "tommy-hilfiger-womens-jenna-watch-and-bracelet-model-2770046": {},
+            "tommy-hilfiger-womens-brooke-watch-and-bracelet-model-2770045": {},
+            "tommy-hilfiger-womens-analogue-rose-gold-1782400-watch": {},
+            "tommy-hilfiger-womens-gold-kelly-watch-model-1782114": {},
+            "tommy-hilfiger-womens-multicolour-lynn-watch-model-1782236": {},
+            "tommy-hilfiger-womens-analogue-multicolour-1782368-watch": {},
+            "tommy-hilfiger-womens-multi-dial-rose-gold-1782331-watch": {},
+            "tommy-hilfiger-womens-layla-1782458-watch-gold": {},
+            "hugo-boss-womens-watch-model-1502551": {},
+            "tommy-hilfiger-womens-multi-dial-gold-1782344-watch": {},
+            "guess-womens-raven-gw0104l2-watch-goldgoldgold": {}
+        }
+    },
+    "hugo-boss-watches": {
+        "title": "Hugo Boss Watches",
+        "image": "/img/banners/watch-store-collection-banner-3.png",
+        "products": {
+            "hugo-boss-mens-jet-watch-model-1513280": {},
+            "hugo-boss-mens-watch-model-1513839": {},
+            "hugo-boss-mens-associate-watch-model-1513806": {},
+            "hugo-boss-womens-watch-model-1502551": {}
+        }
+    },
+    "tommy-hilfiger-watches": {
+        "title": "Tommy Hilfiger Watches",
+        "image": "/img/banners/watch-store-collection-banner-4.png",
+        "products": {
+            "tommy-hilfiger-mens-black-damon-watch-model-1791420": {},
+            "tommy-hilfiger-mens-brown-daniel-watch-model-1710418": {},
+            "tommy-hilfiger-mens-essence-hugo-boss-watch": {},
+            "tommy-hilfiger-mens-larson-1791921-watch-black": {},
+            "tommy-hilfiger-mens-sawyer-watch-model-1710422": {},
+            "tommy-hilfiger-mens-blue-bank-watch-model-1791721": {},
+            "tommy-hilfiger-mens-sullivan-1791884-watch-brown": {},
+            "tommy-hilfiger-mens-curis-watch-model-1791170": {},
+            "tommy-hilfiger-mens-carter-1791911-watch-blue": {},
+            "tommy-hilfiger-womens-multicolour-angela-watch": {},
+            "tommy-hilfiger-womens-silver-sunray-watch-model-1782210": {},
+            "tommy-hilfiger-womens-analogue-sunray-watch": {},
+            "tommy-hilfiger-womens-jenna-watch-model-1782296": {},
+            "tommy-hilfiger-womens-multi-dial-gold-1782424-watch": {},
+            "tommy-hilfiger-womens-jenna-watch-and-bracelet-model-2770046": {},
+            "tommy-hilfiger-womens-brooke-watch-and-bracelet-model-2770045": {},
+            "tommy-hilfiger-womens-analogue-rose-gold-1782400-watch": {},
+            "tommy-hilfiger-womens-gold-kelly-watch-model-1782114": {},
+            "tommy-hilfiger-womens-multicolour-lynn-watch-model-1782236": {},
+            "tommy-hilfiger-womens-analogue-multicolour-1782368-watch": {},
+            "tommy-hilfiger-womens-multi-dial-rose-gold-1782331-watch": {},
+            "tommy-hilfiger-womens-layla-1782458-watch-gold": {},
+            "tommy-hilfiger-womens-multi-dial-gold-1782344-watch": {}
+        }
+    },
+    "lacoste-watches": {
+        "title": "Lacoste Watches",
+        "products": {
+            "lacoste-mens-club-2011158-watch-silver": {},
+            "lacoste-mens-stainless-steel-silver-2011017-watch": {}
+        }
+    },
+    "watches-on-sales": {
+        "title": "Watches on Sales",
+        "products": {
+            "guess-mens-bolt-w1302g2-watch-multicolourblackblack": {},
+            "guess-womens-raven-gw0104l2-watch-goldgoldgold": {}
+        }
+    }
+}

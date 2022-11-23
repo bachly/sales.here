@@ -27,14 +27,4 @@ Version 1:
 2. Replace `site_settings` properties in `package.json` with your own values
 3. Replace favicon files in `public/favicons` directory with your own favicon files
 
-## Banners
-
-- Women Dresses
-- Personalisation
-- Shoes
-- Accessories
-- Beauty
-- Pet
-- Kids
-- Home
 

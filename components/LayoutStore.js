@@ -8,50 +8,18 @@ import Announcement from "./Announcement";
 const DEMO_BASE_URL = '/store';
 
 const MENU = {
-    clothing: {
+    dropdown: {
         "links": [
             {
-                "label": "Shirts",
+                "label": "Mens Watches",
                 "url": "#"
             },
             {
-                "label": "T-shirts",
+                "label": "Women Watches",
                 "url": "#"
             },
             {
-                "label": "Pants",
-                "url": "#"
-            },
-            {
-                "label": "Shorts",
-                "url": "#"
-            },
-            {
-                "label": "Underwear",
-                "url": "#"
-            },
-            {
-                "label": "Outerwear",
-                "url": "#"
-            },
-            {
-                "label": "Socks",
-                "url": "#"
-            },
-            {
-                "label": "Swimwear",
-                "url": "#"
-            },
-            {
-                "label": "Activewear",
-                "url": "#"
-            },
-            {
-                "label": "Sleepwear",
-                "url": "#"
-            },
-            {
-                "label": "Suits",
+                "label": "On Sales",
                 "url": "#"
             }
         ]
@@ -91,47 +59,19 @@ const MENU = {
     "accessories": {
         "links": [
             {
-                "label": "Watches",
+                "label": "Hugo Boss",
                 "url": "#"
             },
             {
-                "label": "Bags",
+                "label": "Tommy Hilfiger",
                 "url": "#"
             },
             {
-                "label": "Hats",
+                "label": "Lacoste",
                 "url": "#"
             },
             {
-                "label": "Sunglasses",
-                "url": "#"
-            },
-            {
-                "label": "Wallets",
-                "url": "#"
-            },
-            {
-                "label": "Belts",
-                "url": "#"
-            },
-            {
-                "label": "Toes",
-                "url": "#"
-            },
-            {
-                "label": "Cufflinks",
-                "url": "#"
-            },
-            {
-                "label": "Keyholders",
-                "url": "#"
-            },
-            {
-                "label": "Techcases",
-                "url": "#"
-            },
-            {
-                "label": "Optical Glasses",
+                "label": "Guess",
                 "url": "#"
             },
         ]
@@ -238,30 +178,30 @@ export default function LayoutStore({ children }) {
                             <nav className="megamenu">
                                 <span className="megamenu__label">Megamenu</span>
                                 <div className="megamenu__content">
-                                    <div className="px-4 font-bold pb-2 border-b border-gray-200 mb-3">Megamenu</div>
+                                    <div className="px-4 font-bold pb-2 border-b border-gray-200">Megamenu</div>
                                     <div className="flex items-start justify-between">
                                         <div className="flex items-start">
-                                            <div className="w-40">
-                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Clothing</div>
-                                                {MENU.clothing.links.map(link => {
+                                            <div className="w-40 py-3">
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Collections</div>
+                                                {MENU.dropdown.links.map(link => {
                                                     return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
-                                            <div className="w-40">
-                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Footwear</div>
-                                                {MENU.footwear.links.map(link => {
+                                            <div className="w-40 py-3">
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Public Pages</div>
+                                                {MENU.publicPages.links.map(link => {
                                                     return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
-                                            <div className="w-40">
-                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Accessories</div>
-                                                {MENU.accessories.links.map(link => {
+                                            <div className="w-40 py-3">
+                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Private Pages</div>
+                                                {MENU.privatePages.links.map(link => {
                                                     return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>
                                         </div>
-                                        <div className="w-40">
-                                            <div className="text-xs font-bold px-4 pb-2 uppercase">BRANDS</div>
+                                        <div className="w-40 bg-gray-100 py-3">
+                                            <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">BRANDS</div>
                                             {MENU.accessories.links.map(link => {
                                                 return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                             })}
@@ -275,7 +215,7 @@ export default function LayoutStore({ children }) {
                                     <div className="flex items-start justify-between">
                                         <div className="flex items-start">
                                             <div className="w-40">
-                                                {MENU.clothing.links.map(link => {
+                                                {MENU.dropdown.links.map(link => {
                                                     return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>

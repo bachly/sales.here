@@ -8,7 +8,7 @@
 }
 
 .megamenu__content {
-    @apply bg-body hidden absolute top-full w-full left-0 py-4 px-8 shadow-xl border-b border-dark border-opacity-10
+    @apply bg-body hidden absolute top-full w-full left-0 pt-4 pb-2 px-8 shadow-xl border-b border-dark border-opacity-10
 }
 
 .megamenu:hover > .megamenu__label {
@@ -29,7 +29,7 @@
 }
 
 .menu__content {
-    @apply bg-body hidden absolute top-full left-0 py-4 shadow-xl border-b border-dark border-opacity-10
+    @apply bg-body hidden absolute top-full left-0 pt-4 pb-2 shadow-xl border-b border-dark border-opacity-10
 }
 
 .menu:hover > .menu__label {
