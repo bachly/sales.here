@@ -1,7 +1,7 @@
 {
     "men-watches": {
         "title": "Mens Watches",
-        "image": "/img/banners/watch-store-collection-banner-1.png",
+        "image": "/img/banners/watch-store-banner-01.png",
         "products": {
             "hugo-boss-mens-jet-watch-model-1513280": {},
             "tommy-hilfiger-mens-black-damon-watch-model-1791420": {},
@@ -23,7 +23,7 @@
     },
     "women-watches": {
         "title": "Women Watches",
-        "image": "/img/banners/watch-store-collection-banner-2.png",
+        "image": "/img/banners/watch-store-banner-02.png",
         "products": {
             "tommy-hilfiger-womens-multicolour-angela-watch": {},
             "tommy-hilfiger-womens-silver-sunray-watch-model-1782210": {},
@@ -45,7 +45,7 @@
     },
     "hugo-boss-watches": {
         "title": "Hugo Boss Watches",
-        "image": "/img/banners/watch-store-collection-banner-3.png",
+        "image": "/img/banners/watch-store-banner-03.png",
         "products": {
             "hugo-boss-mens-jet-watch-model-1513280": {},
             "hugo-boss-mens-watch-model-1513839": {},
@@ -55,7 +55,7 @@
     },
     "tommy-hilfiger-watches": {
         "title": "Tommy Hilfiger Watches",
-        "image": "/img/banners/watch-store-collection-banner-4.png",
+        "image": "/img/banners/watch-store-banner-04.png",
         "products": {
             "tommy-hilfiger-mens-black-damon-watch-model-1791420": {},
             "tommy-hilfiger-mens-brown-daniel-watch-model-1710418": {},
@@ -84,6 +84,7 @@
     },
     "lacoste-watches": {
         "title": "Lacoste Watches",
+        "image": "/img/banners/watch-store-banner-05.png",
         "products": {
             "lacoste-mens-club-2011158-watch-silver": {},
             "lacoste-mens-stainless-steel-silver-2011017-watch": {}
@@ -91,6 +92,7 @@
     },
     "watches-on-sales": {
         "title": "Watches on Sales",
+        "image": "/img/banners/watch-store-banner-06.png",
         "products": {
             "guess-mens-bolt-w1302g2-watch-multicolourblackblack": {},
             "guess-womens-raven-gw0104l2-watch-goldgoldgold": {}

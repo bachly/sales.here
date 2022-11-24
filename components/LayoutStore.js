@@ -6,6 +6,7 @@ import { UserIcon, CartIcon, SearchIcon, PhoneIcon } from "./Icons";
 import Announcement from "./Announcement";
 
 const DEMO_BASE_URL = '/store';
+const SHOP_NAME = 'Fauget';
 
 const MENU = {
     dropdown: {
@@ -155,8 +156,8 @@ export default function LayoutStore({ children }) {
                             </div>
 
                             <Link href={`${DEMO_BASE_URL}`}>
-                                <a className="w-24 flex items-center relative" style={{ top: '3px' }}>
-                                    <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
+                                <a className="flex items-center relative">
+                                    <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
                                 </a>
                             </Link>
                             <div className="w-64">
@@ -287,48 +288,47 @@ export default function LayoutStore({ children }) {
             </section>
 
             <footer id="Footer" className="py-16">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="flex">
-                        <div className="w-1/3">
+                <div className="max-w-8xl mx-auto px-4">
+                    <div className="flex justify-between">
+                        <div className="w-2/5">
                             <div className="h-full flex flex-col">
-                                <div className="flex-1">
+                                <div className="">
                                     <Link href={`${DEMO_BASE_URL}`}>
-                                        <a className="w-24 flex items-center relative text-white fill-current" style={{ top: '3px' }}>
-                                            <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
+                                        <a className="block flex items-center justify-center relative text-white fill-current">
+                                            <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
                                         </a>
                                     </Link>
-                                    <div className="text-sm">Life made easy.</div>
                                 </div>
-                                <div className="text-xs">
-                                    An online store by Handily Pty Ltd. ABN: 123567890
+                                <div className="mt-4 text-xs text-center">
+                                    An online store by {SHOP_NAME} Pty Ltd. ABN: 123567890
                                 </div>
                             </div>
                         </div>
-                        <div className="w-2/3">
+                        <div className="w-3/5">
                             <div className="grid grid-cols-3 items-start">
                                 <div>
-                                    <div className="uppercase text-sm mb-2 font-bold">About</div>
-                                    <a href="#" className="block py-1">About us</a>
-                                    <a href="#" className="block py-1">Contact us</a>
-                                    <a href="#" className="block py-1">Terms & Conditions</a>
-                                    <a href="#" className="block py-1">Shipping & Delivery</a>
-                                    <a href="#" className="block py-1">Return Policy</a>
-                                </div>
-                                <div>
-                                    <div className="uppercase text-sm mb-2 font-bold">Collections</div>
-                                    <a href="#" className="block py-1">Men Apparel</a>
-                                    <a href="#" className="block py-1">Women Apparel</a>
-                                    <a href="#" className="block py-1">Kids Clothing</a>
-                                    <a href="#" className="block py-1">Furniture</a>
-                                    <a href="#" className="block py-1">Clearance</a>
+                                    <div className="uppercase text-sm mb-2 font-bold">Catalog</div>
+                                    <a href="#" className="block py-1">Men Watches</a>
+                                    <a href="#" className="block py-1">Women Watches</a>
+                                    <a href="#" className="block py-1">Kid Watches</a>
+                                    <a href="#" className="block py-1">Anniversary Watches</a>
+                                    <a href="#" className="block py-1">Luxurious Watches</a>
                                 </div>
                                 <div>
                                     <div className="uppercase text-sm mb-2 font-bold">Brands</div>
-                                    <a href="#" className="block py-1">Clothing Brands</a>
-                                    <a href="#" className="block py-1">Accessory Brands</a>
-                                    <a href="#" className="block py-1">Furniture Brands</a>
-                                    <a href="#" className="block py-1">Children Brands</a>
-                                    <a href="#" className="block py-1">Generic Brands</a>
+                                    <a href="#" className="block py-1">Hugo Boss Watches</a>
+                                    <a href="#" className="block py-1">Tommy Hilfiger Watches</a>
+                                    <a href="#" className="block py-1">Lacoste Watches</a>
+                                    <a href="#" className="block py-1">Guess Watches</a>
+                                    <a href="#" className="block py-1">Michael Kor Watches</a>
+                                </div>
+                                <div>
+                                    <div className="uppercase text-sm mb-2 font-bold">Information</div>
+                                    <a href="#" className="block py-1">About us</a>
+                                    <a href="#" className="block py-1">Shipping & Delivery</a>
+                                    <a href="#" className="block py-1">Terms & Conditions</a>
+                                    <a href="#" className="block py-1">Refund Policy</a>
+                                    <a href="#" className="block py-1">Contact us</a>
                                 </div>
                             </div>
                         </div>

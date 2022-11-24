@@ -32,26 +32,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        "primary": "rgb(var(--color-primary) / <alpha-value>)",
-        "secondary": "rgb(var(--color-secondary) / <alpha-value>)",
-        "light": "#f2f0ed",
-        "body": "#fdfdfd",
-        "dark": "rgb(var(--color-dark) / <alpha-value>)",
-        "danger": "rgb(var(--color-danger) / <alpha-value>)",
-        // "brand": {
-        //   "primary": "#634832",
-        //   "secondary": "#38220F",
-        //   "light": "#ECE0D1",
-        //   "dark": "#170E05",
-        //   "danger": "#A92C11"
-        // },
-        "ocean": {
-          "primary": "#2E889F",
-          "secondary": "#155362",
-          "light": "#FBF8F6",
-          "dark": "#0d121e",
-          "success": "#7FAF6E"
-        },
+        "primary": "var(--color-primary)",
+        "secondary": "var(--color-secondary)",
+        "light": "var(--color-light)",
+        "body": "var(--color-body)",
+        "dark": "var(--color-dark)",
+        "danger": "var(--color-danger)",
         "gray": {
           1000: "rgba(7, 11, 13, 1)",
           900: "rgba(7, 11, 13, 0.9)",

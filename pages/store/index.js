@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 const DEMO_BASE_URL = '/store';
-const SHOP_NAME = 'handily';
+const SHOP_NAME = 'Fauget';
 
 export default function HomepageForOnlineStore({ featuredCollections, collections, featuredProducts }) {
     console.log('featuredCollections', featuredCollections)
@@ -44,7 +44,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
 
                     <p className="mt-6 max-w-lg mx-auto">Here is a section to introduce what your store is all about. Briefly explain what products you are selling, your brand signatures and what is so unique about your store.</p>
 
-                    <button className="bg-primary text-white py-2 px-4 mt-4">Browse products</button>
+                    <button className="bg-primary text-white py-2 px-4 mt-4 hover:bg-secondary transition duration-200">Browse products</button>
                 </div>
             </div>
         </section>

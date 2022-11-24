@@ -11,11 +11,12 @@
 
 @layer base {
     :root {
-        --color-primary: 99 72 50;
-        --color-secondary: 56 34 15;
-        --color-light: 236 224 209;
-        --color-dark: 23 14 5;
-        --color-danger: 169 44 17;
+        --color-primary: rgb(0, 0, 0); 
+        --color-secondary: rgb(150, 20, 20); /** hovering over primary **/
+        --color-light: rgb(235, 235, 235);
+        --color-body: rgb(256, 256, 256);
+        --color-dark: rgb(0, 0, 0);
+        --color-danger: rgb(150, 20, 20);
     }
 
     h1.display, .h1.display {

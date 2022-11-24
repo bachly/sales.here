@@ -52,16 +52,16 @@ export default function CollectionPage({ source, collection }) {
                                 <div className="max-w-7xl mx-auto px-8">
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <button className="px-6 py-2 bg-white border-2 border-dark border-opacity-20 hover:bg-primary hover:text-light transition duration-100 rounded-md mr-6">
+                                            {/* <button className="px-6 py-2 border-gray-400 hover:bg-gray-200 transition duration-100 rounded-md mr-2">
                                                 <span className="flex items-center">
                                                     Filters
                                                 </span>
-                                            </button>
-                                            <button className="text-sm px-3 py-1 bg-primary bg-opacity-20 hover:bg-primary hover:bg-opacity-30 transition duration-100 rounded-md mr-2">Size: M</button>
-                                            <button className="text-sm px-3 py-1 bg-primary bg-opacity-20 hover:bg-primary hover:bg-opacity-30 transition duration-100 rounded-md">Brand: Gudilio</button>
+                                            </button> */}
+                                            <button className="text-sm px-5 py-1 border border-gray-200 hover:bg-gray-200 transition duration-100 rounded-sm mr-2">Sizes</button>
+                                            <button className="text-sm px-5 py-1 border border-gray-200 hover:bg-gray-200 transition duration-100 rounded-sm">Colours</button>
                                         </div>
                                         <div>
-                                            <select className="px-2 py-2 bg-white border-2 border-dark border-opacity-20 transition duration-100 rounded-md">
+                                            <select className="px-2 py-1 border border-gray-200 hover:bg-gray-200 transition duration-100 rounded-sm">
                                                 <option value="bestselling">
                                                     Bestselling
                                                 </option>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../../components/Icons'
 import _ from 'underscore'
 import ProductMedia from '../../../components/ProductMedia'
-import { getStoreCollections, getStoreProducts } from '../../../lib/utils'
+import { getStoreCollections, getStoreCollectionsWithProducts, getStoreProducts } from '../../../lib/utils'
 
 const DEMO_BASE_URL = '/store';
 
@@ -209,7 +209,7 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
-    const collections = getStoreProducts();
+    const collections = getStoreCollectionsWithProducts();
 
     const paths = _.flatten(Object.keys(collections).map(collectionSlug => {
         return Object.keys(collections[collectionSlug].products).map(productSlug => {
