@@ -25,39 +25,31 @@ const MENU = {
             }
         ]
     },
-    "footwear": {
+    layouts: {
         "links": [
             {
-                "label": "Sneakers",
+                "label": "Center",
                 "url": "#"
             },
             {
-                "label": "Trainers",
+                "label": "Left Aligned",
                 "url": "#"
             },
             {
-                "label": "Sandals",
+                "label": "Luxury",
                 "url": "#"
             },
             {
-                "label": "Boots",
+                "label": "Mega",
                 "url": "#"
             },
             {
-                "label": "Thongs",
-                "url": "#"
-            },
-            {
-                "label": "Formal Shoes",
-                "url": "#"
-            },
-            {
-                "label": "Ugg Boots",
+                "label": "Dashboard",
                 "url": "#"
             }
         ]
     },
-    "accessories": {
+    "brands": {
         "links": [
             {
                 "label": "Hugo Boss",
@@ -203,7 +195,7 @@ export default function LayoutStore({ children }) {
                                         </div>
                                         <div className="w-40 bg-gray-100 py-3">
                                             <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">BRANDS</div>
-                                            {MENU.accessories.links.map(link => {
+                                            {MENU.brands.links.map(link => {
                                                 return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                             })}
                                         </div>
@@ -225,19 +217,12 @@ export default function LayoutStore({ children }) {
                                 </div>
                             </nav>
                             <nav className="menu">
-                                <span className="menu__label">Page Layouts</span>
+                                <span className="menu__label">Header Layouts</span>
                                 <div className="menu__content">
                                     <div className="flex items-start justify-between">
                                         <div className="flex items-start">
                                             <div>
-                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Public pages</div>
-                                                {MENU.publicPages.links.map(link => {
-                                                    return <Link key={link.label} href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
-                                                })}
-                                            </div>
-                                            <div>
-                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-gray-500">Private pages</div>
-                                                {MENU.privatePages.links.map(link => {
+                                                {MENU.layouts.links.map(link => {
                                                     return <Link key={link.label} href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
                                                 })}
                                             </div>

@@ -72,23 +72,13 @@
     background: theme("colors.black")
 }
 
-/* .splide__arrows {
-    position: absolute;
-    top: -1.5rem;
-    right: 0;
+#thumbnailSlides .splide__slide {
+    border: 1px solid transparent;
 }
 
-button.splide__arrow {
-    background-color: theme("colors.white");
+#thumbnailSlides .splide__slide.is-visible.is-active {
+    border: 1px solid theme("colors.dark");
 }
-
-.splide__arrow--prev {
-    left: -4.5rem;
-}
-
-.splide__arrow--next {
-    right: 0;
-} */
 
 /** Button styles **/
 .button, 
