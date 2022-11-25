@@ -7,7 +7,7 @@ import _ from 'underscore'
 import ProductMedia from '../../../components/ProductMedia'
 import { getStoreCollections, getStoreCollectionsWithProducts, getStoreProducts } from '../../../lib/utils'
 
-const DEMO_BASE_URL = '/store';
+const DEMO_BASE_URL = '/shop';
 
 export default function ProductPage({ product, collection }) {
     const router = useRouter()

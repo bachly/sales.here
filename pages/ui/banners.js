@@ -1,7 +1,7 @@
 import Link from "next/link";
 import LayoutStore from "../../components/LayoutStore";
 
-const DEMO_BASE_URL = '/store';
+const DEMO_BASE_URL = '/shop';
 
 const BANNERS = {
     product: new Array(12).fill(' '),

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { getCollectionBySlug, getStoreCollections } from '../../../lib/utils'
 import Image from "next/future/image"
 
-const DEMO_BASE_URL = '/store';
+const DEMO_BASE_URL = '/shop';
 
 export default function CollectionPage({ source, collection }) {
     const router = useRouter()

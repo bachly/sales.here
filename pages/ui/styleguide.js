@@ -1,7 +1,7 @@
-import Button from "../components/Button";
-import Container from "../components/Container";
-import Layout from "../components/LayoutStore";
-import { LinkAsButton, LinkWithChevron } from "../components/Link";
+import Button from "../../components/Button";
+import Container from "../../components/Container";
+import Layout from "../../components/LayoutStore";
+import { LinkAsButton, LinkWithChevron } from "../../components/Link";
 
 export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) {
     return <Layout>

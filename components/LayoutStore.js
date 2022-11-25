@@ -5,7 +5,7 @@ import Container from "./Container";
 import { UserIcon, CartIcon, SearchIcon, PhoneIcon } from "./Icons";
 import Announcement from "./Announcement";
 
-const DEMO_BASE_URL = '/store';
+const DEMO_BASE_URL = '/shop';
 const SHOP_NAME = 'Fauget';
 
 const MENU = {

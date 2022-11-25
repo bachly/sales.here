@@ -4,7 +4,7 @@ import { getStoreCollections, getStoreFeaturedCollections } from "../../lib/util
 import Link from "next/link";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-const DEMO_BASE_URL = '/store';
+const DEMO_BASE_URL = '/shop';
 const SHOP_NAME = 'Fauget';
 
 export default function HomepageForOnlineStore({ featuredCollections, collections, featuredProducts }) {
