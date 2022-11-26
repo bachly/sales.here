@@ -36,58 +36,39 @@ export default function CollectionPage({ source, collection }) {
 
                         <main className="">
 
-                            <section id="breadcrumbs" className="bg-dark">
-                                <div className="max-w-7xl mx-auto px-8 py-6">
-                                    <div className="flex flex-col items-center justify-center">
-                                        <Link href={`${DEMO_BASE_URL}`} passHref={true}>
-                                            <a className="block text-white text-sm underline">SHOP</a>
-                                        </Link>
-                                        <h1 className="mt-1 text-3xl font-bold text-white">{collection.title}</h1>
-                                        <div>{collection.description}</div>
+                            <section id="breadcrumbs" className="bg-white shadow-sm">
+                                <div className="max-w-7xl mx-auto px-4 lg:px-0 py-4 lg:py-8">
+                                    <h1 className="mt-1 text-xl lg:text-3xl font-bold">{collection.title}</h1>
+                                    <div>{collection.description}</div>
+
+                                    <div id="filters" className="mt-6 w-full">
+                                        <select className="px-2 h-10 bg-neutral-100 transition duration-100 rounded-sm flex items-center text-sm">
+                                            <option value="bestselling">
+                                                Bestselling
+                                            </option>
+                                            <option value="price-asc">
+                                                Price: Low to High
+                                            </option>
+                                            <option value="price-desc">
+                                                Price: High to Low
+                                            </option>
+                                            <option value="price-desc">
+                                                New Arrivals
+                                            </option>
+                                        </select>
                                     </div>
                                 </div>
                             </section>
 
-                            <section id="filters" className="bg-white py-3 border-b border-neutral-200">
-                                <div className="max-w-7xl mx-auto px-4">
-                                    <div className="flex items-center justify-between">
-                                        <div>
-                                            {/* <button className="px-6 py-2 border-neutral-400 hover:bg-neutral-200 transition duration-100 rounded-md mr-2">
-                                                <span className="flex items-center">
-                                                    Filters
-                                                </span>
-                                            </button> */}
-                                            <button className="text-sm px-5 py-1 border border-neutral-200 hover:bg-neutral-200 transition duration-100 rounded-sm mr-2">Sizes</button>
-                                            <button className="text-sm px-5 py-1 border border-neutral-200 hover:bg-neutral-200 transition duration-100 rounded-sm">Colours</button>
-                                        </div>
-                                        <div>
-                                            <select className="px-2 py-1 border border-neutral-200 hover:bg-neutral-200 transition duration-100 rounded-sm">
-                                                <option value="bestselling">
-                                                    Bestselling
-                                                </option>
-                                                <option value="price-asc">
-                                                    Price: Low to High
-                                                </option>
-                                                <option value="price-desc">
-                                                    Price: High to Low
-                                                </option>
-                                                <option value="price-desc">
-                                                    New Arrivals
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section id="products-grid" className="mt-6">
-                                <div className="max-w-7xl mx-auto">
+                            <section id="products-grid" className="my-1 lg:my-1">
+                                <div className="mx-auto">
                                     {collection.products && Object.keys(collection.products).length > 0 ?
-                                        <div className="grid grid-cols-2 lg:grid-cols-4 gap0 lg:gap-1">
+                                        <div className="grid grid-cols-2 lg:grid-cols-6 gap-1 lg:gap-1">
+
                                             {Object.keys(collection.products).map(productSlug => {
                                                 const product = collection.products[productSlug];
                                                 return <Link key={product.slug} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
-                                                    <a className="block bg-white p-1 shadow-sm overflow-hidden flex flex-col border-1 border-neutral-100 hover:border-primary hover:border-opacity-20 transition duration-200">
+                                                    <a className="block bg-white p-1 shadow-sm overflow-hidden flex flex-col border border-neutral-100 hover:border-neutral-900 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "240px" }}>
                                                             <div className="h-full flex flex-col justify-center">
                                                                 <img src={product.images[0]} />

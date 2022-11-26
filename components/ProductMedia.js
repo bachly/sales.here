@@ -19,7 +19,7 @@ export default function ProductMedia({ media = [] }) {
     return <div id="productMedia">
         <div className="w-full relative">
             <div className="flex items-start">
-                <div id="thumbnailSlides">
+                <div id="thumbnailSlides" className="hidden lg:block">
                     <Splide
                         ref={(slider) => (slider2.current = slider)}
                         onClick={handleClickOnThumbnail}
@@ -45,14 +45,21 @@ export default function ProductMedia({ media = [] }) {
                         })}
                     </Splide>
                 </div>
-                <div className="pl-8">
+                <div className="lg:pl-8">
                     <Splide
                         ref={(slider) => (slider1.current = slider)}
                         options={{
                             perPage: 1,
                             pagination: false,
                             arrows: false,
-                            speed: 0
+                            speed: 0,
+                            breakpoints: {
+                                1280: {
+                                    type: 'loop',
+                                    arrows: true,
+                                    perPage: 1,
+                                },
+                            }
                         }}>
                         {media.map((item, index) => {
                             switch (item.type) {

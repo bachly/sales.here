@@ -15,11 +15,8 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
             <section id="hero">
                 <div className="mx-auto">
                     <Splide options={{
-                        type: 'loop',
-                        gap: '1rem',
                         perPage: 2,
-                        arrows: false,
-                        padding: '5%',
+                        arrows: true,
                         breakpoints: {
                             640: {
                                 arrows: true,
@@ -73,7 +70,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                                         <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />}
                                 </div>
                                 <div className="flex items-center justify-center relative -top-3">
-                                    <div className="text-center py-1 px-6 bg-dark text-white inline-block text-sm lg:text-base">
+                                    <div className="text-center py-1 px-6 bg-primary text-white inline-block text-sm lg:text-base">
                                         {collection.title}
                                     </div>
                                 </div>

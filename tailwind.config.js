@@ -35,7 +35,6 @@ module.exports = {
         "primary": "var(--color-primary)",
         "secondary": "var(--color-secondary)",
         "light": "var(--color-light)",
-        "body": "var(--color-body)",
         "dark": "var(--color-dark)",
         "danger": "var(--color-danger)"
       },

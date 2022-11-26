@@ -126,37 +126,117 @@ const MENU = {
 export default function LayoutStore({ children }) {
     const sitename = `${PackageJSON.site_settings.sitename}`;
     return (
-        <div id="Layout" className="min-h-screen font-body">
+        <div id="Layout" className="min-h-screen font-body bg-neutral-100">
             <Meta />
 
-            <header id="Header" className="bg-white relative z-10">
+            <header id="Header" className="relative z-10">
                 <Announcement>
                     We ship nationwide. 30-day return policy. Free standard shipping on orders over $75.
                 </Announcement>
 
                 {/* Desktop menu */}
-                <div className="hidden lg:block">
+                <div className="hidden lg:block bg-neutral-100 border-b border-neutral-200">
                     <Container>
-                        <div className="py-6">
+                        <div className="py-4">
                             <div className="flex items-center justify-between">
+                                <div style={{ width: '300px' }}>
+                                    <Link href={`${DEMO_BASE_URL}`}>
+                                        <a className="flex items-center relative">
+                                            <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: '200px' }} />
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="flex-1">
+                                    <div className="max-w-7xl mx-auto px-4 relative">
+                                        <div className="flex items-center justify-start">
+                                            <nav className="megamenu">
+                                                <span className="megamenu__label">Megamenu</span>
+                                                <div className="megamenu__content">
+                                                    <div className="px-4 font-bold pb-2 border-b border-neutral-200">Megamenu</div>
+                                                    <div className="flex items-start justify-between">
+                                                        <div className="flex items-start">
+                                                            <div className="w-40 py-3">
+                                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-400">Collections</div>
+                                                                {MENU.dropdown.links.map(link => {
+                                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                                })}
+                                                            </div>
+                                                            <div className="w-40 py-3">
+                                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-400">Public Pages</div>
+                                                                {MENU.publicPages.links.map(link => {
+                                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                                })}
+                                                            </div>
+                                                            <div className="w-40 py-3">
+                                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-400">Private Pages</div>
+                                                                {MENU.privatePages.links.map(link => {
+                                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                                })}
+                                                            </div>
+                                                        </div>
+                                                        <div className="w-40 bg-neutral-100 py-3">
+                                                            <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-400">BRANDS</div>
+                                                            {MENU.brands.links.map(link => {
+                                                                return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                            })}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                            <nav className="menu">
+                                                <span className="menu__label">Dropdown</span>
+                                                <div className="menu__content">
+                                                    <div className="flex items-start justify-between">
+                                                        <div className="flex items-start">
+                                                            <div className="w-40">
+                                                                {MENU.dropdown.links.map(link => {
+                                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                                })}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                            <nav className="menu">
+                                                <span className="menu__label">Header Layouts</span>
+                                                <div className="menu__content">
+                                                    <div className="flex items-start justify-between">
+                                                        <div className="flex items-start">
+                                                            <div>
+                                                                {MENU.layouts.links.map(link => {
+                                                                    return <Link key={link.label} href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
+                                                                })}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </nav>
+                                            <nav className="menu">
+                                                <Link href={`/styleguide`}>
+                                                    <a className="menu__label">STYLEGUIDE</a>
+                                                </Link>
+                                            </nav>
+                                            <nav className="menu">
+                                                <Link href={`/banners`}>
+                                                    <a className="menu__label">
+                                                        <span className="text-danger">BANNERS</span>
+                                                    </a>
+                                                </Link>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div className="w-64">
-                                    <div className="flex itens-center">
+                                    <div className="flex itens-center justify-end">
                                         <NavIconLink href="#">
                                             <PhoneIcon />
                                         </NavIconLink>
                                         <NavIconLink href="#">
                                             <SearchIcon />
                                         </NavIconLink>
-                                    </div>
-                                </div>
-
-                                <Link href={`${DEMO_BASE_URL}`}>
-                                    <a className="flex items-center relative">
-                                        <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
-                                    </a>
-                                </Link>
-                                <div className="w-64">
-                                    <div className="flex itens-center justify-end">
                                         <NavIconLink href="#">
                                             <UserIcon />
                                         </NavIconLink>
@@ -168,93 +248,10 @@ export default function LayoutStore({ children }) {
                             </div>
                         </div>
                     </Container>
-
-                    {/* Desktop menu */}
-                    <div className="flex-1">
-                        <div className="relative">
-                            <div className="flex items-center justify-center">
-                                <nav className="megamenu">
-                                    <span className="megamenu__label">Megamenu</span>
-                                    <div className="megamenu__content">
-                                        <div className="px-4 font-bold pb-2 border-b border-neutral-200">Megamenu</div>
-                                        <div className="flex items-start justify-between">
-                                            <div className="flex items-start">
-                                                <div className="w-40 py-3">
-                                                    <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-500">Collections</div>
-                                                    {MENU.dropdown.links.map(link => {
-                                                        return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
-                                                    })}
-                                                </div>
-                                                <div className="w-40 py-3">
-                                                    <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-500">Public Pages</div>
-                                                    {MENU.publicPages.links.map(link => {
-                                                        return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
-                                                    })}
-                                                </div>
-                                                <div className="w-40 py-3">
-                                                    <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-500">Private Pages</div>
-                                                    {MENU.privatePages.links.map(link => {
-                                                        return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
-                                                    })}
-                                                </div>
-                                            </div>
-                                            <div className="w-40 bg-neutral-100 py-3">
-                                                <div className="text-xs font-bold px-4 pb-2 uppercase text-neutral-500">BRANDS</div>
-                                                {MENU.brands.links.map(link => {
-                                                    return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
-                                                })}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </nav>
-                                <nav className="menu">
-                                    <span className="menu__label">Dropdown</span>
-                                    <div className="menu__content">
-                                        <div className="flex items-start justify-between">
-                                            <div className="flex items-start">
-                                                <div className="w-40">
-                                                    {MENU.dropdown.links.map(link => {
-                                                        return <Link key={link.label} href={link.url}><a className="block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
-                                                    })}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </nav>
-                                <nav className="menu">
-                                    <span className="menu__label">Header Layouts</span>
-                                    <div className="menu__content">
-                                        <div className="flex items-start justify-between">
-                                            <div className="flex items-start">
-                                                <div>
-                                                    {MENU.layouts.links.map(link => {
-                                                        return <Link key={link.label} href={link.url}><a className="w-48 block px-4 pb-1 hover:underline text-sm">{link.label}</a></Link>
-                                                    })}
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </nav>
-                                <nav className="menu">
-                                    <Link href={`/styleguide`}>
-                                        <a className="menu__label">STYLEGUIDE</a>
-                                    </Link>
-                                </nav>
-                                <nav className="menu">
-                                    <Link href={`/banners`}>
-                                        <a className="menu__label">
-                                            <span className="text-danger">BANNERS</span>
-                                        </a>
-                                    </Link>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Mobile menu */}
-                <div id="mobile-menu" class="block lg:hidden">
+                <div id="mobile-menu" class="block lg:hidden bg-neutral-100 border-b border-neutral-200">
                     <div id="mobile-menu__topbar">
                         <div class="py-2 flex flex-row items-center">
 
@@ -302,11 +299,11 @@ export default function LayoutStore({ children }) {
                         </div> */}
                     </div>
                 </div>
-            </header>
+            </header >
 
             {children}
 
-            <section id="seo-block" className="mt-6 lg:mt-20">
+            < section id="seo-block" className="mt-6 lg:mt-20" >
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="columns1 lg:columns-2 text-xs gap-12 text-dark text-opacity-50 leading-relaxed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisi facilisis, auctor velit eget, commodo ante. Nunc eu consectetur purus. Sed tincidunt ullamcorper erat vitae bibendum. Proin vel neque non ante rutrum dapibus et eget urna. Nulla ultrices commodo interdum. Duis malesuada bibendum nibh, ac lacinia felis posuere nec. Nam ullamcorper porttitor ullamcorper. Nullam luctus ipsum tellus, id volutpat diam feugiat eu. Donec ultricies ante at justo rutrum, a pretium eros ultrices. Phasellus nisi ex, ullamcorper nec vulputate vel, porttitor tempus libero. Sed ac nulla a nunc congue mollis. Cras commodo mattis ornare. Integer vel fermentum turpis, in ornare justo.
@@ -314,7 +311,7 @@ export default function LayoutStore({ children }) {
                         Phasellus purus dui, pharetra a suscipit non, elementum nec turpis. Proin tincidunt pulvinar dui, vitae blandit sapien gravida eu. Curabitur placerat finibus varius. Quisque accumsan semper quam ut vehicula. Suspendisse ut posuere turpis. Nulla dapibus libero lectus, sit amet malesuada lacus rhoncus eu. Ut nisi nisl, tempor a mi vel, malesuada ullamcorper justo. Nam blandit eu lacus non lobortis. Morbi id nisi vitae ex interdum tincidunt a eget diam. Praesent vitae aliquet diam. Curabitur quis metus interdum, volutpat dui a, posuere velit. Phasellus aliquet, felis nec fringilla porta, velit turpis convallis lectus, quis aliquam nisi arcu ut nulla. Pellentesque a pharetra est.
                     </div>
                 </div>
-            </section>
+            </section >
 
             <section id="subscription" className="mt-12 py-8 bg-primary">
                 <div className="max-w-7xl mx-auto px-4">
@@ -334,8 +331,8 @@ export default function LayoutStore({ children }) {
                 <div className="max-w-8xl mx-auto px-4">
                     <div className="flex flex-wrap justify-between">
                         <div className="w-full lg:w-2/5">
-                            <div className="h-full flex flex-col">
-                                <div className="">
+                            <div className="h-full flex flex-col items-center">
+                                <div style={{ width: '300px' }}>
                                     <Link href={`${DEMO_BASE_URL}`}>
                                         <a className="block flex items-center justify-center relative text-white fill-current">
                                             <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
@@ -350,7 +347,7 @@ export default function LayoutStore({ children }) {
                         <div className="w-full lg:w-3/5">
                             <div className="grid grid-cols-1 lg:grid-cols-3 items-start">
                                 <div className="pt-6 lg:pt-0">
-                                    <div className="uppercase text-sm mb-2 font-bold text-neutral-300">Catalog</div>
+                                    <div className="uppercase text-xs mb-2 tracking-widest font-bold text-neutral-400">Catalog</div>
                                     <a href="#" className="block py-1">Men Watches</a>
                                     <a href="#" className="block py-1">Women Watches</a>
                                     <a href="#" className="block py-1">Kid Watches</a>
@@ -358,7 +355,7 @@ export default function LayoutStore({ children }) {
                                     <a href="#" className="block py-1">Luxurious Watches</a>
                                 </div>
                                 <div className="pt-6 lg:pt-0">
-                                    <div className="uppercase text-sm mb-2 font-bold text-neutral-300">Brands</div>
+                                    <div className="uppercase text-xs mb-2 tracking-widest font-bold text-neutral-400">Brands</div>
                                     <a href="#" className="block py-1">Hugo Boss Watches</a>
                                     <a href="#" className="block py-1">Tommy Hilfiger Watches</a>
                                     <a href="#" className="block py-1">Lacoste Watches</a>
@@ -366,7 +363,7 @@ export default function LayoutStore({ children }) {
                                     <a href="#" className="block py-1">Michael Kor Watches</a>
                                 </div>
                                 <div className="pt-6 lg:pt-0">
-                                    <div className="uppercase text-sm mb-2 font-bold text-neutral-300">Information</div>
+                                    <div className="uppercase text-xs mb-2 tracking-widest font-bold text-neutral-400">Information</div>
                                     <a href="#" className="block py-1">About us</a>
                                     <a href="#" className="block py-1">Shipping & Delivery</a>
                                     <a href="#" className="block py-1">Terms & Conditions</a>
@@ -378,7 +375,7 @@ export default function LayoutStore({ children }) {
                     </div>
                 </div>
             </footer>
-        </div>
+        </div >
     )
 }
 

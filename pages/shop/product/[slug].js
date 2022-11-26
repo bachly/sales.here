@@ -46,9 +46,9 @@ export default function ProductPage({ product, collection }) {
 
                         <main className="bg-neutral-100">
 
-                            <section id="breadcrumbs" className="bg-light py-2">
-                                <div className="max-w-7xl mx-auto px-4">
-                                    <div className="flex items-center justify-center flex-row flex-wrap">
+                            <section id="breadcrumbs" className="bg-white py-2">
+                                <div className="max-w-7xl mx-auto px-4 lg:px-0">
+                                    <div className="flex items-center justify-start flex-row flex-wrap">
                                         <Link href={`${DEMO_BASE_URL}`} passHref={true}>
                                             <a className="text-dark text-sm hover:underline">Shop</a>
                                         </Link>
@@ -60,17 +60,17 @@ export default function ProductPage({ product, collection }) {
                                 </div>
                             </section>
 
-                            <section id="productDetails" className="bg-white my-1">
-                                <div className="max-w-7xl mx-auto px-4">
-                                    <div className="pt-12 flex items-start flex-wrap">
+                            <section id="productDetails" className="bg-white my-1 shadow-sm">
+                                <div className="max-w-7xl mx-auto">
+                                    <div className="flex items-start flex-wrap">
 
-                                        <div className="w-full lg:w-1/2">
+                                        <div className="w-full lg:w-1/2 py-4 lg:py-12">
                                             <ProductMedia media={productMedia} />
                                         </div>
 
-                                        <div id="productForm" className="w-full lg:w-1/2 py-12 xl:py-0">
-                                            <div className="max-w-md mx-auto">
-                                                <h1 id="productTitle" className="text-2xl font-bold max-w-sm">{product.title}</h1>
+                                        <div id="productForm" className="w-full lg:w-1/2 py-4 lg:py-12 border-t-4 border-neutral-100 lg:border-none">
+                                            <div className="max-w-sm mx-auto">
+                                                <h1 id="productTitle" className="text-2xl font-bold lg:max-w-sm">{product.title}</h1>
 
                                                 <div id="productReviews" className="mt-2 flex items-center">
                                                     <span className="text-xl">
@@ -81,7 +81,7 @@ export default function ProductPage({ product, collection }) {
                                                     </span>
                                                 </div>
 
-                                                <div id="productPrice" className="mt-6 max-w-sm">
+                                                <div id="productPrice" className="mt-6 lg:max-w-sm">
                                                     <div className="flex items-center">
                                                         <div className="text-3xl font-black">
                                                             {product.price}
@@ -147,8 +147,8 @@ export default function ProductPage({ product, collection }) {
                                 </div>
                             </section>
 
-                            <section id="productDescription" className="my-1 bg-white py-2">
-                                <div className="max-w-7xl mx-auto px-4">
+                            <section id="productDescription" className="my-1 bg-white py-2 shadow-sm">
+                                <div className="max-w-sm lg:max-w-7xl mx-auto lg:px-4">
                                     <div className="mt-6 mb-4 font-bold text-xl">Product Description</div>
                                     <div className="columns-1 lg:columns-3 gap-12">
                                         <div dangerouslySetInnerHTML={{ __html: product.body }}></div>

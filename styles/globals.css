@@ -11,10 +11,9 @@
 
 @layer base {
     :root {
-        --color-primary: rgb(0, 0, 0); 
-        --color-secondary: rgb(150, 20, 20); /** hovering over primary **/
-        --color-light: rgb(235, 235, 235);
-        --color-body: rgb(256, 256, 256);
+        --color-primary: rgb(176 151 115); 
+        --color-secondary: rgb(124 102 71); /** hovering over primary **/
+        --color-light: rgb(237 234 231);
         --color-dark: rgb(0, 0, 0);
         --color-danger: rgb(150, 20, 20);
     }
