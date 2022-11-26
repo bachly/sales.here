@@ -6,7 +6,7 @@ import { LinkAsButton, LinkWithChevron } from "../../components/Link";
 export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) {
     return <Layout>
         <Container>
-            <div className="mt-20 pt-8 border-t-2 border-gray-200 w-12"></div>
+            <div className="mt-20 pt-8 border-t-2 border-neutral-200 w-12"></div>
             <h2>Typography</h2>
             <div className="mt-32 flex items-start">
                 <div className="w-1/3">
@@ -120,7 +120,7 @@ export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) 
         </Container>
 
         <Container>
-            <div className="mt-32 pt-8 border-t-2 border-gray-200 w-12"></div>
+            <div className="mt-32 pt-8 border-t-2 border-neutral-200 w-12"></div>
             <h2>Buttons &amp; Links</h2>
             <div className="mt-20 flex items-start">
                 <div className="w-1/3">

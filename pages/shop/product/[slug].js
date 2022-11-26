@@ -44,7 +44,7 @@ export default function ProductPage({ product, collection }) {
                             <meta name="robots" content="all" />
                         </Head>
 
-                        <main className="">
+                        <main className="bg-neutral-100">
 
                             <section id="breadcrumbs" className="bg-light py-2">
                                 <div className="max-w-7xl mx-auto px-4">
@@ -60,7 +60,7 @@ export default function ProductPage({ product, collection }) {
                                 </div>
                             </section>
 
-                            <section id="productDetails">
+                            <section id="productDetails" className="bg-white my-1">
                                 <div className="max-w-7xl mx-auto px-4">
                                     <div className="pt-12 flex items-start flex-wrap">
 
@@ -147,15 +147,13 @@ export default function ProductPage({ product, collection }) {
                                 </div>
                             </section>
 
-                            <section id="productDescription" className="mt-12">
+                            <section id="productDescription" className="my-1 bg-white py-2">
                                 <div className="max-w-7xl mx-auto px-4">
-                                    <hr />
                                     <div className="mt-6 mb-4 font-bold text-xl">Product Description</div>
-                                    <div className="columns-3 gap-12">
+                                    <div className="columns-1 lg:columns-3 gap-12">
                                         <div dangerouslySetInnerHTML={{ __html: product.body }}></div>
                                     </div>
                                     <div className="pt-8"></div>
-                                    <hr />
                                 </div>
                             </section>
 

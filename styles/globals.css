@@ -20,43 +20,43 @@
     }
 
     h1.display, .h1.display {
-        @apply text-8xl text-gray-900 font-black tracking-tight
+        @apply text-8xl text-neutral-900 font-black tracking-tight
     }
 
     h1, .h1 {
-        @apply text-5xl text-gray-900 font-semibold leading-loose tracking-tight
+        @apply text-5xl text-neutral-900 font-semibold leading-loose tracking-tight
     }
 
     h2, .h2 {
-        @apply text-2xl text-gray-900 font-bold leading-loose
+        @apply text-2xl text-neutral-900 font-bold leading-loose
     }
 
     h3, .h3 {
-        @apply text-xl text-gray-900 font-bold leading-extra-loose
+        @apply text-xl text-neutral-900 font-bold leading-extra-loose
     }
 
     h4, .h4 {
-        @apply text-lg text-gray-900 font-semibold leading-extra-loose tracking-tight
+        @apply text-lg text-neutral-900 font-semibold leading-extra-loose tracking-tight
     }
 
     h5, .h5 {
-        @apply text-sm text-gray-500 uppercase
+        @apply text-sm text-neutral-500 uppercase
     }
 
     h6, .h6 {
-        @apply text-xs text-gray-700 font-bold
+        @apply text-xs text-neutral-700 font-bold
     }
 
     p, .p {
-        @apply text-base text-gray-900
+        @apply text-base text-neutral-900
     }
 
     small {
-        @apply text-xs text-gray-300 font-bold
+        @apply text-xs text-neutral-300 font-bold
     }
 
     blockquote, .blockquote {
-        @apply text-3xl text-gray-900 font-semibold leading-loose border-l-4 border-primary block pl-6
+        @apply text-3xl text-neutral-900 font-semibold leading-loose border-l-4 border-primary block pl-6
     }
 }
 
@@ -80,13 +80,23 @@
     border: 1px solid theme("colors.dark");
 }
 
+.splide__arrow--prev {
+    left: 0.5em;
+    background: theme("colors.gray.100")
+}
+
+.splide__arrow--next {
+    right: 0.5em;
+    background: theme("colors.gray.100")
+}
+
 /** Button styles **/
 .button, 
 .button.outline {
-    @apply text-gray-1000 w-64 border-2 border-gray-1000 
+    @apply text-neutral-900 w-64 border-2 border-neutral-900 
         py-2 px-4 rounded-md transition duration-200
-        hover:bg-gray-1000 hover:text-white
-        active:bg-gray-1000 active:text-white
+        hover:bg-neutral-900 hover:text-white
+        active:bg-neutral-900 active:text-white
 }
 
 .button.secondary {
@@ -96,12 +106,12 @@
 }
 
 .button[disabled] {
-    @apply text-gray-300 border-gray-200 cursor-not-allowed hover:bg-white
+    @apply text-neutral-300 border-neutral-200 cursor-not-allowed hover:bg-white
         active:scale-100
 }
 
 .button.primary {
-    @apply bg-primary border-primary text-gray-1000 
+    @apply bg-primary border-primary text-neutral-900 
         hover:bg-secondary hover:border-secondary
         active:bg-secondary
 }

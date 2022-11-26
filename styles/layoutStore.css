@@ -4,7 +4,7 @@
 }
 
 .megamenu__label {
-    @apply px-2 py-2 text-gray-500;
+    @apply px-2 py-2 text-neutral-500;
 }
 
 .megamenu__content {
@@ -12,7 +12,7 @@
 }
 
 .megamenu:hover > .megamenu__label {
-    @apply text-gray-900
+    @apply text-neutral-900
 }
 
 .megamenu:hover > .megamenu__content {
@@ -25,7 +25,7 @@
 }
 
 .menu__label {
-    @apply px-2 py-2 text-gray-500;
+    @apply px-2 py-2 text-neutral-500;
 }
 
 .menu__content {
@@ -33,7 +33,7 @@
 }
 
 .menu:hover > .menu__label {
-    @apply text-gray-900
+    @apply text-neutral-900
 }
 
 .menu:hover > .menu__content {

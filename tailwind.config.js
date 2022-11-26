@@ -37,17 +37,7 @@ module.exports = {
         "light": "var(--color-light)",
         "body": "var(--color-body)",
         "dark": "var(--color-dark)",
-        "danger": "var(--color-danger)",
-        "gray": {
-          1000: "rgba(7, 11, 13, 1)",
-          900: "rgba(7, 11, 13, 0.9)",
-          500: "rgba(7, 11, 13, 0.5)",
-          400: "rgba(7, 11, 13, 0.4)",
-          300: "rgba(7, 11, 13, 0.3)",
-          200: "rgba(7, 11, 13, 0.2)",
-          100: "rgba(7, 11, 13, 0.1)",
-          50: "rgba(7, 11, 13, 0.05)"
-        }
+        "danger": "var(--color-danger)"
       },
       fontFamily: {
         body: ['Mulish']

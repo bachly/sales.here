@@ -52,35 +52,35 @@ export default function BannersPageForStore() {
 
         <section id="main" className="mt-12">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="pb-2 border-b border-gray-200">{BANNERS.product.length} Product Highlight Banners</h2>
+                <h2 className="pb-2 border-b border-neutral-200">{BANNERS.product.length} Product Highlight Banners</h2>
 
                 <div className="py-12 grid grid-cols-4 gap-4">
                     {BANNERS.product.map(item => {
-                        return <div className="pb-2/3 bg-gray-100"></div>
+                        return <div className="pb-2/3 bg-neutral-100"></div>
                     })}
                 </div>
 
-                <h2 className="pb-2 border-b border-gray-200">{BANNERS.sales.length} Sales Banners</h2>
+                <h2 className="pb-2 border-b border-neutral-200">{BANNERS.sales.length} Sales Banners</h2>
 
                 <div className="py-12 grid grid-cols-4 gap-4">
                     {BANNERS.sales.map(item => {
-                        return <div className="pb-2/3 bg-gray-100"></div>
+                        return <div className="pb-2/3 bg-neutral-100"></div>
                     })}
                 </div>
 
-                <h2 className="pb-2 border-b border-gray-200">{BANNERS.holidays.length} Holiday Banners</h2>
+                <h2 className="pb-2 border-b border-neutral-200">{BANNERS.holidays.length} Holiday Banners</h2>
 
                 <div className="py-12 grid grid-cols-4 gap-4">
                     {BANNERS.holidays.map(item => {
-                        return <div className="pb-2/3 bg-gray-100"></div>
+                        return <div className="pb-2/3 bg-neutral-100"></div>
                     })}
                 </div>
 
-                <h2 className="pb-2 border-b border-gray-200">{BANNERS.blog.length} Blog Banners</h2>
+                <h2 className="pb-2 border-b border-neutral-200">{BANNERS.blog.length} Blog Banners</h2>
 
                 <div className="py-12 grid grid-cols-4 gap-4">
                     {BANNERS.blog.map(item => {
-                        return <div className="pb-2/3 bg-gray-100"></div>
+                        return <div className="pb-2/3 bg-neutral-100"></div>
                     })}
                 </div>
             </div>

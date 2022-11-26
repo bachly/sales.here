@@ -107,5 +107,4 @@ export function BookmarkIcon() {
     return <svg width="24" height="24" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <path fillRule="evenodd" clipRule="evenodd" d="M6.66699 30.1567L16.0003 25.4901L25.3337 30.1567V5.33268C25.3337 3.85992 24.1398 2.66602 22.667 2.66602H9.33366C7.8609 2.66602 6.66699 3.85992 6.66699 5.33268V30.1567ZM16.0003 22.5086L9.33366 25.842V5.33268H22.667V25.842L16.0003 22.5086Z" fill="current" />
     </svg>
-
 }

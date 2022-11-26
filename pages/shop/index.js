@@ -19,7 +19,14 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                         gap: '1rem',
                         perPage: 2,
                         arrows: false,
-                        padding: '5%'
+                        padding: '5%',
+                        breakpoints: {
+                            640: {
+                                arrows: true,
+                                padding: 0,
+                                perPage: 1,
+                            },
+                        }
                     }}>
                         {Object.keys(featuredCollections).map(collectionSlug => {
                             const collection = featuredCollections[collectionSlug];
@@ -50,23 +57,25 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
         </section>
 
         <section id="features" className="mt-16">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
 
                 <div className="text-center">
                     <h2 className="text-primary">Our Collections</h2>
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                     {Object.keys(collections).map(collectionSlug => {
                         const collection = collections[collectionSlug];
                         return <Link href={`${DEMO_BASE_URL}/collection/${collectionSlug}`} passHref={true} key={collectionSlug}>
                             <a className="block">
                                 <div className="pb-2/3 relative bg-light">
                                     {collection.image &&
-                                        <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true}/>}
+                                        <Image alt={`Image for ${collection.title}`} src={`${collection.image}`} fill={true} />}
                                 </div>
-                                <div className="w-full text-center pt-2 px-4 text-dark">
-                                    {collection.title}
+                                <div className="flex items-center justify-center relative -top-3">
+                                    <div className="text-center py-1 px-6 bg-dark text-white inline-block text-sm lg:text-base">
+                                        {collection.title}
+                                    </div>
                                 </div>
                             </a>
                         </Link>
