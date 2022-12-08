@@ -69,7 +69,7 @@ export default function CollectionPage({ source, collection }) {
                                                 const product = collection.products[productSlug];
                                                 return <Link key={product.slug} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
                                                     <a className="block bg-white p-1 shadow-sm overflow-hidden flex flex-col border border-neutral-100 hover:border-neutral-900 transition duration-200">
-                                                        <div className="flex-1 py-12" style={{ minHeight: "240px" }}>
+                                                        <div className="flex-1 py-12" style={{ minHeight: "480px" }}>
                                                             <div className="h-full flex flex-col justify-center">
                                                                 <img src={product.images[0]} />
                                                             </div>
