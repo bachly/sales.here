@@ -1,13 +1,11 @@
 import { useRouter } from "next/router"
-import LayoutStore from '../../../components/LayoutStore'
+import LayoutStore from '../../components/LayoutStore'
 import Head from 'next/head'
 import Link from 'next/link'
-import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../../components/Icons'
+import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../components/Icons'
 import _ from 'underscore'
-import ProductMedia from '../../../components/ProductMedia'
-import { getStoreCollections, getStoreCollectionsWithProducts, getStoreProducts } from '../../../lib/utils'
-
-const DEMO_BASE_URL = '/shop';
+import ProductMedia from '../../components/ProductMedia'
+import { getStoreCollections, getStoreCollectionsWithProducts, getStoreProducts } from '../../lib/utils'
 
 export default function ProductPage({ product, collection }) {
     const router = useRouter()
@@ -49,7 +47,7 @@ export default function ProductPage({ product, collection }) {
                             <section id="breadcrumbs" className="bg-white py-2">
                                 <div className="max-w-7xl mx-auto px-4 lg:px-0">
                                     <div className="flex items-center justify-start flex-row flex-wrap">
-                                        <Link href={`${DEMO_BASE_URL}`} passHref={true}>
+                                        <Link href={`/`} passHref={true}>
                                             <a className="text-dark text-sm hover:underline">Shop</a>
                                         </Link>
                                         <span className="px-2 text-base">&raquo;</span>
@@ -164,7 +162,7 @@ export default function ProductPage({ product, collection }) {
                                         <div className="grid grid-cols-5 gap-1">
                                             {_.first(Object.keys(collection.products), 5).map((key) => {
                                                 const product = collection.products[key];
-                                                return <Link key={key} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
+                                                return <Link key={key} href={`/product/${collection.slug}_${product.slug}`} passHref={true}>
                                                     <a className="block bg-white p-2 shadow-sm rounded-md overflow-hidden flex flex-col border-2 border-transparent hover:border-primary hover:border-opacity-20 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "480px" }}>
                                                             <div className="h-full flex flex-col justify-center">

@@ -1,11 +1,8 @@
 import { useRouter } from "next/router"
-import LayoutStore from '../../../components/LayoutStore'
+import LayoutStore from '../../components/LayoutStore'
 import Head from 'next/head'
 import Link from 'next/link'
-import { getCollectionBySlug, getStoreCollections } from '../../../lib/utils'
-import Image from "next/future/image"
-
-const DEMO_BASE_URL = '/shop';
+import { getCollectionBySlug, getStoreCollections } from '../../lib/utils'
 
 export default function CollectionPage({ source, collection }) {
     const router = useRouter()
@@ -67,7 +64,7 @@ export default function CollectionPage({ source, collection }) {
 
                                             {Object.keys(collection.products).map(productSlug => {
                                                 const product = collection.products[productSlug];
-                                                return <Link key={product.slug} href={`${DEMO_BASE_URL}/product/${collection.slug}_${product.slug}`} passHref={true}>
+                                                return <Link key={product.slug} href={`/product/${collection.slug}_${product.slug}`} passHref={true}>
                                                     <a className="block bg-white p-1 shadow-sm overflow-hidden flex flex-col border border-neutral-100 hover:border-neutral-900 transition duration-200">
                                                         <div className="flex-1 py-12" style={{ minHeight: "480px" }}>
                                                             <div className="h-full flex flex-col justify-center">

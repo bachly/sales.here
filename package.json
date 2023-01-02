@@ -1,6 +1,6 @@
 {
-  "name": "handily",
-  "description": "NextJS Lifestyle Blog & Online Store",
+  "name": "sales.here",
+  "description": "NextJS TailwindCSS Sales ecommerce store template",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",

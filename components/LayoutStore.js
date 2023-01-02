@@ -5,9 +5,6 @@ import Container from "./Container";
 import { UserIcon, CartIcon, SearchIcon, PhoneIcon, MenuIcon } from "./Icons";
 import Announcement from "./Announcement";
 
-const DEMO_BASE_URL = '/shop';
-const SHOP_NAME = 'Fauget';
-
 const MENU = {
     dropdown: {
         "links": [
@@ -73,11 +70,11 @@ const MENU = {
         "links": [
             {
                 "label": "Homepage",
-                "url": `${DEMO_BASE_URL}`
+                "url": `/`
             },
             {
                 "label": "Collection Page",
-                "url": `${DEMO_BASE_URL}/collection/personalised-gifts`
+                "url": `/collection/personalised-gifts`
             },
             {
                 "label": "Product Page",
@@ -140,9 +137,9 @@ export default function LayoutStore({ children }) {
                         <div className="py-4">
                             <div className="flex items-center justify-between">
                                 <div style={{ width: '300px' }}>
-                                    <Link href={`${DEMO_BASE_URL}`}>
+                                    <Link href={`/`}>
                                         <a className="flex items-center relative">
-                                            <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: '200px' }} />
+                                            <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: '200px' }} />
                                         </a>
                                     </Link>
                                 </div>
@@ -214,15 +211,15 @@ export default function LayoutStore({ children }) {
                                                 </div>
                                             </nav>
                                             <nav className="menu">
-                                                <Link href={`/styleguide`}>
-                                                    <a className="menu__label">STYLEGUIDE</a>
+                                                <Link href={`/collection/sales`}>
+                                                    <a className="menu__label">
+                                                        <span className="text-danger">SALES</span>
+                                                    </a>
                                                 </Link>
                                             </nav>
                                             <nav className="menu">
-                                                <Link href={`/banners`}>
-                                                    <a className="menu__label">
-                                                        <span className="text-danger">BANNERS</span>
-                                                    </a>
+                                                <Link href={`/styleguide`}>
+                                                    <a className="menu__label">STYLEGUIDE</a>
                                                 </Link>
                                             </nav>
                                         </div>
@@ -264,9 +261,9 @@ export default function LayoutStore({ children }) {
                             </div>
 
                             <div id="mobile-menu__logo" class="flex-1">
-                                <Link href={`${DEMO_BASE_URL}`}>
+                                <Link href={`/`}>
                                     <a className="block flex items-center justify-center relative focus:outline-none focus:ring focus:border-primary">
-                                        <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: "150px" }} />
+                                        <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: "150px" }} />
                                     </a>
                                 </Link>
                             </div>
@@ -333,14 +330,14 @@ export default function LayoutStore({ children }) {
                         <div className="w-full lg:w-2/5">
                             <div className="h-full flex flex-col items-center">
                                 <div style={{ width: '300px' }}>
-                                    <Link href={`${DEMO_BASE_URL}`}>
+                                    <Link href={`/`}>
                                         <a className="block flex items-center justify-center relative text-white fill-current">
-                                            <img src='/logos/watch-store-logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
+                                            <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
                                         </a>
                                     </Link>
                                 </div>
                                 <div className="mt-4 text-xs text-center">
-                                    An online store by {SHOP_NAME} Pty Ltd. ABN: 123567890
+                                    An online store by Some Company Name Pty Ltd. ABN: 123567890
                                 </div>
                             </div>
                         </div>
