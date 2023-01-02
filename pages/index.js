@@ -10,7 +10,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
     return <LayoutStore>
         {featuredCollections && Object.keys(featuredCollections).length > 0 &&
             <section id="hero">
-                <div className="mx-auto">
+                <div className="max-w-8xl mx-auto">
                     <Splide options={{
                         perPage: 2,
                         arrows: true,

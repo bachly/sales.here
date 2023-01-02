@@ -139,7 +139,7 @@ export default function LayoutStore({ children }) {
                                 <div style={{ width: '300px' }}>
                                     <Link href={`/`}>
                                         <a className="flex items-center relative">
-                                            <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: '200px' }} />
+                                            <img src='/img/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: '200px' }} />
                                         </a>
                                     </Link>
                                 </div>
@@ -263,7 +263,7 @@ export default function LayoutStore({ children }) {
                             <div id="mobile-menu__logo" class="flex-1">
                                 <Link href={`/`}>
                                     <a className="block flex items-center justify-center relative focus:outline-none focus:ring focus:border-primary">
-                                        <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: "150px" }} />
+                                        <img src='/img/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: "150px" }} />
                                     </a>
                                 </Link>
                             </div>
@@ -332,7 +332,7 @@ export default function LayoutStore({ children }) {
                                 <div style={{ width: '300px' }}>
                                     <Link href={`/`}>
                                         <a className="block flex items-center justify-center relative text-white fill-current">
-                                            <img src='/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
+                                            <img src='/img/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} />
                                         </a>
                                     </Link>
                                 </div>
