@@ -1,6 +1,6 @@
 import Button from "../components/Button";
 import Container from "../components/Container";
-import Layout from "../components/LayoutStore";
+import Layout from "../components/Layout";
 import { LinkAsButton, LinkWithChevron } from "../components/Link";
 
 export default function DocsPage({ featuredProducts = [], featuredPosts = [] }) {

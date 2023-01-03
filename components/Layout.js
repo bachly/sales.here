@@ -2,23 +2,25 @@ import Link from "next/link";
 import Meta from './Meta';
 import PackageJSON from '../package.json';
 import Container from "./Container";
-import { UserIcon, CartIcon, SearchIcon, PhoneIcon, MenuIcon } from "./Icons";
+import { UserIcon, CartIcon, SearchIcon, PhoneIcon, MenuIcon, PinIcon, ChevronRight, ChevronRightSmall, CrossIcon } from "./Icons";
 import Announcement from "./Announcement";
+import { useReducer, useState } from "react";
+import clsx from "clsx";
 
 const MENU = {
     dropdown: {
         "links": [
             {
                 "label": "Mens Watches",
-                "url": "#"
+                "url": "/collection/men-watches"
             },
             {
                 "label": "Women Watches",
-                "url": "#"
+                "url": "/collection/women-watches"
             },
             {
                 "label": "On Sales",
-                "url": "#"
+                "url": "/collection/watches-on-sales"
             }
         ]
     },
@@ -50,19 +52,19 @@ const MENU = {
         "links": [
             {
                 "label": "Hugo Boss",
-                "url": "#"
+                "url": "/collection/hugo-boss-watches"
             },
             {
                 "label": "Tommy Hilfiger",
-                "url": "#"
+                "url": "/collection/tommy-hilfiger-watches"
             },
             {
                 "label": "Lacoste",
-                "url": "#"
+                "url": "/collection/lacoste-watches"
             },
             {
                 "label": "Guess",
-                "url": "#"
+                "url": "/collection/guess-watches"
             },
         ]
     },
@@ -74,7 +76,7 @@ const MENU = {
             },
             {
                 "label": "Collection Page",
-                "url": `/collection/personalised-gifts`
+                "url": `/collection/men-watches`
             },
             {
                 "label": "Product Page",
@@ -120,13 +122,34 @@ const MENU = {
     }
 }
 
-export default function LayoutStore({ children }) {
+export default function Layout({ children }) {
     const sitename = `${PackageJSON.site_settings.sitename}`;
+
+    const [state, setState] = useState({
+        isMobileMenuOpened: false
+    })
+
+    function openMobileNav(name) {
+        return (event) => {
+            event && event.preventDefault();
+        }
+    }
+
+    function toggleMobileMenu() {
+        return (event) => {
+            event && event.preventDefault();
+            setState({
+                ...state,
+                isMobileMenuOpened: !state.isMobileMenuOpened
+            })
+        }
+    }
+
     return (
-        <div id="Layout" className="min-h-screen font-body bg-neutral-100">
+        <div id="Layout" className={clsx("font-body bg-neutral-100", state.isMobileMenuOpened ? "h-screen overflow-hidden" : "min-h-screen")}>
             <Meta />
 
-            <header id="Header" className="relative z-10">
+            <header id="Header" className="relative z-10 ">
                 <Announcement>
                     We ship nationwide. 30-day return policy. Free standard shipping on orders over $75.
                 </Announcement>
@@ -134,8 +157,8 @@ export default function LayoutStore({ children }) {
                 {/* Desktop menu */}
                 <div className="hidden lg:block bg-neutral-100 border-b border-neutral-200">
                     <Container>
-                        <div className="py-4">
-                            <div className="flex items-center justify-between">
+                        <div className="">
+                            <div className="pt-4 flex items-center justify-between">
                                 <div style={{ width: '300px' }}>
                                     <Link href={`/`}>
                                         <a className="flex items-center relative">
@@ -145,7 +168,62 @@ export default function LayoutStore({ children }) {
                                 </div>
 
                                 <div className="flex-1">
-                                    <div className="max-w-7xl mx-auto px-4 relative">
+                                    <div className="flex items-center justify-between">
+                                        <div className="w-full relative pr-2" style={{ minWidth: '400px' }}>
+                                            <form className="relative" action="/search">
+                                                <input id="GlobalSearch" type="text" placeholder="Search" name="q" data-live-search-input=""
+                                                    className="relative z-30 text-base bg-neutral-200 text-white placeholder-neutral-500 py-2 pr-10 pl-4 w-full focus:outline-none focus:ring focus:border-primary-300" />
+                                                <button className="absolute right-4 top-0 z-30" type="submit">
+                                                    <span className="block w-6 py-2 fill-current text-neutral-600">
+                                                        <SearchIcon />
+                                                    </span>
+                                                </button>
+                                                <div id="GloablSearchResult" className="absolute w-full top-full left-0 z-30"></div>
+                                            </form>
+                                        </div>
+                                        <div className="flex-1">
+                                            <div className="w-full flex items-center flex-no-wrap justify-end">
+                                                <div className="py-2 px-4 flex flex-row items-center">
+                                                    <span className="inline-block w-6 text-black fill-current mr-2">
+                                                        <PhoneIcon />
+                                                    </span>
+                                                    <div>
+                                                        <a href="tel:1300 023 370" title="Click to call Rowmark Australia" className="rounded-md text-base hover:bg-primary text-black text-left w-full focus:outline-none focus:ring focus:border-primary-300 flex flex-row items-center transition duration-200">
+                                                            1300 023 370
+                                                        </a>
+                                                        <a href="mailto:sales@rowmark.com.au" title="Click to email Rowmark Australia" className="rounded-md hover:bg-primary text-black mr-1 text-xs text-left w-full focus:outline-none focus:ring focus:border-primary-300 flex flex-row items-center transition duration-200">
+                                                            sales@sales.here.li
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div style={{ minWidth: '330px' }} className="rounded-lg text-black text-left text-sm py-2 px-4 w-full focus:outline-none focus:ring focus:border-primary-300 flex flex-row items-center transition duration-200 cursor-default">
+                                                    <span className="inline-block w-10 text-black fill-current mr-2">
+                                                        <PinIcon />
+                                                    </span>
+                                                    100 Prospect Hwy, Parramatta, <br />New South Wales, Australia
+                                                </div>
+
+                                                <div style={{ minWidth: '80px' }}>
+                                                    <a href="/cart" className="block relative focus:outline-nonefocus:ring focus:border-primary-300 flex items-center justify-center">
+                                                        <span className="inline-block w-6 text-black fill-current mr-2">
+                                                            <CartIcon />
+                                                        </span>
+                                                        <div className="">
+                                                            Cart
+                                                            <div className="text-xs">5 items</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="py-2">
+                                <div className="max-w-7xl mx-auto relative">
+                                    <div className="flex items-center justify-between">
                                         <div className="flex items-center justify-start">
                                             <nav className="megamenu">
                                                 <span className="megamenu__label">Megamenu</span>
@@ -223,23 +301,16 @@ export default function LayoutStore({ children }) {
                                                 </Link>
                                             </nav>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div className="w-64">
-                                    <div className="flex itens-center justify-end">
-                                        <NavIconLink href="#">
-                                            <PhoneIcon />
-                                        </NavIconLink>
-                                        <NavIconLink href="#">
-                                            <SearchIcon />
-                                        </NavIconLink>
-                                        <NavIconLink href="#">
-                                            <UserIcon />
-                                        </NavIconLink>
-                                        <NavIconLink href="#">
-                                            <CartIcon />
-                                        </NavIconLink>
+                                        <div className="flex items-center justify-end">
+                                            <nav className="menu">
+                                                <Link href={`/login`}>
+                                                    <a className="menu__label">Login</a>
+                                                </Link>
+                                                <Link href={`/login`}>
+                                                    <a className="menu__label">Register</a>
+                                                </Link>
+                                            </nav>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -248,19 +319,19 @@ export default function LayoutStore({ children }) {
                 </div>
 
                 {/* Mobile menu */}
-                <div id="mobile-menu" class="block lg:hidden bg-neutral-100 border-b border-neutral-200">
+                <div id="mobile-menu" className={clsx("block lg:hidden bg-neutral-100 border-b border-neutral-200")}>
                     <div id="mobile-menu__topbar">
-                        <div class="py-2 flex flex-row items-center">
+                        <div className="p-2 flex flex-row items-center">
 
-                            <div id="mobile-menu__hamburger" class="w-12">
-                                <button target="-1" class="w-10 h-10 px-2 focus:outline-none focus:ring focus:border-primary flex items-center justify-center">
-                                    <span class="w-full fill-current text-black">
+                            <div id="mobile-menu__hamburger" className="w-12">
+                                <button target="-1" onClick={toggleMobileMenu()} className="w-10 h-10 px-2 focus:outline-none focus:ring focus:border-primary flex items-center justify-center">
+                                    <span className="w-full fill-current text-black">
                                         <MenuIcon />
                                     </span>
                                 </button>
                             </div>
 
-                            <div id="mobile-menu__logo" class="flex-1">
+                            <div id="mobile-menu__logo" className="flex-1">
                                 <Link href={`/`}>
                                     <a className="block flex items-center justify-center relative focus:outline-none focus:ring focus:border-primary">
                                         <img src='/img/logo.svg' alt={`${sitename} logo`} title={`${sitename} logo`} style={{ width: "150px" }} />
@@ -268,12 +339,12 @@ export default function LayoutStore({ children }) {
                                 </Link>
                             </div>
 
-                            <div id="mobile-menu__users" class="w-12">
-                                <div class="flex flex-center items-center justify-end">
-                                    <div class="ml-6">
-                                        <div class="flex flex-row items-center">
-                                            <a href="/cart" class="relative w-10 h-10 px-2 focus:outline-none focus:ring focus:border-primary flex items-center justify-center">
-                                                <span class="w-full">
+                            <div id="mobile-menu__users" className="w-12">
+                                <div className="flex flex-center items-center justify-end">
+                                    <div className="ml-6">
+                                        <div className="flex flex-row items-center">
+                                            <a href="/cart" className="relative w-10 h-10 px-2 focus:outline-none focus:ring focus:border-primary flex items-center justify-center">
+                                                <span className="w-full">
                                                     <CartIcon />
                                                 </span>
                                             </a>
@@ -284,16 +355,108 @@ export default function LayoutStore({ children }) {
                         </div>
                     </div>
 
-                    <div id="mobile-menu__flyin">
-                        {/* <div style="max-width: 350px;" class="fixed top-0 left-0 h-full w-full overflow-y-scroll overflow-x-hidden z-50">
-                            <button tabindex="0" style="left: 80%;" class="fixed top-0 w-12 h-12 py-2 px-2 bg-black focus:outline-nonefocus:ring focus:border-primary-300 flex items-center justify-center z-50">
-                                <span class="w-full" style="fill:white"><svg id="lnr-cross" viewBox="0 0 1024 1024">
-                                    <title>cross</title>
-                                    <path class="path1" d="M548.203 537.6l289.099-289.098c9.998-9.998 9.998-26.206 0-36.205-9.997-9.997-26.206-9.997-36.203 0l-289.099 289.099-289.098-289.099c-9.998-9.997-26.206-9.997-36.205 0-9.997 9.998-9.997 26.206 0 36.205l289.099 289.098-289.099 289.099c-9.997 9.997-9.997 26.206 0 36.203 5 4.998 11.55 7.498 18.102 7.498s13.102-2.499 18.102-7.499l289.098-289.098 289.099 289.099c4.998 4.998 11.549 7.498 18.101 7.498s13.102-2.499 18.101-7.499c9.998-9.997 9.998-26.206 0-36.203l-289.098-289.098z">
-                                    </path>
-                                </svg></span>
-                            </button>
-                        </div> */}
+                    <div id="mobile-menu__sidebar" className={clsx(state.isMobileMenuOpened ? "block" : "hidden")}>
+                        <div style={{ maxWidth: "350px" }} className="fixed top-0 left-0 h-full w-full overflow-y-scroll overflow-x-hidden z-50 bg-white shadow-lg border-r border-neutral-300">
+
+                            {/* Mobile menu Level 1 */}
+                            <div className="mobile-menu__level-1" data-name="Root">
+                                <div className="h-12 flex items-center">
+                                    <h2 className="flex-1 pl-4">Menu</h2>
+                                    <button onClick={toggleMobileMenu()} tabindex="0" className="w-10 h-10 mr-2 py-2 px-2 focus:outline-none focus:ring flex items-center justify-center z-50">
+                                        <CrossIcon />
+                                    </button>
+                                </div>
+
+                                <div className="pt-1 bg-neutral-100"></div>
+
+                                <div className="">
+                                    <form className="relative" action="/search">
+                                        <input id="GlobalSearch" type="text" placeholder="Search" name="q" data-live-search-input=""
+                                            className="relative z-30 text-base rounded-sm placeholder-neutral-400 py-2 pr-10 pl-4 w-full focus:outline-none focus:ring focus:border-primary-300" />
+                                        <button className="absolute right-4 top-0 z-30" type="submit">
+                                            <span className="block w-6 py-2 fill-current text-neutral-600">
+                                                <SearchIcon />
+                                            </span>
+                                        </button>
+                                        <div id="GloablSearchResult" className="absolute w-full top-full left-0 z-30"></div>
+                                    </form>
+                                </div>
+
+                                <div className="pt-1 bg-neutral-100"></div>
+
+                                <div className="pl-2 pr-1 pt-1">
+                                    <button className="w-full px-2" onClick={openMobileNav('Megamenu')}>
+                                        <div className="py-2 flex items-center">
+                                            <div className="flex-1 text-left">Megamenu</div>
+                                            <div className=""><ChevronRightSmall /></div>
+                                        </div>
+                                    </button>
+                                    <button className="w-full px-2" onClick={openMobileNav('Dropdown')}>
+                                        <div className="py-2 flex items-center">
+                                            <div className="flex-1 text-left">Dropdown</div>
+                                            <div className=""><ChevronRightSmall /></div>
+                                        </div>
+                                    </button>
+                                    <button className="w-full px-2" onClick={openMobileNav('Header Layouts')}>
+                                        <div className="py-2 flex items-center">
+                                            <div className="flex-1 text-left">Header Layouts</div>
+                                            <div className=""><ChevronRightSmall /></div>
+                                        </div>
+                                    </button>
+                                    <button className="w-full px-2">
+                                        <div className="py-2 flex items-center">
+                                            <div className="flex-1 text-left text-danger">SALES</div>
+                                        </div>
+                                    </button>
+                                    <button className="w-full px-2">
+                                        <div className="py-2 flex items-center">
+                                            <div className="flex-1 text-left">STYLEGUIDE</div>
+                                        </div>
+                                    </button>
+                                </div>
+
+                                <div className="pt-1 bg-neutral-100"></div>
+
+                                <div className="pt-1 px-3">
+                                    <div className="w-full flex flex-col flex-wrap">
+                                        <div className="py-2 flex flex-row items-center">
+                                            <span className="inline-block w-6 text-black fill-current mr-2">
+                                                <PhoneIcon />
+                                            </span>
+                                            <a href="tel:1300 023 370" title="Click to call Rowmark Australia" className="rounded-md text-base text-black text-left w-full focus:outline-none focus:ring focus:border-primary-300 flex flex-row items-center transition duration-200">
+                                                1300 023 370
+                                            </a>
+                                        </div>
+
+                                        <div className="py-2 flex flex-row items-center">
+                                            <span className="inline-block w-6 text-black fill-current mr-2">
+                                                <PhoneIcon />
+                                            </span>
+                                            <a href="mailto:sales@rowmark.com.au" title="Click to email Rowmark Australia" className="rounded-md text-black mr-1 text-left w-full focus:outline-none focus:ring focus:border-primary-300 flex flex-row items-center transition duration-200">
+                                                sales@sales.here.li
+                                            </a>
+                                        </div>
+
+                                        <div className="py-2 rounded-lg text-black text-left text-sm w-full focus:outline-none focus:ring focus:border-primary-300 flex flex-row items-center transition duration-200 cursor-default">
+                                            <span className="inline-block w-6 text-black fill-current mr-2">
+                                                <PinIcon />
+                                            </span>
+                                            100 Prospect Hwy, Parramatta, <br />New South Wales, Australia
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Mobile menu Level 2 */}
+                            <div className="mobile-menu__level-2 hidden" data-name="Megamenu"></div>
+                            <div className="mobile-menu__level-2 hidden" data-name="Dropdown"></div>
+                            <div className="mobile-menu__level-2 hidden" data-name="Header Layouts"></div>
+                        </div>
+                    </div>
+
+                    <div id="mobile-menu__overlay"
+                        onClick={toggleMobileMenu()}
+                        className={clsx(state.isMobileMenuOpened ? "block" : "hidden", "fixed top-0 left-0 w-full h-full bg-white bg-opacity-80")}>
                     </div>
                 </div>
             </header >

@@ -34,6 +34,12 @@ export function ChevronRight() {
     </svg>
 }
 
+export function ChevronRightSmall() {
+    return <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fillRule="evenodd" clipRule="evenodd" d="M14.5858 12L7.29291 4.70712L8.70712 3.29291L17.4142 12L8.70712 20.7071L7.29291 19.2929L14.5858 12Z" fill="current" />
+    </svg>
+}
+
 export function CrossIcon() {
     return <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <g id="16 / x">
@@ -107,4 +113,11 @@ export function BookmarkIcon() {
     return <svg width="24" height="24" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <path fillRule="evenodd" clipRule="evenodd" d="M6.66699 30.1567L16.0003 25.4901L25.3337 30.1567V5.33268C25.3337 3.85992 24.1398 2.66602 22.667 2.66602H9.33366C7.8609 2.66602 6.66699 3.85992 6.66699 5.33268V30.1567ZM16.0003 22.5086L9.33366 25.842V5.33268H22.667V25.842L16.0003 22.5086Z" fill="current" />
     </svg>
+}
+
+export function PinIcon() {
+    return <svg width="24" height="24" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path fillRule="evenodd" clipRule="evenodd" d="M15 29.1595L15.8222 28.4416C22.7359 22.4047 26.25 17.1334 26.25 12.5C26.25 5.93833 21.1287 1.25 15 1.25C8.87132 1.25 3.75 5.93833 3.75 12.5C3.75 17.1334 7.26413 22.4047 14.1778 28.4416L15 29.1595ZM15 25.8293C9.13327 20.5419 6.25 16.0615 6.25 12.5C6.25 7.37075 10.2051 3.75 15 3.75C19.7949 3.75 23.75 7.37075 23.75 12.5C23.75 16.0615 20.8667 20.5419 15 25.8293ZM15 6.25C18.4518 6.25 21.25 9.04822 21.25 12.5C21.25 15.9518 18.4518 18.75 15 18.75C11.5482 18.75 8.75 15.9518 8.75 12.5C8.75 9.04822 11.5482 6.25 15 6.25ZM11.25 12.5C11.25 10.4289 12.9289 8.75 15 8.75C17.0711 8.75 18.75 10.4289 18.75 12.5C18.75 14.5711 17.0711 16.25 15 16.25C12.9289 16.25 11.25 14.5711 11.25 12.5Z" fill="current" />
+    </svg>
+
 }

@@ -1,5 +1,5 @@
 import Image from "next/future/image";
-import LayoutStore from "../components/LayoutStore";
+import Layout from "../components/Layout";
 import { getStoreCollections, getStoreFeaturedCollections } from "../lib/utils";
 import Link from "next/link";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
@@ -7,7 +7,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 export default function HomepageForOnlineStore({ featuredCollections, collections, featuredProducts }) {
     console.log('featuredCollections', featuredCollections)
 
-    return <LayoutStore>
+    return <Layout>
         {featuredCollections && Object.keys(featuredCollections).length > 0 &&
             <section id="hero">
                 <div className="max-w-8xl mx-auto">
@@ -77,7 +77,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
                 </div>
             </div>
         </section>
-    </LayoutStore>
+    </Layout>
 }
 
 export function getStaticProps() {

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import LayoutStore from '../../components/LayoutStore'
+import Layout from '../../components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import { getCollectionBySlug, getStoreCollections } from '../../lib/utils'
@@ -17,7 +17,7 @@ export default function CollectionPage({ source, collection }) {
                 router.isFallback ? (
                     <>Loading…</>
                 ) : (
-                    <LayoutStore post={collection}>
+                    <Layout post={collection}>
                         <Head>
                             <title>{collection.title}</title>
                             <meta name="description" content={collection.description} />
@@ -83,7 +83,7 @@ export default function CollectionPage({ source, collection }) {
                                 </div>
                             </section>
                         </main>
-                    </LayoutStore>
+                    </Layout>
                 )
             }
         </>

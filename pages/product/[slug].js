@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import LayoutStore from '../../components/LayoutStore'
+import Layout from '../../components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import { BookmarkIcon, CheckMarkIcon, LockIcon } from '../../components/Icons'
@@ -28,7 +28,7 @@ export default function ProductPage({ product, collection }) {
                 router.isFallback ? (
                     <>Loading…</>
                 ) : (
-                    <LayoutStore>
+                    <Layout>
                         <Head>
                             <title>{product.title}</title>
                             <meta name="description" content={product.description} />
@@ -179,7 +179,7 @@ export default function ProductPage({ product, collection }) {
                                     </div>
                                 </section>} */}
                         </main>
-                    </LayoutStore>
+                    </Layout>
                 )
             }
         </>

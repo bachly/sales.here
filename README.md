@@ -1,4 +1,4 @@
-# The1Template | A minimal multipurpose theme for any starter project 
+# SalesHere | Ecommerce store templates with NextJS and TailwindCSS
 
 ## Features
 
@@ -15,6 +15,7 @@ Version 1:
 - [Done] Product media slider
 - Product tabs
 - Subscription form
+- Cart flyout
 - Cart page
 - Product options
 - Product pricing tiers
