@@ -10,10 +10,11 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
     return <Layout>
         {featuredCollections && Object.keys(featuredCollections).length > 0 &&
             <section id="hero">
-                <div className="max-w-8xl mx-auto">
+                <div className="max-w-7xl mx-auto py-2">
                     <Splide options={{
                         perPage: 2,
                         arrows: true,
+                        gap: "0.5rem",
                         breakpoints: {
                             640: {
                                 arrows: true,
@@ -45,7 +46,7 @@ export default function HomepageForOnlineStore({ featuredCollections, collection
 
                     <p className="mt-6 max-w-lg mx-auto">This is a section to introduce what your store is all about. Briefly explain what products you are selling, your brand signatures and what is so unique about your store.</p>
 
-                    <button className="bg-primary text-white py-2 px-4 mt-4 hover:bg-secondary transition duration-200">Browse products</button>
+                    <a className="inline-block bg-primary text-white py-2 px-4 mt-4 hover:bg-secondary transition duration-200">About us</a>
                 </div>
             </div>
         </section>

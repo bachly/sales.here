@@ -362,7 +362,7 @@ export default function Layout({ children }) {
                             <div className="mobile-menu__level-1" data-name="Root">
                                 <div className="h-12 flex items-center">
                                     <h2 className="flex-1 pl-4">Menu</h2>
-                                    <button onClick={toggleMobileMenu()} tabindex="0" className="w-10 h-10 mr-2 py-2 px-2 focus:outline-none focus:ring flex items-center justify-center z-50">
+                                    <button onClick={toggleMobileMenu()} tabIndex="0" className="w-10 h-10 mr-2 py-2 px-2 focus:outline-none focus:ring flex items-center justify-center z-50">
                                         <CrossIcon />
                                     </button>
                                 </div>

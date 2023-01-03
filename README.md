@@ -4,10 +4,10 @@
 
 Version 1:
 - [Done] Header that allows for big logo
-- Global search
+- Mobile menu
+- [Done] Global search
 - [Done] Dropdown menus
 - [Done] Mega menus
-- 52 sample banners for every week of the year, and for holidays & special days. Standard 3:2 ratios, reusabe & versatile for all platforms and screensizes.
 - [Done] A simple set of 6 colours for branding: primary, secondary, body, light, dark, danger.
 - [Done] Sliding banners
 - [Done] Simple homepage with eye-catching banners
@@ -21,6 +21,7 @@ Version 1:
 - Product pricing tiers
 - Collection filters
 - Collection pagination / infinite scroll
+- Search page
 - Customers page:
 - - Login
 - - Logout
